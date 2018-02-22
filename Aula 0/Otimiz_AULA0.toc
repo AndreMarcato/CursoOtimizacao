@@ -1,0 +1,12 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {brazilian}
+\beamer@sectionintoc {1}{Objetivos}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{O que vamos estudar?}{3}{0}{1}
+\beamer@sectionintoc {2}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{Rela\IeC {\c c}\IeC {\~a}o de livros sobre o tema}{4}{0}{2}
+\beamer@sectionintoc {3}{Ementa}{35}{0}{3}
+\beamer@subsectionintoc {3}{1}{ENE081 - M\IeC {\'e}todos de Otimiza\IeC {\c c}\IeC {\~a}o - Departamento de Energia - Faculdade de Engenharia - UFJF}{35}{0}{3}
+\beamer@sectionintoc {4}{Avalia\IeC {\c c}\IeC {\~a}o}{48}{0}{4}
+\beamer@subsectionintoc {4}{1}{Provas, trabalhos e listas}{48}{0}{4}
+\beamer@sectionintoc {5}{Programa\IeC {\c c}\IeC {\~a}o do Curso}{51}{0}{5}
+\beamer@subsectionintoc {5}{1}{Dias de Aula}{51}{0}{5}
