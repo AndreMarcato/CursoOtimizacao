@@ -1,0 +1,8 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {brazilian}
+\beamer@sectionintoc {1}{Introdu\IeC {\c c}\IeC {\~a}o}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Pesquisa Operacional}{3}{0}{1}
+\beamer@sectionintoc {2}{Modelagem para a Tomada de Decis\IeC {\~a}o}{11}{0}{2}
+\beamer@subsectionintoc {2}{1}{Vari\IeC {\'a}veis de Decis\IeC {\~a}o, Par\IeC {\^a}metros, Restri\IeC {\c c}\IeC {\~o}es, Fun\IeC {\c c}\IeC {\~a}o Objetivo}{11}{0}{2}
+\beamer@sectionintoc {3}{Conceitos Gerais de Otimiza\IeC {\c c}\IeC {\~a}o}{27}{0}{3}
+\beamer@subsectionintoc {3}{1}{Discuss\IeC {\~o}es Iniciais}{27}{0}{3}

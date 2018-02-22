@@ -1,0 +1,21 @@
+\frametitle{Egg Crate Function}
+	\begin{block}{Código em Matlab}
+		\begin{lstlisting}
+clear all; close all; clc;
+
+x = [-6:0.1:6]; y = [-6:0.1:6];
+[X,Y] = meshgrid(x,y);
+
+egg_crate = @(x,y) x.^2 + y.^2 ...
+    + 25*( sin(x).^2 + sin(y).^2 );
+Z = egg_crate(X,Y);
+
+grafico=mesh(x,y,Z); colormap(hsv);
+
+title('Eggcrate Function - 3D');
+xlabel('x','FontSize',14);
+ylabel('y','FontSize',14);
+zlabel('f(x,y)','FontSize',14);
+grafico.Parent.FontSize = 14;
+		\end{lstlisting}
+	\end{block}
