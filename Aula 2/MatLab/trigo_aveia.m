@@ -120,8 +120,7 @@ contador = contador + 1;
 nome = [ 'anima_' num2str(contador) '.png' ];
 imwrite(im,nome,'JPG');
 
-
-otimos = [ 36000 60000 72000 76000 ]
+otimos = [ 36000 60000 72000 76000 ];
 
 for i = 1:4
     linha.delete;
@@ -154,3 +153,40 @@ for i = 1:4
 end
 
 plot(20,80,'o','LineWidth',25)
+
+otimos = [ 36000 60000 72000 76000 ];
+
+grad_x = [30 45 54 60 ];
+grad_y = [40 60 72 80 ];
+
+for i = 1:4
+    linha.delete;
+    escreve.delete;
+
+    Z = otimos(i);
+    linha = plot(x1,reta_FOB(x1,Z),'-r','LineWidth',6);
+
+    pos_y = reta_FOB(0,Z);
+    if pos_y <= 100
+        pos_x = 0;
+    else
+        pos_y = 100;
+        pos_x = (Z - 800*100)/600;
+    end
+
+    Texto = [ 'Z =' num2str(Z) '= 600*x_1 + 800*x_2' ];
+    escreve = text(pos_x+2.5,pos_y-5.5,Texto,'FontSize',30, ...
+                                             'FontWeigh','Bold', ...
+                                             'Color', 'black');
+
+    escreve.Rotation = -(600/800)*180/pi+5;
+    gradiente = quiver(0,0,grad_x(i),grad_y(i), 'Color', 'cyan', 'LineWidth',5)
+    drawnow;    
+    frame = getframe(grafico);
+    im = frame2im(frame);
+    contador = contador + 1;
+    nome = [ 'anima_' num2str(contador) '.png' ];
+    imwrite(im,nome,'JPG');
+    gradiente.delete;
+
+end

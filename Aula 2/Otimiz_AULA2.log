@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.21)  18 FEB 2018 22:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.21)  25 FEB 2018 22:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2250,13 +2250,13 @@ Dictionary: translator-theorem-dictionary, Language: English
 LaTeX Info: Redefining \includegraphics on input line 168.
 \c@lstlisting=\count335
 
-(./Otimiz_AULA2.nav) <Engenharia.jpg, id=94, 541.02126pt x 649.42625pt>
+(./Otimiz_AULA2.nav) <Engenharia.jpg, id=102, 541.02126pt x 649.42625pt>
 File: Engenharia.jpg Graphic file (type jpg)
 
 <use Engenharia.jpg>
 Package pdftex.def Info: Engenharia.jpg used on input line 178.
 (pdftex.def)             Requested size: 28.45274pt x 34.1479pt.
- <cover.jpg, id=95, 1204.5pt x 903.375pt>
+ <cover.jpg, id=103, 1204.5pt x 903.375pt>
 File: cover.jpg Graphic file (type jpg)
  <use cover.jpg>
 Package pdftex.def Info: cover.jpg used on input line 178.
@@ -2266,7 +2266,7 @@ Package pdftex.def Info: cover.jpg used on input line 178.
 LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <4> not available
 (Font)              size <5> substituted on input line 178.
 
-<UFJF.jpg, id=96, 1027.84pt x 742.775pt>
+<UFJF.jpg, id=104, 1027.84pt x 742.775pt>
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
 Package pdftex.def Info: UFJF.jpg used on input line 178.
@@ -2302,7 +2302,7 @@ line 306.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
-) <fourier.jpg, id=191, 141.52875pt x 160.6pt>
+) <fourier.jpg, id=223, 141.52875pt x 160.6pt>
 File: fourier.jpg Graphic file (type jpg)
  <use fourier.jpg>
 Package pdftex.def Info: fourier.jpg used on input line 306.
@@ -2323,7 +2323,7 @@ Package pdftex.def Info: UFJF.jpg used on input line 306.
  [3
 
  <./fourier.jpg>]
-<kantorovich.jpg, id=229, 136.51pt x 186.6975pt>
+<kantorovich.jpg, id=269, 136.51pt x 186.6975pt>
 File: kantorovich.jpg Graphic file (type jpg)
  <use kantorovich.jpg>
 Package pdftex.def Info: kantorovich.jpg used on input line 306.
@@ -2344,7 +2344,7 @@ Package pdftex.def Info: UFJF.jpg used on input line 306.
  [4
 
  <./kantorovich.jpg>]
-<koopmans.jpg, id=264, 114.4275pt x 160.6pt>
+<koopmans.jpg, id=313, 114.4275pt x 160.6pt>
 File: koopmans.jpg Graphic file (type jpg)
  <use koopmans.jpg>
 Package pdftex.def Info: koopmans.jpg used on input line 306.
@@ -2365,7 +2365,7 @@ Package pdftex.def Info: UFJF.jpg used on input line 306.
  [5
 
  <./koopmans.jpg>]
-<secondwar.jpg, id=300, 259.97125pt x 194.7275pt>
+<secondwar.jpg, id=356, 259.97125pt x 194.7275pt>
 File: secondwar.jpg Graphic file (type jpg)
  <use secondwar.jpg>
 Package pdftex.def Info: secondwar.jpg used on input line 306.
@@ -2386,7 +2386,7 @@ Package pdftex.def Info: UFJF.jpg used on input line 306.
  [6
 
  <./secondwar.jpg>]
-<dantzig.jpg, id=335, 180.675pt x 275.0275pt>
+<dantzig.jpg, id=399, 180.675pt x 275.0275pt>
 File: dantzig.jpg Graphic file (type jpg)
  <use dantzig.jpg>
 Package pdftex.def Info: dantzig.jpg used on input line 306.
@@ -2406,7 +2406,7 @@ Package pdftex.def Info: UFJF.jpg used on input line 306.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [7
 
- <./dantzig.jpg>] <nobel.jpg, id=371, 401.5pt x 229.85875pt>
+ <./dantzig.jpg>] <nobel.jpg, id=444, 401.5pt x 229.85875pt>
 File: nobel.jpg Graphic file (type jpg)
 
 <use nobel.jpg>
@@ -2427,7 +2427,7 @@ Package pdftex.def Info: UFJF.jpg used on input line 306.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [8
 
- <./nobel.jpg>] <bitcoin.jpg, id=406, 642.4pt x 351.3125pt>
+ <./nobel.jpg>] <bitcoin.jpg, id=486, 642.4pt x 351.3125pt>
 File: bitcoin.jpg Graphic file (type jpg)
 
 <use bitcoin.jpg>
@@ -2448,7 +2448,7 @@ Package pdftex.def Info: UFJF.jpg used on input line 306.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [9
 
- <./bitcoin.jpg>] <seta.png, id=440, 333.245pt x 152.57pt>
+ <./bitcoin.jpg>] <seta.png, id=529, 333.245pt x 152.57pt>
 File: seta.png Graphic file (type png)
 
 <use seta.png>
@@ -2584,7 +2584,7 @@ Package pdftex.def Info: UFJF.jpg used on input line 358.
  [17
 
 ]
-<milho_aveia.png, id=719, 151.56625pt x 195.73125pt>
+<milho_aveia.png, id=872, 151.56625pt x 195.73125pt>
 File: milho_aveia.png Graphic file (type png)
  <use milho_aveia.png>
 Package pdftex.def Info: milho_aveia.png used on input line 491.
@@ -2597,7 +2597,7 @@ Package pdftex.def Info: UFJF.jpg used on input line 491.
  [18
 
  <./milho_aveia.png>]
-<milho_aveia2.png, id=758, 151.56625pt x 195.73125pt>
+<milho_aveia2.png, id=919, 151.56625pt x 195.73125pt>
 File: milho_aveia2.png Graphic file (type png)
  <use milho_aveia2.png>
 Package pdftex.def Info: milho_aveia2.png used on input line 491.
@@ -2610,7 +2610,7 @@ Package pdftex.def Info: UFJF.jpg used on input line 491.
  [19
 
  <./milho_aveia2.png>]
-<dinheiro2.jpg, id=795, 198.7425pt x 254.9525pt>
+<dinheiro2.jpg, id=965, 198.7425pt x 254.9525pt>
 File: dinheiro2.jpg Graphic file (type jpg)
  <use dinheiro2.jpg>
 Package pdftex.def Info: dinheiro2.jpg used on input line 491.
@@ -2784,7 +2784,7 @@ Package pdftex.def Info: UFJF.jpg used on input line 491.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [32
 
-] <seta2.png, id=1250, 256.96pt x 256.96pt>
+] <seta2.png, id=1524, 256.96pt x 256.96pt>
 File: seta2.png Graphic file (type png)
  <use seta2.png>
 Package pdftex.def Info: seta2.png used on input line 491.
@@ -2822,448 +2822,837 @@ Package pdftex.def Info: UFJF.jpg used on input line 491.
  [33
 
  <./seta2.png>]
-<MatLab/anima_1.png, id=1287, 888.31876pt x 804.00375pt>
+<MatLab/anima_1.png, id=1570, 888.31876pt x 804.00375pt>
 File: MatLab/anima_1.png Graphic file (type png)
 
 <use MatLab/anima_1.png>
-Package pdftex.def Info: MatLab/anima_1.png used on input line 553.
+Package pdftex.def Info: MatLab/anima_1.png used on input line 565.
 (pdftex.def)             Requested size: 170.70708pt x 170.71053pt.
 
-Overfull \hbox (17.06215pt too wide) in paragraph at lines 553--553
+Overfull \hbox (17.06215pt too wide) in paragraph at lines 565--565
  [][] 
  []
 
 File: UFJF.jpg Graphic file (type jpg)
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 553.
+Package pdftex.def Info: UFJF.jpg used on input line 565.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [34
 
  <./MatLab/anima_1.png>]
-<MatLab/anima_2.png, id=1323, 888.31876pt x 804.00375pt>
+<MatLab/anima_2.png, id=1614, 888.31876pt x 804.00375pt>
 File: MatLab/anima_2.png Graphic file (type png)
 
 <use MatLab/anima_2.png>
-Package pdftex.def Info: MatLab/anima_2.png used on input line 553.
+Package pdftex.def Info: MatLab/anima_2.png used on input line 565.
 (pdftex.def)             Requested size: 170.70708pt x 170.71053pt.
 
-Overfull \hbox (17.06215pt too wide) in paragraph at lines 553--553
+Overfull \hbox (17.06215pt too wide) in paragraph at lines 565--565
  [] 
  []
 
 File: UFJF.jpg Graphic file (type jpg)
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 553.
+Package pdftex.def Info: UFJF.jpg used on input line 565.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [35
 
  <./MatLab/anima_2.png>]
-<MatLab/anima_3.png, id=1359, 888.31876pt x 804.00375pt>
+<MatLab/anima_3.png, id=1657, 888.31876pt x 804.00375pt>
 File: MatLab/anima_3.png Graphic file (type png)
 
 <use MatLab/anima_3.png>
-Package pdftex.def Info: MatLab/anima_3.png used on input line 553.
+Package pdftex.def Info: MatLab/anima_3.png used on input line 565.
 (pdftex.def)             Requested size: 170.70708pt x 170.71053pt.
 
-Overfull \hbox (17.06215pt too wide) in paragraph at lines 553--553
+Overfull \hbox (17.06215pt too wide) in paragraph at lines 565--565
  [] 
  []
 
 File: UFJF.jpg Graphic file (type jpg)
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 553.
+Package pdftex.def Info: UFJF.jpg used on input line 565.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [36
 
  <./MatLab/anima_3.png>]
-<MatLab/anima_4.png, id=1394, 888.31876pt x 804.00375pt>
+<MatLab/anima_4.png, id=1701, 888.31876pt x 804.00375pt>
 File: MatLab/anima_4.png Graphic file (type png)
 
 <use MatLab/anima_4.png>
-Package pdftex.def Info: MatLab/anima_4.png used on input line 553.
+Package pdftex.def Info: MatLab/anima_4.png used on input line 565.
 (pdftex.def)             Requested size: 170.70708pt x 170.71053pt.
 
-Overfull \hbox (17.06215pt too wide) in paragraph at lines 553--553
+Overfull \hbox (17.06215pt too wide) in paragraph at lines 565--565
  [] 
  []
 
 File: UFJF.jpg Graphic file (type jpg)
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 553.
+Package pdftex.def Info: UFJF.jpg used on input line 565.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [37
 
  <./MatLab/anima_4.png>]
-<MatLab/anima_5.png, id=1430, 888.31876pt x 804.00375pt>
+<MatLab/anima_5.png, id=1745, 888.31876pt x 804.00375pt>
 File: MatLab/anima_5.png Graphic file (type png)
 
 <use MatLab/anima_5.png>
-Package pdftex.def Info: MatLab/anima_5.png used on input line 553.
+Package pdftex.def Info: MatLab/anima_5.png used on input line 565.
 (pdftex.def)             Requested size: 170.70708pt x 170.71053pt.
 
-Overfull \hbox (17.06215pt too wide) in paragraph at lines 553--553
+Overfull \hbox (17.06215pt too wide) in paragraph at lines 565--565
  [] 
  []
 
 File: UFJF.jpg Graphic file (type jpg)
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 553.
+Package pdftex.def Info: UFJF.jpg used on input line 565.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [38
 
  <./MatLab/anima_5.png>]
-<MatLab/anima_6.png, id=1466, 888.31876pt x 804.00375pt>
+<MatLab/anima_6.png, id=1789, 888.31876pt x 804.00375pt>
 File: MatLab/anima_6.png Graphic file (type png)
 
 <use MatLab/anima_6.png>
-Package pdftex.def Info: MatLab/anima_6.png used on input line 553.
+Package pdftex.def Info: MatLab/anima_6.png used on input line 565.
 (pdftex.def)             Requested size: 170.70708pt x 170.71053pt.
 
-Overfull \hbox (17.06215pt too wide) in paragraph at lines 553--553
+Overfull \hbox (17.06215pt too wide) in paragraph at lines 565--565
  [] 
  []
 
 File: UFJF.jpg Graphic file (type jpg)
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 553.
+Package pdftex.def Info: UFJF.jpg used on input line 565.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [39
 
  <./MatLab/anima_6.png>]
-<MatLab/anima_7.png, id=1501, 888.31876pt x 804.00375pt>
+<MatLab/anima_7.png, id=1832, 888.31876pt x 804.00375pt>
 File: MatLab/anima_7.png Graphic file (type png)
 
 <use MatLab/anima_7.png>
-Package pdftex.def Info: MatLab/anima_7.png used on input line 553.
+Package pdftex.def Info: MatLab/anima_7.png used on input line 565.
 (pdftex.def)             Requested size: 170.70708pt x 170.71053pt.
 
-Overfull \hbox (17.06215pt too wide) in paragraph at lines 553--553
+Overfull \hbox (17.06215pt too wide) in paragraph at lines 565--565
  [] 
  []
 
 File: UFJF.jpg Graphic file (type jpg)
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 553.
+Package pdftex.def Info: UFJF.jpg used on input line 565.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [40
 
  <./MatLab/anima_7.png>]
-<MatLab/anima_8.png, id=1536, 888.31876pt x 804.00375pt>
+<MatLab/anima_8.png, id=1875, 888.31876pt x 804.00375pt>
 File: MatLab/anima_8.png Graphic file (type png)
 
 <use MatLab/anima_8.png>
-Package pdftex.def Info: MatLab/anima_8.png used on input line 553.
+Package pdftex.def Info: MatLab/anima_8.png used on input line 565.
 (pdftex.def)             Requested size: 170.70708pt x 170.71053pt.
 
-Overfull \hbox (17.06215pt too wide) in paragraph at lines 553--553
+Overfull \hbox (17.06215pt too wide) in paragraph at lines 565--565
  [] 
  []
 
 File: UFJF.jpg Graphic file (type jpg)
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 553.
+Package pdftex.def Info: UFJF.jpg used on input line 565.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [41
 
  <./MatLab/anima_8.png>]
-<MatLab/anima_9.png, id=1572, 888.31876pt x 804.00375pt>
+<MatLab/anima_9.png, id=1919, 888.31876pt x 804.00375pt>
 File: MatLab/anima_9.png Graphic file (type png)
 
 <use MatLab/anima_9.png>
-Package pdftex.def Info: MatLab/anima_9.png used on input line 553.
+Package pdftex.def Info: MatLab/anima_9.png used on input line 565.
 (pdftex.def)             Requested size: 170.70708pt x 170.71053pt.
 
-Overfull \hbox (17.06215pt too wide) in paragraph at lines 553--553
+Overfull \hbox (17.06215pt too wide) in paragraph at lines 565--565
  [] 
  []
 
 File: UFJF.jpg Graphic file (type jpg)
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 553.
+Package pdftex.def Info: UFJF.jpg used on input line 565.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [42
 
  <./MatLab/anima_9.png>]
 File: MatLab/anima_9.png Graphic file (type png)
  <use MatLab/anima_9.png>
-Package pdftex.def Info: MatLab/anima_9.png used on input line 553.
+Package pdftex.def Info: MatLab/anima_9.png used on input line 565.
 (pdftex.def)             Requested size: 170.70708pt x 170.71053pt.
 
-Overfull \hbox (17.06215pt too wide) in paragraph at lines 553--553
+Overfull \hbox (17.06215pt too wide) in paragraph at lines 565--565
  [] 
  []
 
 File: UFJF.jpg Graphic file (type jpg)
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 553.
+Package pdftex.def Info: UFJF.jpg used on input line 565.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [43
 
-] <MatLab/anima_10.png, id=1642, 888.31876pt x 804.00375pt>
+] <MatLab/anima_10.png, id=2006, 888.31876pt x 804.00375pt>
 File: MatLab/anima_10.png Graphic file (type png)
 
 <use MatLab/anima_10.png>
-Package pdftex.def Info: MatLab/anima_10.png used on input line 553.
+Package pdftex.def Info: MatLab/anima_10.png used on input line 565.
 (pdftex.def)             Requested size: 170.70708pt x 170.71053pt.
 
-Overfull \hbox (17.06215pt too wide) in paragraph at lines 553--553
+Overfull \hbox (17.06215pt too wide) in paragraph at lines 565--565
  [] 
  []
 
 File: UFJF.jpg Graphic file (type jpg)
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 553.
+Package pdftex.def Info: UFJF.jpg used on input line 565.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [44
 
  <./MatLab/anima_10.png>]
-Overfull \hbox (5.97276pt too wide) in paragraph at lines 553--553
+Overfull \hbox (5.97276pt too wide) in paragraph at lines 565--565
  [] 
  []
 
 File: MatLab/anima_10.png Graphic file (type png)
 <use MatLab/anima_10.png>
-Package pdftex.def Info: MatLab/anima_10.png used on input line 553.
+Package pdftex.def Info: MatLab/anima_10.png used on input line 565.
 (pdftex.def)             Requested size: 170.70708pt x 170.71053pt.
 
-Overfull \hbox (17.06215pt too wide) in paragraph at lines 553--553
+Overfull \hbox (17.06215pt too wide) in paragraph at lines 565--565
  [] 
  []
 
 File: UFJF.jpg Graphic file (type jpg)
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 553.
+Package pdftex.def Info: UFJF.jpg used on input line 565.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [45
 
 ]
-Overfull \hbox (5.97276pt too wide) in paragraph at lines 553--553
+Overfull \hbox (5.97276pt too wide) in paragraph at lines 565--565
  [] 
  []
 
-<MatLab/anima_11.png, id=1712, 888.31876pt x 804.00375pt>
+<MatLab/anima_11.png, id=2091, 888.31876pt x 804.00375pt>
 File: MatLab/anima_11.png Graphic file (type png)
 
 <use MatLab/anima_11.png>
-Package pdftex.def Info: MatLab/anima_11.png used on input line 553.
+Package pdftex.def Info: MatLab/anima_11.png used on input line 565.
 (pdftex.def)             Requested size: 170.70708pt x 170.71053pt.
 
-Overfull \hbox (17.06215pt too wide) in paragraph at lines 553--553
+Overfull \hbox (17.06215pt too wide) in paragraph at lines 565--565
  [] 
  []
 
 File: UFJF.jpg Graphic file (type jpg)
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 553.
+Package pdftex.def Info: UFJF.jpg used on input line 565.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [46
 
  <./MatLab/anima_11.png>]
-Overfull \hbox (5.97276pt too wide) in paragraph at lines 553--553
+Overfull \hbox (5.97276pt too wide) in paragraph at lines 565--565
  [] 
  []
 
-<MatLab/anima_12.png, id=1747, 888.31876pt x 804.00375pt>
+<MatLab/anima_12.png, id=2135, 888.31876pt x 804.00375pt>
 File: MatLab/anima_12.png Graphic file (type png)
 
 <use MatLab/anima_12.png>
-Package pdftex.def Info: MatLab/anima_12.png used on input line 553.
+Package pdftex.def Info: MatLab/anima_12.png used on input line 565.
 (pdftex.def)             Requested size: 170.70708pt x 170.71053pt.
 
-Overfull \hbox (17.06215pt too wide) in paragraph at lines 553--553
+Overfull \hbox (17.06215pt too wide) in paragraph at lines 565--565
  [] 
  []
 
 File: UFJF.jpg Graphic file (type jpg)
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 553.
+Package pdftex.def Info: UFJF.jpg used on input line 565.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [47
 
  <./MatLab/anima_12.png>]
-Overfull \hbox (5.97276pt too wide) in paragraph at lines 553--553
+Overfull \hbox (5.97276pt too wide) in paragraph at lines 565--565
  [] 
  []
 
 File: MatLab/anima_12.png Graphic file (type png)
 <use MatLab/anima_12.png>
-Package pdftex.def Info: MatLab/anima_12.png used on input line 553.
+Package pdftex.def Info: MatLab/anima_12.png used on input line 565.
 (pdftex.def)             Requested size: 170.70708pt x 170.71053pt.
 
-Overfull \hbox (17.06215pt too wide) in paragraph at lines 553--553
+Overfull \hbox (17.06215pt too wide) in paragraph at lines 565--565
  [] 
  []
 
 File: UFJF.jpg Graphic file (type jpg)
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 553.
+Package pdftex.def Info: UFJF.jpg used on input line 565.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [48
 
 ]
-Overfull \hbox (5.97276pt too wide) in paragraph at lines 553--553
+Overfull \hbox (5.97276pt too wide) in paragraph at lines 565--565
  [] 
  []
 
-<MatLab/anima_13.png, id=1817, 888.31876pt x 804.00375pt>
+<MatLab/anima_13.png, id=2221, 888.31876pt x 804.00375pt>
 File: MatLab/anima_13.png Graphic file (type png)
 
 <use MatLab/anima_13.png>
-Package pdftex.def Info: MatLab/anima_13.png used on input line 553.
+Package pdftex.def Info: MatLab/anima_13.png used on input line 565.
 (pdftex.def)             Requested size: 170.70708pt x 170.71053pt.
 
-Overfull \hbox (17.06215pt too wide) in paragraph at lines 553--553
+Overfull \hbox (17.06215pt too wide) in paragraph at lines 565--565
  [] 
  []
 
 File: UFJF.jpg Graphic file (type jpg)
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 553.
+Package pdftex.def Info: UFJF.jpg used on input line 565.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [49
 
  <./MatLab/anima_13.png>]
-Overfull \hbox (5.97276pt too wide) in paragraph at lines 553--553
+Overfull \hbox (5.97276pt too wide) in paragraph at lines 565--565
  [] 
  []
 
-<MatLab/anima_14.png, id=1853, 888.31876pt x 804.00375pt>
+<MatLab/anima_14.png, id=2265, 888.31876pt x 804.00375pt>
 File: MatLab/anima_14.png Graphic file (type png)
 
 <use MatLab/anima_14.png>
-Package pdftex.def Info: MatLab/anima_14.png used on input line 553.
+Package pdftex.def Info: MatLab/anima_14.png used on input line 565.
 (pdftex.def)             Requested size: 170.70708pt x 170.71053pt.
 
-Overfull \hbox (17.06215pt too wide) in paragraph at lines 553--553
+Overfull \hbox (17.06215pt too wide) in paragraph at lines 565--565
  [] 
  []
 
 File: UFJF.jpg Graphic file (type jpg)
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 553.
+Package pdftex.def Info: UFJF.jpg used on input line 565.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [50
 
  <./MatLab/anima_14.png>]
-Overfull \hbox (5.97276pt too wide) in paragraph at lines 553--553
+Overfull \hbox (5.97276pt too wide) in paragraph at lines 565--565
  [] 
  []
 
-<MatLab/anima_15.png, id=1889, 888.31876pt x 804.00375pt>
+<MatLab/anima_15.png, id=2309, 888.31876pt x 804.00375pt>
 File: MatLab/anima_15.png Graphic file (type png)
 
 <use MatLab/anima_15.png>
-Package pdftex.def Info: MatLab/anima_15.png used on input line 553.
+Package pdftex.def Info: MatLab/anima_15.png used on input line 565.
 (pdftex.def)             Requested size: 170.70708pt x 170.71053pt.
 
-Overfull \hbox (17.06215pt too wide) in paragraph at lines 553--553
+Overfull \hbox (17.06215pt too wide) in paragraph at lines 565--565
  [] 
  []
 
 File: UFJF.jpg Graphic file (type jpg)
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 553.
+Package pdftex.def Info: UFJF.jpg used on input line 565.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [51
 
  <./MatLab/anima_15.png>]
-Overfull \hbox (5.97276pt too wide) in paragraph at lines 553--553
+Overfull \hbox (5.97276pt too wide) in paragraph at lines 565--565
  [] 
  []
 
-<MatLab/anima_16.png, id=1924, 888.31876pt x 804.00375pt>
+<MatLab/anima_16.png, id=2352, 888.31876pt x 804.00375pt>
 File: MatLab/anima_16.png Graphic file (type png)
 
 <use MatLab/anima_16.png>
-Package pdftex.def Info: MatLab/anima_16.png used on input line 553.
+Package pdftex.def Info: MatLab/anima_16.png used on input line 565.
 (pdftex.def)             Requested size: 170.70708pt x 170.71053pt.
 
-Overfull \hbox (17.06215pt too wide) in paragraph at lines 553--553
+Overfull \hbox (17.06215pt too wide) in paragraph at lines 565--565
  [] 
  []
 
 File: UFJF.jpg Graphic file (type jpg)
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 553.
+Package pdftex.def Info: UFJF.jpg used on input line 565.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [52
 
  <./MatLab/anima_16.png>]
-Overfull \hbox (5.97276pt too wide) in paragraph at lines 553--553
+Overfull \hbox (5.97276pt too wide) in paragraph at lines 565--565
  [] 
  []
 
-<MatLab/anima_17.png, id=1959, 888.31876pt x 804.00375pt>
+<MatLab/anima_17.png, id=2395, 888.31876pt x 804.00375pt>
 File: MatLab/anima_17.png Graphic file (type png)
 
 <use MatLab/anima_17.png>
-Package pdftex.def Info: MatLab/anima_17.png used on input line 553.
+Package pdftex.def Info: MatLab/anima_17.png used on input line 565.
 (pdftex.def)             Requested size: 170.70708pt x 170.71053pt.
 
-Overfull \hbox (17.06215pt too wide) in paragraph at lines 553--553
+Overfull \hbox (17.06215pt too wide) in paragraph at lines 565--565
  [] 
  []
 
 File: UFJF.jpg Graphic file (type jpg)
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 553.
+Package pdftex.def Info: UFJF.jpg used on input line 565.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [53
 
  <./MatLab/anima_17.png>]
-Overfull \hbox (5.97276pt too wide) in paragraph at lines 553--553
+Overfull \hbox (5.97276pt too wide) in paragraph at lines 565--565
  [] 
  []
 
-<MatLab/anima_18.png, id=1995, 888.31876pt x 804.00375pt>
+<MatLab/anima_18.png, id=2439, 888.31876pt x 804.00375pt>
 File: MatLab/anima_18.png Graphic file (type png)
 
 <use MatLab/anima_18.png>
-Package pdftex.def Info: MatLab/anima_18.png used on input line 553.
+Package pdftex.def Info: MatLab/anima_18.png used on input line 565.
 (pdftex.def)             Requested size: 170.70708pt x 170.71053pt.
 
-Overfull \hbox (17.06215pt too wide) in paragraph at lines 553--553
+Overfull \hbox (17.06215pt too wide) in paragraph at lines 565--565
  [] 
  []
 
 File: UFJF.jpg Graphic file (type jpg)
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 553.
+Package pdftex.def Info: UFJF.jpg used on input line 565.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [54
 
  <./MatLab/anima_18.png>]
-Overfull \hbox (5.97276pt too wide) in paragraph at lines 553--553
+Overfull \hbox (5.97276pt too wide) in paragraph at lines 565--565
  [] 
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 553.
+(mdframed)              on input line 565.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 553.
+ mdframed uses option nobreak mdframed on input line 565.
 File: MatLab/anima_18.png Graphic file (type png)
 <use MatLab/anima_18.png>
-Package pdftex.def Info: MatLab/anima_18.png used on input line 553.
+Package pdftex.def Info: MatLab/anima_18.png used on input line 565.
 (pdftex.def)             Requested size: 170.70708pt x 170.71053pt.
 
-Overfull \hbox (17.06215pt too wide) in paragraph at lines 553--553
+Overfull \hbox (17.06215pt too wide) in paragraph at lines 565--565
  [] 
  []
 
 File: UFJF.jpg Graphic file (type jpg)
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 553.
+Package pdftex.def Info: UFJF.jpg used on input line 565.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [55
 
 ]
+Overfull \hbox (5.97276pt too wide) in paragraph at lines 565--565
+ [] 
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 565.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 565.
+File: MatLab/anima_18.png Graphic file (type png)
+<use MatLab/anima_18.png>
+Package pdftex.def Info: MatLab/anima_18.png used on input line 565.
+(pdftex.def)             Requested size: 170.70708pt x 170.71053pt.
+
+Overfull \hbox (17.06215pt too wide) in paragraph at lines 565--565
+ [] 
+ []
+
+File: UFJF.jpg Graphic file (type jpg)
+<use UFJF.jpg>
+Package pdftex.def Info: UFJF.jpg used on input line 565.
+(pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
+ [56
+
+]
+Overfull \hbox (5.97276pt too wide) in paragraph at lines 565--565
+ [] 
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 565.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 565.
+File: MatLab/anima_18.png Graphic file (type png)
+<use MatLab/anima_18.png>
+Package pdftex.def Info: MatLab/anima_18.png used on input line 565.
+(pdftex.def)             Requested size: 170.70708pt x 170.71053pt.
+
+Overfull \hbox (17.06215pt too wide) in paragraph at lines 565--565
+ [] 
+ []
+
+File: UFJF.jpg Graphic file (type jpg)
+<use UFJF.jpg>
+Package pdftex.def Info: UFJF.jpg used on input line 565.
+(pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
+ [57
+
+]
+File: MatLab/anima_18.png Graphic file (type png)
+ <use MatLab/anima_18.png>
+Package pdftex.def Info: MatLab/anima_18.png used on input line 598.
+(pdftex.def)             Requested size: 170.70708pt x 170.71053pt.
+
+Overfull \hbox (17.06215pt too wide) in paragraph at lines 598--598
+ [][] 
+ []
+
+File: UFJF.jpg Graphic file (type jpg)
+<use UFJF.jpg>
+Package pdftex.def Info: UFJF.jpg used on input line 598.
+(pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
+ [58
+
+]
+File: MatLab/anima_18.png Graphic file (type png)
+ <use MatLab/anima_18.png>
+Package pdftex.def Info: MatLab/anima_18.png used on input line 598.
+(pdftex.def)             Requested size: 170.70708pt x 170.71053pt.
+
+Overfull \hbox (17.06215pt too wide) in paragraph at lines 598--598
+ [][] 
+ []
+
+File: UFJF.jpg Graphic file (type jpg)
+<use UFJF.jpg>
+Package pdftex.def Info: UFJF.jpg used on input line 598.
+(pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
+ [59
+
+]
+File: MatLab/anima_18.png Graphic file (type png)
+ <use MatLab/anima_18.png>
+Package pdftex.def Info: MatLab/anima_18.png used on input line 598.
+(pdftex.def)             Requested size: 170.70708pt x 170.71053pt.
+
+Overfull \hbox (17.06215pt too wide) in paragraph at lines 598--598
+ [][] 
+ []
+
+File: UFJF.jpg Graphic file (type jpg)
+<use UFJF.jpg>
+Package pdftex.def Info: UFJF.jpg used on input line 598.
+(pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
+ [60
+
+] <MatLab/anima_19.png, id=2739, 888.31876pt x 804.00375pt>
+File: MatLab/anima_19.png Graphic file (type png)
+
+<use MatLab/anima_19.png>
+Package pdftex.def Info: MatLab/anima_19.png used on input line 598.
+(pdftex.def)             Requested size: 170.70708pt x 170.71053pt.
+
+Overfull \hbox (17.06215pt too wide) in paragraph at lines 598--598
+ [] 
+ []
+
+File: UFJF.jpg Graphic file (type jpg)
+<use UFJF.jpg>
+Package pdftex.def Info: UFJF.jpg used on input line 598.
+(pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
+ [61
+
+ <./MatLab/anima_19.png>]
+File: MatLab/anima_19.png Graphic file (type png)
+ <use MatLab/anima_19.png>
+Package pdftex.def Info: MatLab/anima_19.png used on input line 598.
+(pdftex.def)             Requested size: 170.70708pt x 170.71053pt.
+
+Overfull \hbox (17.06215pt too wide) in paragraph at lines 598--598
+ [] 
+ []
+
+File: UFJF.jpg Graphic file (type jpg)
+<use UFJF.jpg>
+Package pdftex.def Info: UFJF.jpg used on input line 598.
+(pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
+ [62
+
+]
+File: MatLab/anima_19.png Graphic file (type png)
+ <use MatLab/anima_19.png>
+Package pdftex.def Info: MatLab/anima_19.png used on input line 598.
+(pdftex.def)             Requested size: 170.70708pt x 170.71053pt.
+
+Overfull \hbox (17.06215pt too wide) in paragraph at lines 598--598
+ [] 
+ []
+
+File: UFJF.jpg Graphic file (type jpg)
+<use UFJF.jpg>
+Package pdftex.def Info: UFJF.jpg used on input line 598.
+(pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
+ [63
+
+] <MatLab/anima_20.png, id=2869, 888.31876pt x 804.00375pt>
+File: MatLab/anima_20.png Graphic file (type png)
+
+<use MatLab/anima_20.png>
+Package pdftex.def Info: MatLab/anima_20.png used on input line 598.
+(pdftex.def)             Requested size: 170.70708pt x 170.71053pt.
+
+Overfull \hbox (17.06215pt too wide) in paragraph at lines 598--598
+ [] 
+ []
+
+File: UFJF.jpg Graphic file (type jpg)
+<use UFJF.jpg>
+Package pdftex.def Info: UFJF.jpg used on input line 598.
+(pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
+ [64
+
+ <./MatLab/anima_20.png>]
+<MatLab/anima_21.png, id=2912, 888.31876pt x 804.00375pt>
+File: MatLab/anima_21.png Graphic file (type png)
+
+<use MatLab/anima_21.png>
+Package pdftex.def Info: MatLab/anima_21.png used on input line 598.
+(pdftex.def)             Requested size: 170.70708pt x 170.71053pt.
+
+Overfull \hbox (17.06215pt too wide) in paragraph at lines 598--598
+ [] 
+ []
+
+File: UFJF.jpg Graphic file (type jpg)
+<use UFJF.jpg>
+Package pdftex.def Info: UFJF.jpg used on input line 598.
+(pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
+ [65
+
+ <./MatLab/anima_21.png>]
+<MatLab/anima_22.png, id=2956, 888.31876pt x 804.00375pt>
+File: MatLab/anima_22.png Graphic file (type png)
+
+<use MatLab/anima_22.png>
+Package pdftex.def Info: MatLab/anima_22.png used on input line 598.
+(pdftex.def)             Requested size: 170.70708pt x 170.71053pt.
+
+Overfull \hbox (17.06215pt too wide) in paragraph at lines 598--598
+ [] 
+ []
+
+File: UFJF.jpg Graphic file (type jpg)
+<use UFJF.jpg>
+Package pdftex.def Info: UFJF.jpg used on input line 598.
+(pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
+ [66
+
+ <./MatLab/anima_22.png>]
+File: MatLab/anima_22.png Graphic file (type png)
+ <use MatLab/anima_22.png>
+Package pdftex.def Info: MatLab/anima_22.png used on input line 598.
+(pdftex.def)             Requested size: 170.70708pt x 170.71053pt.
+
+Overfull \hbox (17.06215pt too wide) in paragraph at lines 598--598
+ [] 
+ []
+
+File: UFJF.jpg Graphic file (type jpg)
+<use UFJF.jpg>
+Package pdftex.def Info: UFJF.jpg used on input line 598.
+(pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
+ [67
+
+]
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 561.
+Package pdftex.def Info: UFJF.jpg used on input line 606.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
-Package atenddvi Info: Last page = 56.
- [56
+ [68
+
+]
+File: UFJF.jpg Graphic file (type jpg)
+ <use UFJF.jpg>
+Package pdftex.def Info: UFJF.jpg used on input line 606.
+(pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
+ [69
+
+]
+File: UFJF.jpg Graphic file (type jpg)
+ <use UFJF.jpg>
+Package pdftex.def Info: UFJF.jpg used on input line 606.
+(pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
+
+[70
+
+] <ProblemaTrigoCereais.png, id=3172, 857.2025pt x 620.3175pt>
+File: ProblemaTrigoCereais.png Graphic file (type png)
+
+<use ProblemaTrigoCereais.png>
+Package pdftex.def Info: ProblemaTrigoCereais.png used on input line 612.
+(pdftex.def)             Requested size: 256.0771pt x 170.71562pt.
+File: UFJF.jpg Graphic file (type jpg)
+ <use UFJF.jpg>
+Package pdftex.def Info: UFJF.jpg used on input line 612.
+(pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
+ [71
+
+ <./ProblemaTrigoCereais.png>]
+File: UFJF.jpg Graphic file (type jpg)
+<use UFJF.jpg>
+Package pdftex.def Info: UFJF.jpg used on input line 622.
+(pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
+ [72
+
+]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 645.
+
+Underfull \hbox (badness 10000) in paragraph at lines 645--645
+[]
+ []
+
+
+Overfull \hbox (9.01277pt too wide) in paragraph at lines 645--645
+[] 
+ []
+
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 645.
+<CasosEspeciais-Multiplas.png, id=3257, 786.94pt x 593.21625pt>
+File: CasosEspeciais-Multiplas.png Graphic file (type png)
+
+<use CasosEspeciais-Multiplas.png>
+Package pdftex.def Info: CasosEspeciais-Multiplas.png used on input line 645.
+(pdftex.def)             Requested size: 241.84752pt x 199.16542pt.
+
+Overfull \hbox (26.74556pt too wide) in paragraph at lines 645--645
+[][]  
+ []
+
+File: UFJF.jpg Graphic file (type jpg)
+<use UFJF.jpg>
+Package pdftex.def Info: UFJF.jpg used on input line 645.
+(pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
+ [73
+
+ <./CasosEspeciais-Multiplas.png>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 667.
+
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
+[]
+ []
+
+
+Overfull \hbox (0.51485pt too wide) in paragraph at lines 667--667
+[] 
+ []
+
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 667.
+<CasosEspeciais-Infactivel.png, id=3301, 743.77875pt x 596.2275pt>
+File: CasosEspeciais-Infactivel.png Graphic file (type png)
+
+<use CasosEspeciais-Infactivel.png>
+Package pdftex.def Info: CasosEspeciais-Infactivel.png used on input line 667.
+(pdftex.def)             Requested size: 241.85007pt x 199.16656pt.
+
+Overfull \hbox (26.74811pt too wide) in paragraph at lines 667--667
+[][]  
+ []
+
+File: UFJF.jpg Graphic file (type jpg)
+<use UFJF.jpg>
+Package pdftex.def Info: UFJF.jpg used on input line 667.
+(pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
+ [74
+
+ <./CasosEspeciais-Infactivel.png>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 689.
+
+Underfull \hbox (badness 10000) in paragraph at lines 689--689
+[]
+ []
+
+
+Overfull \hbox (9.01277pt too wide) in paragraph at lines 689--689
+[] 
+ []
+
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 689.
+<CasosEspeciais-Ilimitado.png, id=3344, 701.62125pt x 556.0775pt>
+File: CasosEspeciais-Ilimitado.png Graphic file (type png)
+
+<use CasosEspeciais-Ilimitado.png>
+Package pdftex.def Info: CasosEspeciais-Ilimitado.png used on input line 689.
+(pdftex.def)             Requested size: 241.84547pt x 199.16954pt.
+
+Overfull \hbox (26.74352pt too wide) in paragraph at lines 689--689
+[][]  
+ []
+
+File: UFJF.jpg Graphic file (type jpg)
+<use UFJF.jpg>
+Package pdftex.def Info: UFJF.jpg used on input line 689.
+(pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
+ [75
+
+ <./CasosEspeciais-Ilimitado.png>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 712.
+
+Underfull \hbox (badness 10000) in paragraph at lines 712--712
+[]
+ []
+
+
+Overfull \hbox (4.76381pt too wide) in paragraph at lines 712--712
+[] 
+ []
+
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 712.
+<CasosEspeciais-Degenerada.png, id=3388, 816.04875pt x 543.02875pt>
+File: CasosEspeciais-Degenerada.png Graphic file (type png)
+
+<use CasosEspeciais-Degenerada.png>
+Package pdftex.def Info: CasosEspeciais-Degenerada.png used on input line 712.
+(pdftex.def)             Requested size: 241.85297pt x 199.16914pt.
+
+Overfull \hbox (26.751pt too wide) in paragraph at lines 712--712
+[][]  
+ []
+
+File: UFJF.jpg Graphic file (type jpg)
+<use UFJF.jpg>
+Package pdftex.def Info: UFJF.jpg used on input line 712.
+(pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
+ [76
+
+ <./CasosEspeciais-Degenerada.png>]
+File: UFJF.jpg Graphic file (type jpg)
+ <use UFJF.jpg>
+Package pdftex.def Info: UFJF.jpg used on input line 721.
+(pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
+Package atenddvi Info: Last page = 77.
+ [77
 
 ]
 \tf@nav=\write7
@@ -3275,49 +3664,56 @@ Package atenddvi Info: Last page = 56.
 \tf@snm=\write9
 \openout9 = `Otimiz_AULA2.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 565.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 565.
- (./Otimiz_AULA2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 565.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 565.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 725.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 725.
+
+(./Otimiz_AULA2.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 725.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 725.
 Package rerunfilecheck Info: File `Otimiz_AULA2.out' has not changed.
-(rerunfilecheck)             Checksum: 16723A7442789314FFC83A2E00F0191B;576.
+(rerunfilecheck)             Checksum: 056366CFCE7B42D519544A9072FADA38;576.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 565.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 725.
  ) 
 Here is how much of TeX's memory you used:
- 36118 strings out of 493089
- 742298 string characters out of 6134841
- 889846 words of memory out of 5000000
- 38713 multiletter control sequences out of 15000+600000
- 22897 words of font info for 68 fonts, out of 8000000 for 9000
+ 36276 strings out of 493089
+ 745078 string characters out of 6134841
+ 895380 words of memory out of 5000000
+ 38808 multiletter control sequences out of 15000+600000
+ 30497 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,20n,75p,10409b,1085s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></u
-sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr
-/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr
-/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/
-local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/l
-ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/loc
-al/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb></usr/local
-/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfss0700.pfb></usr/local/t
-exlive/2015/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/local/tex
-live/2015/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texli
-ve/2015/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive
-/2015/texmf-dist/fonts/type1/public/cm-super/sfss1440.pfb></usr/local/texlive/2
-015/texmf-dist/fonts/type1/public/cm-super/sfss2488.pfb></usr/local/texlive/201
-5/texmf-dist/fonts/type1/public/cm-super/sfsx0800.pfb></usr/local/texlive/2015/
-texmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb>
-Output written on Otimiz_AULA2.pdf (56 pages, 1720977 bytes).
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr
+/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/l
+ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/l
+ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/lo
+cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loc
+al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local
+/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfsi0600.pfb></usr/local/t
+exlive/2015/texmf-dist/fonts/type1/public/cm-super/sfsi0800.pfb></usr/local/tex
+live/2015/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/public/cm-super/sfss0700.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/local/texlive/2
+015/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2015/
+texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2015/te
+xmf-dist/fonts/type1/public/cm-super/sfss1440.pfb></usr/local/texlive/2015/texm
+f-dist/fonts/type1/public/cm-super/sfss2488.pfb></usr/local/texlive/2015/texmf-
+dist/fonts/type1/public/cm-super/sfsx0800.pfb></usr/local/texlive/2015/texmf-di
+st/fonts/type1/public/cm-super/sfsx1000.pfb></usr/local/texlive/2015/texmf-dist
+/fonts/type1/public/cm-super/sfsx1095.pfb>
+Output written on Otimiz_AULA2.pdf (77 pages, 2483174 bytes).
 PDF statistics:
- 2181 PDF objects out of 2487 (max. 8388607)
- 2006 compressed objects within 21 object streams
- 122 named destinations out of 1000 (max. 500000)
- 440 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3584 PDF objects out of 4296 (max. 8388607)
+ 3346 compressed objects within 34 object streams
+ 164 named destinations out of 1000 (max. 500000)
+ 491 words of extra memory for PDF output out of 10000 (max. 10000000)
 
