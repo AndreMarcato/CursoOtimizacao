@@ -190,3 +190,4 @@ for i = 1:4
     gradiente.delete;
 
 end
+

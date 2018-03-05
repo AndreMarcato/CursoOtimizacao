@@ -30,6 +30,10 @@
 \usepackage{multirow}
 \usepackage{amssymb}
 \usepackage{mdframed}
+\usepackage{listings}
+\usepackage{amsmath}
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+
 
 
 \mode<presentation> {
@@ -709,13 +713,760 @@ Universidade Federal de Juiz de Fora \\
 			\includegraphics[width=8.5cm,height=7cm]{CasosEspeciais-Degenerada.png}
 		\end{column}
 	\end{columns}
+	{\color{red}Existe no mínimo uma restrição redundante.}
 \end{frame}
 
 
 \section{Formulação Matricial}
 \subsection{c, A, B, Aeq, Beq, lowerbound, upper bound}
 
+\begin{frame}
+	\frametitle{Formulação Matricial} 
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\centering
+			\begin{exampleblock}{Exemplo 1 - Problema do Agricultor/Área de Plantio}
+				\scriptsize
+				\begin{table}
+					\begin{tabular}{r | l}
+						{\color{red} $ \max Z = 600x_1+800x_2$ } & {\color{red} Objetivo } \\
+						sujeito a & \\
+						{\color{blue}$x_1+x_2 \le 100$} &  {\color{blue} Área} \\
+						{\color{olive}$3x_1+2x_2 \le 240$} & {\color{olive}Mão de Obra} \\
+						{$x_1 \le 60 $ } & {Produção \textbf{A} } \\
+						{$x_2 \le 80 $ } &  {Produção  \textbf{B} } \\
+						{$x_1, x_2 \ge 0$ } &  {Produção } \\
+					\end{tabular}
+				\end{table}
+			\end{exampleblock}
+			\includegraphics[width=1.5cm,height=2.3cm]{milho_aveia2.png}
+		\end{column}
+		\begin{column}{0.5\textwidth}
+			\only<1>
+			{
+				\begin{equation*}
+					 \max Z = \begin{bmatrix}
+									800 & 600 \\ 
+							 \end{bmatrix} 
+					     	 \begin{bmatrix}
+									 x_1 \\
+									 x_2 \\
+				    		 \end{bmatrix}
+				\end{equation*}
+				\begin{equation*}
+					\begin{bmatrix}
+							1 & 1 \\
+							3 & 2 \\
+							1 & 0  \\
+							0 & 1 \\
+					\end{bmatrix}
+					\begin{bmatrix}
+						x_1 \\
+						x_2
+					\end{bmatrix} \le
+					\begin{bmatrix}
+						100 \\
+						240 \\
+						60 \\
+						80 \\
+					\end{bmatrix}
+				\end{equation*}
+				\begin{equation*}
+					x_1, x_2 \ge 0 
+				\end{equation*}
+			}
+			\only<2>
+			{
+				\begin{equation*}
+				\max Z = \overset{\mathbf{\color{red}c}}{\overbrace
+								    {
+									  \begin{bmatrix}
+											800 & 600 \\ 
+									  \end{bmatrix} 
+									}
+									}
+						 \overset{\mathbf{\color{red}x}}{\overbrace
+									{
+									\begin{bmatrix}
+										x_1 \\
+										x_2 \\
+									\end{bmatrix}
+								  }
+								  }
+				\end{equation*}
+				\begin{equation*}
+					\underset{\mathbf{\color{red}A}}{\underbrace
+								{
+									\begin{bmatrix}
+										1 & 1 \\
+										3 & 2 \\
+										1 & 0  \\
+										0 & 1 \\
+									\end{bmatrix}
+								}}
+					\underset{\mathbf{\color{red}x}}{\underbrace
+								{
+									\begin{bmatrix}
+										x_1 \\
+										x_2 \\
+									\end{bmatrix} 
+								}}
+					\le
+					\underset{\mathbf{\color{red}B}}{\underbrace
+								{
+									\begin{bmatrix}
+										100 \\
+										240 \\
+										60 \\
+										80 \\
+									\end{bmatrix}
+								}}
+				\end{equation*}
+				\begin{equation*}
+				x_1, x_2 \ge 0 
+				\end{equation*}
+			}
+			\only<3>
+			{
+				\centering
+				\underline{\textbf{Notação Compacta}}
+				\begin{equation*}
+					\max Z = \mathbf{cx}
+				\end{equation*} 
+				\begin{equation*}
+					\mathbf{Ax} \le \mathbf{B}
+				\end{equation*}
+				\begin{equation*}
+					x_1, x_2 \ge 0 
+				\end{equation*}
+			}
+		\end{column}
+	\end{columns}		
+\end{frame}
 
+\begin{frame}
+	\frametitle{Formulação Padrão Geral} 
+	\begin{mdframed}[backgroundcolor=blue!20] 
+		\only<1>
+		{
+			\begin{equation*}
+				\max z = c_1x_1 + c_2x_2 + \cdots + c_nx_n 
+			\end{equation*}
+			{\color{red}Sujeito a (restrições de igualdade)} 
+			\begin{equation*}
+				\begin{matrix}
+					a_{11}x_1 + a_{12}x_2 + \cdots + c_{1n}x_n = b_1 \\
+					a_{21}x_1 + a_{22}x_2 + \cdots + c_{2n}x_n = b_2 \\
+					\vdots \\
+					a_{m1}x_1 + a_{m2}x_2 + \cdots + c_{mn}x_n = b_n \\
+					x_1, x_2, \cdots, x_n \ge 0 \\
+				\end{matrix}
+			\end{equation*}
+			$n$ variáveis de decisão e $m$ restrições de igualdade.
+		}
+		\only<2>
+		{
+			\begin{equation*}
+				\max z = \sum_{j=1}^{n}c_jx_j
+			\end{equation*}
+			{\color{red}Sujeito a (restrições de igualdade)} 
+			\begin{equation*}
+				\begin{matrix}
+					\sum_{j=1}^{n}a_{ij} = b_i & \forall i = 1, 2, \cdots, m \\
+					x_j \ge 0 & \forall j = 1, 2, \cdots, n \\
+				\end{matrix}
+			\end{equation*}
+			$n$ variáveis de decisão e $m$ restrições de igualdade.
+		}
+		\only<3>
+		{
+			\begin{equation*} 
+				\max z = \begin{bmatrix}
+							c_1 & c_2 & \cdots & c_n \\
+						 \end{bmatrix}
+						 \begin{bmatrix}
+							 x_1 \\
+							 x_2 \\
+							 \vdots \\
+							 x_n \\
+						 \end{bmatrix}
+			\end{equation*}
+			{\color{red}Sujeito a (restrições de igualdade)} 
+			\begin{equation*}
+				\begin{bmatrix}
+						a_{11} & a_{12} & \cdots & a_{1n} \\
+						a_{21} & a_{22} & \cdots & a_{2n} \\
+						\vdots & \vdots & \ddots & \vdots \\
+						a_{m1} & a_{m2} & \cdots & a_{mn} \\
+				\end{bmatrix}
+				\begin{bmatrix}
+						x_1 \\
+						x_2 \\
+						\vdots \\
+						x_n \\
+				\end{bmatrix} = 
+				\begin{bmatrix}
+						b_1 \\
+						b_2 \\
+						\vdots \\
+						b_m \\
+				\end{bmatrix} \text{ e }
+				\begin{bmatrix}
+						x_1 \\
+						x_2 \\
+						\vdots \\
+						x_n \\
+				\end{bmatrix} \ge
+				\begin{bmatrix}
+						0 \\
+						0 \\
+						\vdots \\
+						0 \\
+				\end{bmatrix} 				
+			\end{equation*}			
+			$n$ variáveis de decisão e $m$ restrições de igualdade.
+		}
+		\only<4>
+		{
+			\begin{equation*} 
+				\max z = \begin{bmatrix}
+							c_1 & c_2 & \cdots & c_n \\
+						 \end{bmatrix}_{\text{\color{red}1 x n}}
+						 \begin{bmatrix}
+							 x_1 \\
+							 x_2 \\
+							 \vdots \\
+							 x_n \\
+						 \end{bmatrix}_{\text{\color{red}n x 1}} 
+			\end{equation*}
+			{\color{red}Sujeito a (restrições de igualdade)} 
+			\begin{equation*}
+				\begin{bmatrix}
+						a_{11} & a_{12} & \cdots & a_{1n} \\
+						a_{21} & a_{22} & \cdots & a_{2n} \\
+						\vdots & \vdots & \ddots & \vdots \\
+						a_{m1} & a_{m2} & \cdots & a_{mn} \\
+				\end{bmatrix}_{\text{\color{red}m x n}}
+				\begin{bmatrix}
+						x_1 \\
+						x_2 \\
+						\vdots \\
+						x_n \\
+				\end{bmatrix}_{\text{\color{red} n x 1}} = 
+				\begin{bmatrix}
+						b_1 \\
+						b_2 \\
+						\vdots \\
+						b_m \\
+				\end{bmatrix}_{\text{\color{red} m x 1}}  				
+			\end{equation*}			
+			$n$ variáveis de decisão e $m$ restrições de igualdade.
+		}
+		\only<5>
+		{
+			\begin{equation*} 
+				\max z = \mathbf{c}^T \mathbf{x}
+			\end{equation*}
+			{\color{red}Sujeito a (restrições de igualdade)} 
+			\begin{equation*}
+				\begin{matrix}
+					\mathbf{A_{eq}x} = \mathbf{B_{eq}}  \\
+					\mathbf{x} \ge \mathbf{0}
+				\end{matrix}
+			\end{equation*}	
+			$n$ variáveis de decisão e $m$ restrições de igualdade.		
+		}		
+	\end{mdframed}
+	\only<5>
+	{
+	\vspace{0.3cm}
+	\begin{equation*}
+		\begin{matrix}
+			\mathbf{c} = 	\begin{bmatrix}
+									c_1 \\ c_2 \\ \vdots \\ c_n \\
+							\end{bmatrix} &
+
+			\mathbf{x} = 	\begin{bmatrix}
+									x_1 \\ x_2 \\ \vdots \\ x_n \\
+							\end{bmatrix} &
+
+			\mathbf{B_{eq}} = 	\begin{bmatrix}
+									b_1 \\ b_2 \\ \vdots \\ b_m \\
+							\end{bmatrix} &
+
+			\mathbf{A_{eq}} = 	\begin{bmatrix}
+									a_{11} & a_{12} & \cdots & a_{1n} \\
+									a_{21} & a_{22} & \cdots & a_{2n} \\
+									\vdots & \vdots & \ddots & \vdots \\
+									a_{m1} & a_{m2} & \cdots & a_{mn} \\
+								\end{bmatrix} \\
+
+		\end{matrix}
+	\end{equation*}
+	}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Relação entre Maximização e Minimização}
+	\only<1>
+	{
+		\centering
+		\includegraphics[width=5cm,height=4cm]{up-down.jpg}
+	}	
+	\only<2>
+	{
+		\centering
+		\includegraphics[width=5cm,height=4cm]{up-down.jpg}
+		\begin{itemize}
+		\item Qualquer que seja o formato do PPL, sempre é possível transforma-lo no formato padrão apresentado.
+		\item Como é a relação entre minimização e maximização?
+		\end{itemize}
+	}	
+	\only<3>
+	{
+		\centering
+		\includegraphics[width=2.5cm,height=2cm]{up-down.jpg}
+		\begin{mdframed}[backgroundcolor=blue!20] 
+			\begin{equation*}
+				\max z = \sum_{j=1}^{n}c_jx_j \Leftrightarrow \min (-z) = \sum_{j=1}^{n}(-c_j)x_j
+			\end{equation*}
+			\begin{equation*}
+				\min z = \sum_{j=1}^{n}c_jx_j \Leftrightarrow \max (-z) = \sum_{j=1}^{n}(-c_j)x_j
+			\end{equation*}
+		\end{mdframed}
+	}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Relação Entre Inequações e Equações}
+	
+	\only<1->
+	{
+	\underline{Restrições de Menor ou Igual}
+	\begin{mdframed}[backgroundcolor=blue!20]
+		\begin{equation*}
+			\sum_{j-1}^{n}a_{ij} \le b_i \Leftrightarrow
+			\left\{ \begin{matrix}
+						\sum_{j=1}^{n}a_{ij}x_j + S_i = b_i \\
+						0 \le S_i \ge \infty
+					\end{matrix}  
+			\right.
+		\end{equation*}
+	\end{mdframed}	
+	}
+	
+	\only<2>
+	{
+	\vspace{0.5cm}
+	\underline{Restrições de Maior ou Igual}
+	\begin{mdframed}[backgroundcolor=red!20]
+		\begin{equation*}
+			\sum_{j-1}^{n}a_{ij} \ge b_i \Leftrightarrow
+			\left\{ \begin{matrix}
+						\sum_{j=1}^{n}a_{ij}x_j - S_i = b_i \\
+						0 \le S_i \ge \infty
+					\end{matrix}  
+			\right.
+		\end{equation*}
+	\end{mdframed}
+	}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Tratamento de Limites das Variáveis}
+	\only<1->
+	{
+	\underline{Limite Inferior ou \textit{Lower  Bound}}
+	\begin{mdframed}[backgroundcolor=blue!20]
+		\begin{equation*}
+			x_j \ge LB \Leftrightarrow
+			\left\{ \begin{matrix}
+						x_j - LB = {x}'_j \Rightarrow x_j = {x}'_j + LB \\
+						{x}'_j \ge 0
+					\end{matrix}  
+			\right.
+		\end{equation*}
+	\end{mdframed}	
+	}
+	
+	\only<2->
+	{
+	\vspace{0.5cm}
+	\underline{Limite Superior ou \textit{Upper  Bound}}
+	\begin{mdframed}[backgroundcolor=red!20]
+		\begin{equation*}
+			x_j \le UB \Leftrightarrow
+			\left\{ \begin{matrix}
+						UB - x_j = {x}'_j \Rightarrow x_j = UB - {x}'_j  \\
+						{x}'_j \ge 0
+					\end{matrix}  
+			\right.
+		\end{equation*}
+	\end{mdframed}
+	}
+
+	\only<3->
+	{
+	\vspace{0.5cm}
+	\begin{mdframed}[backgroundcolor=green!20]
+		\begin{equation*}
+			- \infty \le x_j \le \infty \Leftrightarrow
+			\left\{ \begin{matrix}
+						x_j = {x}'_j - {x}''_j \\
+						{x}'_j \ge 0 \text{ e } {x}''_j \ge 0  \\
+					\end{matrix}  
+			\right.
+		\end{equation*}
+	\end{mdframed}
+	}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Observações}
+	\begin{itemize}
+	\item As restrições do problema expressam limites que devem ser respeitados
+	\item {O algoritmo de resolução encontra a solução ótima no espaço de soluções compatíveis com o problema de PL, a saber:}
+		\begin{itemize}
+		\item Os pontos pertencentes a região factível correspondem aos valores das variáveis que atendem ao conjunto de restrições;
+		\item Cada restrição poderá ser de igualdade ou desigualdade
+		\item As restrições de não-negatividade das variáveis constituem condição necessária à aplicação do algoritmo de resolução do problema de PL;
+		\item Embora isso normalmente ocorra em decorrência da natureza da variável dentro do modelo, pode haver situações em que as variáveis são irrestritas, isto é, podem assumir qualquer valor real (nestes casos, realizar substituição de variáveis).
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Softwares de Otimização }
+	\centering
+	\begin{table}
+		\begin{tabular}{c c c c}
+		\includegraphics[width=2cm,height=2cm]{solver_matlab.png} & 
+		\includegraphics[width=2cm,height=2cm]{solver_coin.png} &
+		\includegraphics[width=2cm,height=2cm]{solver_cplex.jpg} &
+		\includegraphics[width=2cm,height=2cm]{solver_ampl.jpg} \\
+		\includegraphics[width=2cm,height=2cm]{solver_excel.png} & 
+		\includegraphics[width=2cm,height=2cm]{solver_gams.png} &
+		\includegraphics[width=2cm,height=2cm]{solver_R.png} &		
+		\includegraphics[width=2cm,height=2cm]{solver_gurobi.png} \\
+		\includegraphics[width=2cm,height=2cm]{solver_lingo.png} & 
+		\includegraphics[width=2cm,height=2cm]{solver_python.jpg} &
+		\includegraphics[width=2cm,height=2cm]{solver_julia.png} &
+		\includegraphics[width=4cm,height=2cm]{solver_xpress.png} \\		
+		\end{tabular}
+	\end{table}
+\end{frame}
+	
+\begin{frame}
+	\frametitle{Toolbox de Programação Linear do Matlab}
+	\begin{table}
+		\begin{tabular}{c}
+			\only<1-4>
+			{
+				\includegraphics[width=2cm,height=2cm]{solver_matlab.png} \\
+			}
+			\only<1>
+			{
+				\includegraphics[width=7cm,height=5cm]{linprogA.png} \\
+			}
+			\only<2>
+			{
+				\includegraphics[width=7cm,height=5cm]{linprogA1.png}\\
+			}
+			\only<3>
+			{
+				\includegraphics[width=7cm,height=5cm]{linprogB.png}\\
+			}
+			\only<4>
+			{
+				\begin{tabular}{| l |}
+					\hline
+					\cellcolor{yellow} Parâmetros de Entrada \\
+					\hline
+					\cellcolor{green!20} f: Vetor de Custos \\
+					\cellcolor{gray!20} A: Matriz dos coeficientes das restrições de desiguadade \\
+					\cellcolor{green!20} b: Termos constantes das restrições de desigualdade \\
+					\cellcolor{gray!20} Aeq: Matriz dos coeficientes das restrições de igualdade \\
+					\cellcolor{green!20} Beq: Termos constantes das restrições de igualdade \\
+					\cellcolor{gray!20} lb: Vetor com os limites inferiores das variáveis \\
+					\cellcolor{green!20} ub: Vetor com os limites superiores das variáveis \\
+					\cellcolor{gray!20} options: Configuração do comportamento do solver \\
+					\hline
+				\end{tabular}
+			}
+			\only<5>
+			{
+				\begin{tabular}{| l |}
+					\hline
+					\cellcolor{yellow} Parâmetros de Saída \\
+					\hline
+					\cellcolor{green!20} x: Vetor os valores ótimos das variáveis \\
+					\cellcolor{gray!20} fval: Valor da Função Objetivo \\
+					\cellcolor{green!20} exitflag: Código detalhando processo de convergência: \\
+						\hspace{0.4cm}\scriptsize\cellcolor{green!20} (1) Função convergiu para a solução x \\
+						\hspace{0.4cm}\scriptsize\cellcolor{green!20} (0) Número de iterações excedido. options.MaxIterations \\
+						\hspace{0.4cm}\scriptsize\cellcolor{green!20} (-2) Não foi encontrato um x viável \\
+						\hspace{0.4cm}\scriptsize\cellcolor{green!20} (-3) Problema é ilimitado \\
+						\hspace{0.4cm}\scriptsize\cellcolor{green!20} (-4) Encontrada divisão por zero durante processo \\
+						\hspace{0.4cm}\scriptsize\cellcolor{green!20} (-5) Tanto o primal quando dual são inviáveis \\
+						\hspace{0.4cm}\scriptsize\cellcolor{green!20} (-7) Direção de busca tornou-se pequena demais. \\ 
+					\cellcolor{gray!20} output: Informações sobre do processo de otimização \\
+					\cellcolor{green!20} lambda: Multiplicadores de lagrange da solução \\
+					\hline
+				\end{tabular}
+			}
+
+		\end{tabular}
+	\end{table}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Problema do Milho e da Aveia}
+	\begin{columns}
+		\begin{column}{0.7\textwidth}
+			\centering
+			\begin{exampleblock}{Exemplo 1 - Modelo Matemático Completo}
+				\scriptsize
+				\begin{table}
+					\begin{tabular}{r c l}
+						$ \max Z = 600x_1+800x_2$ & \includegraphics[width=0.8cm,height=0.2cm]{seta2.png} & Função Objetivo \\
+						sujeito a & & \\
+						$x_1+x_2 \le 100$ & \includegraphics[width=0.8cm,height=0.2cm]{seta2.png}& Área Cultivo \\
+						$3x_1+2x_2 \le 240$ & \includegraphics[width=0.8cm,height=0.2cm]{seta2.png}& Mão de Obra \\
+						$x_1 \le 60 $ & \includegraphics[width=0.8cm,height=0.2cm]{seta2.png}& Produção Cereal \textbf{A} \\
+						$x_2 \le 80 $ &\includegraphics[width=0.8cm,height=0.2cm]{seta2.png} & Produção Cereal \textbf{B} \\
+						$x_1, x_2 \ge 0$ & \includegraphics[width=0.8cm,height=0.2cm]{seta2.png}& Produção \\
+					\end{tabular}
+				\end{table}
+			\end{exampleblock}
+		\end{column}
+		\begin{column}{0.3\textwidth}
+			\centering
+			\includegraphics[width=2cm,height=3cm]{milho_aveia2.png}
+		\end{column}
+	\end{columns}
+	\begin{mdframed}[backgroundcolor=blue!20]
+		\Large
+		Confirmar o resultado da Análise Gráfica com o Matlab !
+	\end{mdframed}	
+\end{frame}
+
+\begin{frame}[fragile] 
+	\frametitle{Problema do Milho e da Aveia}
+	\centering
+	\begin{block}{Programa em Matlab}
+		\begin{lstlisting}
+clear all; close all; clc;
+f = [-600 -800]; A = [1 1; 3 2]; b = [100; 240];
+Aeq=[]; beq=[]; LB=[0 0]; UB=[60 80];
+[x, fval, exitflag] = linprog(f,A,b,Aeq,beq,LB,UB)		
+		\end{lstlisting}	
+	\end{block}	
+
+	\begin{figure}
+		\includegraphics[width=3.5cm,height=4.5cm]{MatLabTriboAveia.png}
+	\end{figure}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Análise Gráfica x Matlab}
+	\centering
+	\includegraphics[width=10cm,height=7cm]{graficamatlab.png}
+\end{frame}
+
+
+\section{Mais Exemplos}
+
+\subsection{Aviário}
+
+\begin{frame}
+	\frametitle{Exemplo Aviário}
+	\begin{block}{O problema}
+		\scriptsize
+		O dono de um aviário precisa fabricar uma ração especial para as suas aves, de forma a atender diversas exigências alimentares. A produção desejada de ração é de 90kg, e a mistura deve ser formada por dois ingredientes básicos: milho e farelo de arroz, que custam \$0,90 e \$0,30 por kg respectivamente. Além disso, sabe-se que a ração precisa ter pelo menos 7\% de proteína e 3\% de fibra na sua composição, de forma a atender as necessidades das aves. A partir da tabela abaixo, com a composição percentual de fibra e proteína do milho e do farelo de arroz, pede-se formular um problema de programação linear para atender às necessidades diárias a um custo mínimo. 
+	\end{block}
+	\begin{columns}
+		\begin{column}{0.7\textwidth}
+			\begin{table}
+				\scriptsize
+				\caption{Composição de Cada Ingrediente}
+				\begin{tabular}{| c | c | c |}
+					\hline
+					\textbf{Ingredientes} & \textbf{Proteína} & \textbf{Fibra} \\
+					\hline
+					Milho				  & 9 \%              & 2 \% \\
+					Farelo de Arroz		  & 5 \%			  & 6 \% \\
+					\hline
+				\end{tabular}
+			\end{table}
+		\end{column}
+		\begin{column}{0.3\textwidth}
+				\centering
+				\includegraphics[width=2cm,height=3cm]{aviario.jpg}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Exemplo Aviário}
+	\begin{columns}
+		\begin{column}{0.8\textwidth}
+			\centering
+			\begin{exampleblock}{Exemplo 1 - Modelo Matemático Completo}
+				\centering
+				\scriptsize
+				\begin{table}
+					\only<1>
+					{
+					\begin{tabular}{r c l}
+						$ \min Z = 0.9x_M+0.3x_F$ & \includegraphics[width=0.8cm,height=0.2cm]{seta2.png} & Minimizar Custo \\
+						sujeito a & & \\
+						$1x_M+1x_F = 90$ & \includegraphics[width=0.8cm,height=0.2cm]{seta2.png}& Produção \\
+						$0.09x_M+0.05x_F \ge 0.07(x_M+x_F)$ & \includegraphics[width=0.8cm,height=0.2cm]{seta2.png}& Proteína \\
+						$0.02x_M+0.06x_F \ge 0.03(x_M+x_F)$ & \includegraphics[width=0.8cm,height=0.2cm]{seta2.png}& Fibra \\
+						$x_M, x_F \ge 0$ & \includegraphics[width=0.8cm,height=0.2cm]{seta2.png}& Canalização \\
+					\end{tabular}
+					}
+					\only<2>
+					{
+					\begin{tabular}{r c l}
+						$ \min Z = 0.9x_M+0.3x_F$ & \includegraphics[width=0.8cm,height=0.2cm]{seta2.png} & Minimizar Custo \\
+						sujeito a & & \\
+						$1x_M+1x_F = 90$ & \includegraphics[width=0.8cm,height=0.2cm]{seta2.png}& Produção \\
+						$0.02x_M-0.02x_F \ge 0$ & \includegraphics[width=0.8cm,height=0.2cm]{seta2.png}& Proteína \\
+						$-0.01x_M+0.03x_F \ge 0$ & \includegraphics[width=0.8cm,height=0.2cm]{seta2.png}& Fibra \\
+						$x_M, x_F \ge 0$ & \includegraphics[width=0.8cm,height=0.2cm]{seta2.png}& Canalização \\
+					\end{tabular}
+					}					
+				\end{table}
+				\only<3>
+				{	
+					Função Objetivo \\~\\
+					\includegraphics[width=6cm,height=6cm]{MatLab/aviario_1.png}
+				}
+				\only<4>
+				{	
+					Função Objetivo \\~\\
+					\includegraphics[width=6cm,height=6cm]{MatLab/aviario_2.png}
+				}
+				\only<5>
+				{	
+					Função Objetivo \\~\\
+					\includegraphics[width=6cm,height=6cm]{MatLab/aviario_3.png}
+				}
+				\only<6>
+				{	
+					Função Objetivo \\~\\
+					\includegraphics[width=6cm,height=6cm]{MatLab/aviario_4.png}
+				}
+				\only<7>
+				{	
+					Função Objetivo \\~\\
+					\includegraphics[width=6cm,height=6cm]{MatLab/aviario_5.png}
+				}
+				\only<8>
+				{	
+					Função Objetivo \\~\\
+					\includegraphics[width=6cm,height=6cm]{MatLab/aviario_6.png}
+				}
+				\only<9>
+				{	
+					Função Objetivo \\~\\
+					\includegraphics[width=6cm,height=6cm]{MatLab/aviario_7.png}
+				}
+				\only<10>
+				{	
+					Função Objetivo \\~\\
+					\includegraphics[width=6cm,height=6cm]{MatLab/aviario_8.png}
+				}
+				\only<11>
+				{	
+					Função Objetivo \\~\\
+					\includegraphics[width=6cm,height=6cm]{MatLab/aviario_9.png}
+				}
+				\only<12>
+				{	
+					Restrição de Igualdade: $1x_M+1x_F = 90$ \\~\\
+					\includegraphics[width=6cm,height=6cm]{MatLab/aviario_10.png}
+				}
+				\only<13>
+				{	
+					Restrição Proteína: $0.02x_M-0.02x_F \ge 0$  \\~\\
+					\includegraphics[width=6cm,height=6cm]{MatLab/aviario_11.png}
+				}
+				\only<14>
+				{	
+					Restrição Fibra: $-0.01x_M+0.03x_F \ge 0$ \\~\\
+					\includegraphics[width=6cm,height=6cm]{MatLab/aviario_12.png}
+				}
+				\only<15>
+				{	
+					Minimizando Função Objetivo \\~\\
+					\includegraphics[width=6cm,height=6cm]{MatLab/aviario_13.png}
+				}
+				\only<16>
+				{	
+					Minimizando Função Objetivo \\~\\
+					\includegraphics[width=6cm,height=6cm]{MatLab/aviario_14.png}
+				}
+				\only<17>
+				{	
+					Minimizando Função Objetivo \\~\\
+					\includegraphics[width=6cm,height=6cm]{MatLab/aviario_15.png}
+				}
+				\only<18>
+				{	
+					Minimizando Função Objetivo \\~\\
+					\includegraphics[width=6cm,height=6cm]{MatLab/aviario_16.png}
+				}
+				\only<19>
+				{	
+					Ponto Ótimo Global \\~\\
+					\includegraphics[width=6cm,height=6cm]{MatLab/aviario_17.png}
+				}
+			\end{exampleblock}
+		\end{column}
+		\begin{column}{0.2\textwidth}
+			\centering
+			\includegraphics[width=2cm,height=3cm]{aviario.jpg}
+		\end{column}
+	\end{columns}
+	\only<1-2>
+	{
+	\begin{mdframed}[backgroundcolor=blue!20]
+		\Large
+		Confirmar o resultado da Análise Gráfica com o Matlab !
+	\end{mdframed}
+	}	
+\end{frame}
+
+\begin{frame}[fragile] 
+	\frametitle{Exemplo Aviário}
+	\centering
+	\begin{block}{Programa em Matlab}
+		\begin{lstlisting}
+clear all; close all; clc;
+f = [0.9 0.3]; A = [-0.02 0.02;0.01 -0.03]; 
+B = [ 0; 0]; Aeq = [ 1 1 ]; Beq = 90;
+[x, fval] = linprog(f,A,B,Aeq,Beq)	
+		\end{lstlisting}	
+	\end{block}	
+
+	\begin{figure}
+		\includegraphics[width=3.5cm,height=4.5cm]{MatLabAviario.png}
+	\end{figure}
+
+\end{frame}
+
+\subsection{Serralheria Tabajara}
+
+\subsection{Nutrição}
+
+
+\subsection{Inviável}
+
+\subsection{ } 
+	
 \begin{frame}
 \Huge{\centerline{Fim}}
 \end{frame}
