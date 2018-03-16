@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.21)  11 FEB 2018 16:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.23)  7 MAR 2018 16:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1187,13 +1187,13 @@ Dictionary: translator-theorem-dictionary, Language: English
 )
 LaTeX Info: Redefining \includegraphics on input line 101.
 
-(./Otimiz_AULA0.nav) <cover.jpg, id=92, 1204.5pt x 903.375pt>
+(./Otimiz_AULA0.nav) <cover.jpg, id=94, 1204.5pt x 903.375pt>
 File: cover.jpg Graphic file (type jpg)
  <use cover.jpg>
 Package pdftex.def Info: cover.jpg used on input line 108.
-(pdftex.def)             Requested size: 142.25475pt x 85.35284pt.
+(pdftex.def)             Requested size: 113.80379pt x 76.82031pt.
 
-Overfull \vbox (10.87263pt too high) detected at line 108
+Overfull \vbox (0.80333pt too high) detected at line 108
  []
 
 
@@ -1207,7 +1207,7 @@ LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <4> not available
 ] [3
 
 ]
-<pesquisaoperacional-campus.jpg, id=288, 260.975pt x 333.245pt>
+<pesquisaoperacional-campus.jpg, id=290, 260.975pt x 333.245pt>
 File: pesquisaoperacional-campus.jpg Graphic file (type jpg)
 
 <use pesquisaoperacional-campus.jpg>
@@ -1217,7 +1217,7 @@ Package pdftex.def Info: pesquisaoperacional-campus.jpg used on input line 156.
  [4
 
  <./pesquisaoperacional-campus.jpg>]
-<a-first-course-in-optimization-theory.jpg, id=342, 348.30125pt x 500.87125pt>
+<a-first-course-in-optimization-theory.jpg, id=344, 348.30125pt x 500.87125pt>
 File: a-first-course-in-optimization-theory.jpg Graphic file (type jpg)
 
 <use a-first-course-in-optimization-theory.jpg>
@@ -1227,7 +1227,7 @@ t line 371.
  [5
 
  <./a-first-course-in-optimization-theory.jpg>]
-<Applied-Optimization-with-MATLAB-Programming-SDL069600218-1-c62c2.jpg, id=394,
+<Applied-Optimization-with-MATLAB-Programming-SDL069600218-1-c62c2.jpg, id=396,
  216.81pt x 350.5095pt>
 File: Applied-Optimization-with-MATLAB-Programming-SDL069600218-1-c62c2.jpg Gra
 phic file (type jpg)
@@ -1240,7 +1240,7 @@ Package pdftex.def Info: Applied-Optimization-with-MATLAB-Programming-SDL069600
 [6
 
  <./Applied-Optimization-with-MATLAB-Programming-SDL069600218-1-c62c2.jpg>]
-<appliedoptmization.jpg, id=447, 349.305pt x 500.87125pt>
+<appliedoptmization.jpg, id=449, 349.305pt x 500.87125pt>
 File: appliedoptmization.jpg Graphic file (type jpg)
 
 <use appliedoptmization.jpg>
@@ -1249,7 +1249,7 @@ Package pdftex.def Info: appliedoptmization.jpg used on input line 371.
  [7
 
  <./appliedoptmization.jpg>]
-<aproximatesdp.jpg, id=500, 332.24126pt x 500.87125pt>
+<aproximatesdp.jpg, id=502, 332.24126pt x 500.87125pt>
 File: aproximatesdp.jpg Graphic file (type jpg)
  <use aproximatesdp.jpg>
 Package pdftex.def Info: aproximatesdp.jpg used on input line 371.
@@ -1257,7 +1257,7 @@ Package pdftex.def Info: aproximatesdp.jpg used on input line 371.
 
 [8
 
- <./aproximatesdp.jpg>] <bazaraa.jpg, id=553, 301.125pt x 491.8375pt>
+ <./aproximatesdp.jpg>] <bazaraa.jpg, id=555, 301.125pt x 491.8375pt>
 File: bazaraa.jpg Graphic file (type jpg)
 
 <use bazaraa.jpg>
@@ -1266,14 +1266,14 @@ Package pdftex.def Info: bazaraa.jpg used on input line 371.
  [9
 
  <./bazaraa.jpg>]
-<bertsekas_0.jpg, id=605, 714.67pt x 1003.75pt>
+<bertsekas_0.jpg, id=607, 714.67pt x 1003.75pt>
 File: bertsekas_0.jpg Graphic file (type jpg)
  <use bertsekas_0.jpg>
 Package pdftex.def Info: bertsekas_0.jpg used on input line 371.
 (pdftex.def)             Requested size: 113.80428pt x 170.71182pt.
  [10
 
- <./bertsekas_0.jpg>] <bertsekas_1.jpg, id=658, 338.26375pt x 500.87125pt>
+ <./bertsekas_0.jpg>] <bertsekas_1.jpg, id=660, 338.26375pt x 500.87125pt>
 File: bertsekas_1.jpg Graphic file (type jpg)
 
 <use bertsekas_1.jpg>
@@ -1282,7 +1282,7 @@ Package pdftex.def Info: bertsekas_1.jpg used on input line 371.
  [11
 
  <./bertsekas_1.jpg>]
-<convexoptmization.png, id=710, 188.705pt x 269.005pt>
+<convexoptmization.png, id=712, 188.705pt x 269.005pt>
 File: convexoptmization.png Graphic file (type png)
 
 <use convexoptmization.png>
@@ -1291,7 +1291,7 @@ Package pdftex.def Info: convexoptmization.png used on input line 371.
  [12
 
  <./convexoptmization.png>]
-<dynamicprogramming-belmann.jpg, id=764, 318.18875pt x 500.87125pt>
+<dynamicprogramming-belmann.jpg, id=766, 318.18875pt x 500.87125pt>
 File: dynamicprogramming-belmann.jpg Graphic file (type jpg)
 
 <use dynamicprogramming-belmann.jpg>
@@ -1301,7 +1301,7 @@ Package pdftex.def Info: dynamicprogramming-belmann.jpg used on input line 371.
  [13
 
  <./dynamicprogramming-belmann.jpg>]
-<engineeringoptimization.jpg, id=817, 250.9375pt x 401.5pt>
+<engineeringoptimization.jpg, id=819, 250.9375pt x 401.5pt>
 File: engineeringoptimization.jpg Graphic file (type jpg)
 
 <use engineeringoptimization.jpg>
@@ -1310,7 +1310,7 @@ Package pdftex.def Info: engineeringoptimization.jpg used on input line 371.
  [14
 
  <./engineeringoptimization.jpg>]
-<engineeringoptmizationrao.jpg, id=870, 196.735pt x 257.96375pt>
+<engineeringoptmizationrao.jpg, id=872, 196.735pt x 257.96375pt>
 File: engineeringoptmizationrao.jpg Graphic file (type jpg)
 
 <use engineeringoptmizationrao.jpg>
@@ -1319,14 +1319,14 @@ Package pdftex.def Info: engineeringoptmizationrao.jpg used on input line 371.
  [15
 
  <./engineeringoptmizationrao.jpg>]
-<goldberg.jpg, id=922, 115.632pt x 163.812pt>
+<goldberg.jpg, id=924, 115.632pt x 163.812pt>
 File: goldberg.jpg Graphic file (type jpg)
  <use goldberg.jpg>
 Package pdftex.def Info: goldberg.jpg used on input line 371.
 (pdftex.def)             Requested size: 113.81613pt x 170.73038pt.
  [16
 
- <./goldberg.jpg>] <handbookofappliedoptmization.jpg, id=975, 342.27875pt x 500
+ <./goldberg.jpg>] <handbookofappliedoptmization.jpg, id=977, 342.27875pt x 500
 .87125pt>
 File: handbookofappliedoptmization.jpg Graphic file (type jpg)
 
@@ -1336,7 +1336,7 @@ Package pdftex.def Info: handbookofappliedoptmization.jpg used on input line 37
 (pdftex.def)             Requested size: 113.80885pt x 170.71431pt.
  [17
 
- <./handbookofappliedoptmization.jpg>] <integerandcombinatorial.jpg, id=1027, 3
+ <./handbookofappliedoptmization.jpg>] <integerandcombinatorial.jpg, id=1029, 3
 01.125pt x 429.605pt>
 File: integerandcombinatorial.jpg Graphic file (type jpg)
 
@@ -1346,7 +1346,7 @@ Package pdftex.def Info: integerandcombinatorial.jpg used on input line 371.
  [18
 
  <./integerandcombinatorial.jpg>]
-<introductiontosdp.jpg, id=1080, 334.24875pt x 500.87125pt>
+<introductiontosdp.jpg, id=1082, 334.24875pt x 500.87125pt>
 File: introductiontosdp.jpg Graphic file (type jpg)
 
 <use introductiontosdp.jpg>
@@ -1355,7 +1355,7 @@ Package pdftex.def Info: introductiontosdp.jpg used on input line 371.
  [19
 
  <./introductiontosdp.jpg>]
-<kagan.jpg, id=1133, 321.2pt x 432.61626pt>
+<kagan.jpg, id=1135, 321.2pt x 432.61626pt>
 File: kagan.jpg Graphic file (type jpg)
  <use kagan.jpg>
 Package pdftex.def Info: kagan.jpg used on input line 371.
@@ -1363,7 +1363,7 @@ Package pdftex.def Info: kagan.jpg used on input line 371.
  [20
 
  <./kagan.jpg>]
-<modernheuristiques.jpg, id=1186, 301.125pt x 485.815pt>
+<modernheuristiques.jpg, id=1188, 301.125pt x 485.815pt>
 File: modernheuristiques.jpg Graphic file (type jpg)
 
 <use modernheuristiques.jpg>
@@ -1372,14 +1372,14 @@ Package pdftex.def Info: modernheuristiques.jpg used on input line 371.
  [21
 
  <./modernheuristiques.jpg>]
-<momoh.jpg, id=1238, 283.0575pt x 431.6125pt>
+<momoh.jpg, id=1240, 283.0575pt x 431.6125pt>
 File: momoh.jpg Graphic file (type jpg)
  <use momoh.jpg>
 Package pdftex.def Info: momoh.jpg used on input line 371.
 (pdftex.def)             Requested size: 113.80838pt x 170.71228pt.
  [22
 
- <./momoh.jpg>] <neurobertsekas.jpg, id=1291, 327.2225pt x 475.7775pt>
+ <./momoh.jpg>] <neurobertsekas.jpg, id=1293, 327.2225pt x 475.7775pt>
 File: neurobertsekas.jpg Graphic file (type jpg)
 
 <use neurobertsekas.jpg>
@@ -1388,7 +1388,7 @@ Package pdftex.def Info: neurobertsekas.jpg used on input line 371.
  [23
 
  <./neurobertsekas.jpg>]
-<nonlinearprogramming.jpg, id=1343, 308.15125pt x 475.7775pt>
+<nonlinearprogramming.jpg, id=1345, 308.15125pt x 475.7775pt>
 File: nonlinearprogramming.jpg Graphic file (type jpg)
 
 <use nonlinearprogramming.jpg>
@@ -1397,7 +1397,7 @@ Package pdftex.def Info: nonlinearprogramming.jpg used on input line 371.
  [24
 
  <./nonlinearprogramming.jpg>]
-<optimizationprinciples.jpg, id=1396, 177.66376pt x 285.065pt>
+<optimizationprinciples.jpg, id=1398, 177.66376pt x 285.065pt>
 File: optimizationprinciples.jpg Graphic file (type jpg)
 
 <use optimizationprinciples.jpg>
@@ -1406,7 +1406,7 @@ Package pdftex.def Info: optimizationprinciples.jpg used on input line 371.
  [25
 
  <./optimizationprinciples.jpg>]
-<Pesquisa-Operacional-Para-Cursos-de-Engenharia-118182.jpg, id=1449, 760.8425pt
+<Pesquisa-Operacional-Para-Cursos-de-Engenharia-118182.jpg, id=1451, 760.8425pt
  x 1001.7425pt>
 File: Pesquisa-Operacional-Para-Cursos-de-Engenharia-118182.jpg Graphic file (t
 ype jpg)
@@ -1418,7 +1418,7 @@ jpg used on input line 371.
  [26
 
  <./Pesquisa-Operacional-Para-Cursos-de-Engenharia-118182.jpg>]
-<pesquisaoperacionalmoreira.jpg, id=1502, 346.29375pt x 500.87125pt>
+<pesquisaoperacionalmoreira.jpg, id=1504, 346.29375pt x 500.87125pt>
 File: pesquisaoperacionalmoreira.jpg Graphic file (type jpg)
 
 <use pesquisaoperacionalmoreira.jpg>
@@ -1428,7 +1428,7 @@ Package pdftex.def Info: pesquisaoperacionalmoreira.jpg used on input line 371.
  [27
 
  <./pesquisaoperacionalmoreira.jpg>]
-<programacaolinearcaloba.png, id=1554, 497.86pt x 710.655pt>
+<programacaolinearcaloba.png, id=1556, 497.86pt x 710.655pt>
 File: programacaolinearcaloba.png Graphic file (type png)
 
 <use programacaolinearcaloba.png>
@@ -1437,7 +1437,7 @@ Package pdftex.def Info: programacaolinearcaloba.png used on input line 371.
  [28
 
  <./programacaolinearcaloba.png>]
-<sthocasticlinearprogramming.jpg, id=1609, 330.23375pt x 500.87125pt>
+<sthocasticlinearprogramming.jpg, id=1611, 330.23375pt x 500.87125pt>
 File: sthocasticlinearprogramming.jpg Graphic file (type jpg)
 
 <use sthocasticlinearprogramming.jpg>
@@ -1447,7 +1447,7 @@ Package pdftex.def Info: sthocasticlinearprogramming.jpg used on input line 371
  [29
 
  <./sthocasticlinearprogramming.jpg>]
-<introductiontomathematicaloptmization.jpg, id=1661, 334.24875pt x 500.87125pt>
+<introductiontomathematicaloptmization.jpg, id=1663, 334.24875pt x 500.87125pt>
 File: introductiontomathematicaloptmization.jpg Graphic file (type jpg)
 <use introductiontomathematicaloptmization.jpg>
 Package pdftex.def Info: introductiontomathematicaloptmization.jpg used on inpu
@@ -1456,7 +1456,7 @@ t line 371.
  [30
 
  <./introductiontomathematicaloptmization.jpg>]
-<linearprogrammingwithmatlab.jpg, id=1714, 341.275pt x 500.87125pt>
+<linearprogrammingwithmatlab.jpg, id=1716, 341.275pt x 500.87125pt>
 File: linearprogrammingwithmatlab.jpg Graphic file (type jpg)
 
 <use linearprogrammingwithmatlab.jpg>
@@ -1466,7 +1466,7 @@ Package pdftex.def Info: linearprogrammingwithmatlab.jpg used on input line 371
  [31
 
  <./linearprogrammingwithmatlab.jpg>]
-<pesquisaoperacionalpearson.jpg, id=1767, 501.875pt x 680.5425pt>
+<pesquisaoperacionalpearson.jpg, id=1769, 501.875pt x 680.5425pt>
 File: pesquisaoperacionalpearson.jpg Graphic file (type jpg)
 
 <use pesquisaoperacionalpearson.jpg>
@@ -1476,7 +1476,7 @@ Package pdftex.def Info: pesquisaoperacionalpearson.jpg used on input line 371.
  [32
 
  <./pesquisaoperacionalpearson.jpg>]
-<pesquisaoperacionalsaraiva.jpg, id=1820, 501.875pt x 716.6775pt>
+<pesquisaoperacionalsaraiva.jpg, id=1822, 501.875pt x 716.6775pt>
 File: pesquisaoperacionalsaraiva.jpg Graphic file (type jpg)
 
 <use pesquisaoperacionalsaraiva.jpg>
@@ -1486,7 +1486,7 @@ Package pdftex.def Info: pesquisaoperacionalsaraiva.jpg used on input line 371.
  [33
 
  <./pesquisaoperacionalsaraiva.jpg>]
-<tecnicasdeotimizacao.png, id=1871, 431.6125pt x 577.15625pt>
+<tecnicasdeotimizacao.png, id=1873, 431.6125pt x 577.15625pt>
 File: tecnicasdeotimizacao.png Graphic file (type png)
 
 <use tecnicasdeotimizacao.png>
@@ -1505,7 +1505,7 @@ Package pdftex.def Info: tecnicasdeotimizacao.png used on input line 371.
 
 ] [39
 
-] <desorganizacao.png, id=2182, 214.401pt x 155.6214pt>
+] <desorganizacao.png, id=2184, 214.401pt x 155.6214pt>
 File: desorganizacao.png Graphic file (type png)
 
 <use desorganizacao.png>
@@ -1518,7 +1518,7 @@ Package pdftex.def Info: desorganizacao.png used on input line 452.
 ] [42
 
 ]
-<dantzig.png, id=2336, 513.117pt x 241.3818pt>
+<dantzig.png, id=2338, 513.117pt x 241.3818pt>
 File: dantzig.png Graphic file (type png)
  <use dantzig.png>
 Package pdftex.def Info: dantzig.png used on input line 477.
@@ -1529,7 +1529,7 @@ Overfull \vbox (4.56786pt too high) detected at line 477
 
 [43
 
- <./dantzig.png>] <modelosPO.png, id=2390, 421.575pt x 210.0648pt>
+ <./dantzig.png>] <modelosPO.png, id=2392, 421.575pt x 210.0648pt>
 File: modelosPO.png Graphic file (type png)
 
 <use modelosPO.png>
@@ -1568,7 +1568,7 @@ thkerncmss.
 
 ] [49
 
-] <SegChamada.png, id=2701, 1468.48625pt x 519.9425pt>
+] <SegChamada.png, id=2703, 1468.48625pt x 519.9425pt>
 File: SegChamada.png Graphic file (type png)
 
 <use SegChamada.png>
@@ -1612,7 +1612,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 623.
 Here is how much of TeX's memory you used:
  18066 strings out of 493089
  342929 string characters out of 6134841
- 448321 words of memory out of 5000000
+ 448627 words of memory out of 5000000
  20950 multiletter control sequences out of 15000+600000
  17511 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1631,10 +1631,10 @@ xlive/2015/texmf-dist/fonts/type1/public/cm-super/sfss1440.pfb></usr/local/texl
 ive/2015/texmf-dist/fonts/type1/public/cm-super/sfss2488.pfb></usr/local/texliv
 e/2015/texmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb></usr/local/texlive/
 2015/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb>
-Output written on Otimiz_AULA0.pdf (52 pages, 3515609 bytes).
+Output written on Otimiz_AULA0.pdf (52 pages, 3517316 bytes).
 PDF statistics:
- 2928 PDF objects out of 2984 (max. 8388607)
- 2748 compressed objects within 28 object streams
+ 2930 PDF objects out of 2984 (max. 8388607)
+ 2750 compressed objects within 28 object streams
  115 named destinations out of 1000 (max. 500000)
  363 words of extra memory for PDF output out of 10000 (max. 10000000)
 

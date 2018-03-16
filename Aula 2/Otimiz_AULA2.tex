@@ -109,6 +109,7 @@
 \xpretocmd{\chronology}{\tikzset{>=|}}{}{\failure}
 \usepackage{mdframed}
 \usepackage{tikz}
+\usepackage{makecell}
 \usetikzlibrary{arrows.meta}
 \tikzset{%
   >={Latex[width=2mm,length=2mm]},
@@ -1458,9 +1459,375 @@ B = [ 0; 0]; Aeq = [ 1 1 ]; Beq = 90;
 
 \end{frame}
 
-\subsection{Serralheria Tabajara}
+\subsection{Produção}
+\begin{frame}
+	\frametitle{Empresa e seus Produtos}
+	\begin{block}{O problema}
+		\scriptsize
+		Seja uma empresa que produz produtos A, B, C e D. A fabricação de cada unidade desses produtos exige mão de obra, matéria-prima e processamento mecânico, gerando um dado lucro de acordo com a Tabela abaixo.
+		\\~\\
+		O suprimento semanal de matéria prima é restrito a 20.000Kg. A disponibilidade semanal de mão de obra é de 15.000 horas, e a quantidade de horas-máquina é de 40.000 hm. Pede-se determinar o plano de produção semanal de forma a maximizar o lucro. 
+	\end{block}
+	\begin{columns}
+		\begin{column}{0.7\textwidth}
+			\begin{table}
+				\scriptsize
+				\caption{Dados do Problema}
+				\begin{tabular}{| c | c | c | c | c |}
+					\hline
+					\textbf{Recursos} 			& \textbf{A} & \textbf{B} & \textbf{C} & \textbf{D} \\
+					\hline
+					Mão de Obra (hh/unidade)	& 8		     & 3		  & 5		   &6		    \\
+					Matéria Prima (kg/unidade)	& 5			 & 7 		  & 4		   &5			\\
+					Processamento Mecânico (hm) & 12		 & 9		  & 8  		   &7			\\
+					Lucro (\$/Unidade)			& 3			 & 6		  & 5		   &4			\\
+					\hline
+				\end{tabular}
+			\end{table}
+		\end{column}
+		\begin{column}{0.3\textwidth}
+				\centering
+				\includegraphics[width=3cm,height=3cm]{industria.jpg}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Empresa e seus Produtos}
+	\begin{columns}
+		\begin{column}{0.7\textwidth}
+			\only<1-2>
+			{
+				\begin{block}{Identificação das Variáveis do Problema}
+					\centering
+					\only<2>
+					{
+						\begin{itemize}
+							\item[] $x_A$: Produção Semanal do Produto A 
+							\item[] $x_B$: Produção Semanal do Produto A
+							\item[] $x_C$: Produção Semanal do Produto A
+							\item[] $x_D$: Produção Semanal do Produto A
+						\end{itemize}
+					}
+				\end{block}
+			}
+			\only<3-5>
+			{
+				\begin{block}{Identificação da Função Objetivo}
+					\centering
+					\only<4-5>
+					{
+						\begin{table}
+							\begin{tabular}{| c | c | c | c | c |}
+								\hline
+								\textbf{Recursos}  & \textbf{A} & \textbf{B} & \textbf{C} & \textbf{D} \\
+								\hline
+								Lucro (\$/unidade) & 3 & 6 & 5 & 4 \\
+								\hline  
+							\end{tabular}
+						\end{table}
+					}
+					\only<5>
+					{
+						$\max Z = 3x_A + 6x_B + 5x_C + 4x_D$
+					}
+				\end{block}
+			}
+			\only<6-8>
+			{
+				\begin{block}{Identificação das Restrições}
+					\centering
+					\only<7-8>
+					{
+						\begin{table}
+							\scriptsize
+							\begin{tabular}{| c | c | c | c | c |}
+								\hline
+								\textbf{Recursos}  			& \textbf{A} & \textbf{B} & \textbf{C} & \textbf{D} \\
+								\hline
+								Mão de Obra (hh/unidade)	& 8		     & 3		  & 5		   &6		    \\
+								Matéria Prima (kg/unidade)	& 5			 & 7 		  & 4		   &5			\\
+								Processamento Mecânico (hm) & 12		 & 9		  & 8  		   &7			\\
+								\hline  
+							\end{tabular}
+						\end{table}
+					}
+					\only<8>
+					{
+						\begin{equation*}
+							\begin{matrix}
+								\text{Sujeito a} \\
+								8x_A + 3x_B + 5x_C + 6x_D \le 15000 \\
+								5x_A + 7x_B + 4x_C + 5x_D \le 20000 \\
+								12x_A + 9x_B + 8x_C + 7x_D \le 40000 \\
+								x_A, x_B, x_C, x_D \ge 0		
+							\end{matrix}
+						\end{equation*}
+					}
+				\end{block}
+			}		
+			\only<9>
+			{
+				\begin{block}{Modeloagem Final do Problema}
+					\begin{equation*}
+						\begin{matrix}
+							\max Z = 3x_A + 6x_B + 5x_C + 4x_D \\
+							\text{Sujeito a} \\
+							8x_A + 3x_B + 5x_C + 6x_D \le 15000 \\
+							5x_A + 7x_B + 4x_C + 5x_D \le 20000 \\
+							12x_A + 9x_B + 8x_C + 7x_D \le 40000 \\
+							x_A, x_B, x_C, x_D \ge 0		
+						\end{matrix}
+					\end{equation*}
+				\end{block}
+			}		
+		\end{column}
+		\begin{column}{0.3\textwidth}
+				\centering
+				\includegraphics[width=3cm,height=3cm]{industria.jpg}
+		\end{column}
+	\end{columns}
+\end{frame}
 
 \subsection{Nutrição}
+\begin{frame}
+	\frametitle{Nutricionista}
+	\begin{block}{O problema}
+		\scriptsize
+		Suponhamos que 8, 12 e 9 são as quantidades de Proteínas (P), Carboidratos (C) e Gorduras (G), respectivamente, sejam as quantidades semanais mínimas de cada pessoa.
+		\begin{itemize}
+		\item O alimento tipo-A contém por quilo: 2P, 6C e 1G
+		\item O alimento tipo-B contém por quilo: 1P, 1C e 3G
+		\item O alimento tipo-A custa R\$3,00 e o alimento tipo-B custa R\$2,00 (por quilo)
+		\end{itemize}  
+		Quantos quilos de cada alimento deve-se comprar por semana para ter uma dieta ao menor custo possível? \\~\\
+		Modele matematicamente esse problema de otimização.
+	\end{block}
+	\only<1>
+	{
+		\centering
+		\includegraphics[width=3.3cm,height=3.3cm]{nutricionista.jpg}
+	}
+	\only<2>
+	{
+		\centering
+		\includegraphics[width=6cm,height=3.3cm]{Nutri_0.png}
+	}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Nutricionista}
+	\begin{columns}
+		\begin{column}{0.6\textwidth}
+			\begin{block}{Solução Gráfica e Busca Exaustiva}
+				\centering
+				\only<1>
+				{
+					\includegraphics[width=6cm,height=6cm]{Nutri_1.png}
+				}
+				\only<2>
+				{
+					\includegraphics[width=6cm,height=6cm]{Nutri_2.png}
+				}
+				\only<3>
+				{
+					\includegraphics[width=6cm,height=6cm]{Nutri_3.png}
+				}
+				\only<4>
+				{
+					\includegraphics[width=6cm,height=6cm]{Nutri_4.png}
+				}
+				\only<5>
+				{
+					\includegraphics[width=6cm,height=6cm]{Nutri_5.png}
+				}
+				\only<6>
+				{
+					\includegraphics[width=6cm,height=6cm]{Nutri_6.png}
+				}
+				\only<7>
+				{
+					\includegraphics[width=6cm,height=6cm]{Nutri_7.png}
+				}
+				\only<8>
+				{
+					\includegraphics[width=6cm,height=6cm]{Nutri_8.png}
+				}
+				\only<9>
+				{
+					\includegraphics[width=6cm,height=6cm]{Nutri_9.png}
+				}
+				\only<10>
+				{
+					\includegraphics[width=6cm,height=6cm]{Nutri_10.png}
+				}
+				\only<11>
+				{
+					\includegraphics[width=6cm,height=6cm]{Nutri_11.png}
+				}			
+			\end{block}
+		\end{column}
+		\begin{column}{0.4\textwidth}
+			\only<1-10>
+			{
+				\centering
+				\includegraphics[width=5cm,height=3.3cm]{Nutri_0.png}
+			}
+		
+			\only<11>
+			{
+				\centering
+				\includegraphics[width=3.3cm,height=3.3cm]{nutricionista.jpg}
+			}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}[fragile] 
+	\frametitle{Problema do Milho e da Aveia}
+	\centering
+	\begin{columns}
+		\begin{column}{0.7\textwidth}
+			\begin{block}{Programa em Matlab}
+				\begin{lstlisting}
+clear all; close all; clc;
+
+% FOB
+f = [ 3 2];
+% Restricoes de desigualdade
+A = [-2 -1; -6 -1; -1 -3];
+% Termos constantes 
+b = [-8; -12; -9];
+% Restricoes de Igualdade
+Aeq = []; beq = [];
+% Restricoes de Canalizacao
+LB = [ 0 0]; UB = [inf inf];
+% Resolucao
+[X, FVAL, EXITFLAG] = linprog(f,A,b,Aeq,beq,LB,UB)	
+				\end{lstlisting}	
+			\end{block}
+		\end{column}
+		\begin{column}{0.3\textwidth}
+			\begin{figure}
+				\only<1>
+				{
+					\includegraphics[width=3cm,height=3cm]{solver_matlab.png}
+				}
+				\only<2>
+				{
+					\includegraphics[width=3.5cm,height=5cm]{Nutri_Matlab.png}
+				}
+			\end{figure}
+		\end{column}				
+	\end{columns}
+\end{frame}
+
+
+
+\subsection{Serralheria Tabajara}
+\begin{frame}
+	\frametitle{Serralheria Tabajara}
+	\begin{block}{O problema}
+		\scriptsize
+		A TABAJARA LTDA dispõe de capacidade extra para produzir dois novos produtos (Janelas e Portas). A demanda é muito maior que a capacidade disponível (toda a produção será vendida). \\~\\
+		Pergunta-se: \\
+		\begin{itemize}
+		\item Quando produzir visando a maximização do lucro?
+		\item Qual será o lucro?
+		\end{itemize}
+	\end{block}
+	\begin{table}
+		\scriptsize
+		\caption{Dados do Problema}
+		\begin{tabular}{| c | c | c | c |}
+			\hline 
+			 \multirow{2}{*}{\makecell{\textbf{Setor} \\ \textbf{Produtivo} }} & \multicolumn{2}{|c|}{\textbf{Produto}} &  \multirow{2}{*}{\makecell{\textbf{Capacidade} \\ \textbf{Disponível} }  } \\
+			\cline{2-3}
+			 & \textbf{Janelas} & \textbf{Portas} & \\
+			\hline
+			Montagem		& 1 hora/unid	& ---		  	& 4	horas/mês  \\
+			Laminação		& ---			& 2 horas/unid 	& 12 horas/mês  \\
+			Corte 			& 3 horas/unid	& 2 horas/unid	& 18 horas/mês \\
+			\hline
+			Lucro Unitário	& \$ 3,00		& \$ 5,00		& 	  \\
+			\hline
+		\end{tabular}
+	\end{table}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Serralheria Tabajara}
+	\begin{table}
+		\scriptsize
+		\begin{tabular}{| c | c | c | c |}
+			\hline 
+			 \multirow{2}{*}{\makecell{\textbf{Setor} \\ \textbf{Produtivo} }} & \multicolumn{2}{|c|}{\textbf{Produto}} &  \multirow{2}{*}{\makecell{\textbf{Capacidade} \\ \textbf{Disponível} }  } \\
+			\cline{2-3}
+			 & \textbf{Janelas} & \textbf{Portas} & \\
+			\hline
+			Montagem		& 1 hora/unid	& ---		  	& 4	horas/mês  \\
+			Laminação		& ---			& 2 horas/unid 	& 12 horas/mês  \\
+			Corte 			& 3 horas/unid	& 2 horas/unid	& 18 horas/mês \\
+			\hline
+			Lucro Unitário	& \$ 3,00		& \$ 5,00		& 	  \\
+			\hline
+		\end{tabular}
+	\end{table}
+	\begin{columns}
+		\begin{column}{0.6\textwidth}
+			\begin{equation*}
+				\left.\begin{matrix}
+				\text{\scriptsize \underline{Variaveis}}\\ 
+				x_1 = \text{\scriptsize Qde de janelas, em milhares de unidades} \\ 
+				x_2 = \text{\scriptsize Qde de janelas, em milhares de unidades} \\ 
+				z = \text{\scriptsize Qde de janelas, em milhares de unidades} \\ 
+				\text{\scriptsize \underline{Restrições}} \\ 
+				\text{\scriptsize a) Disponibilidade do Setor de Montagem} \\ 
+				\text{\scriptsize b) Disponibilidade do Setor de Laminação} \\ 
+				\text{\scriptsize c) Disponibilidade do Setor de Corte} \\ 
+				\text{\scriptsize d) Quantidades não Negativas} \\ 
+				\text{\scriptsize \underline{Objetivo}} \\ 
+				\text{\scriptsize Maximizar o Lucro Total da Empresa} \\ 
+				\end{matrix}\right\} 
+			\end{equation*}
+		\end{column}
+		\begin{column}{0.4\textwidth}
+			\includegraphics[width=4.5cm,height=4.5cm]{Tabajara_01.png}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Serralheria Tabajara}
+	\only<1>
+	{
+		\includegraphics[width=11cm,height=8cm]{Tabajara_02.png}
+	}
+	\only<2>
+	{
+		\includegraphics[width=11cm,height=8cm]{Tabajara_03.png}
+	}
+	\only<3>
+	{
+		\includegraphics[width=11cm,height=8cm]{Tabajara_04.png}
+	}
+	\only<4>
+	{
+		\includegraphics[width=11cm,height=8cm]{Tabajara_05.png}
+	}
+	\only<5>
+	{
+		\includegraphics[width=11cm,height=8cm]{Tabajara_06.png}
+	}
+	\only<6>
+	{
+		\includegraphics[width=11cm,height=8cm]{Tabajara_07.png}
+	}
+	\only<7>
+	{
+		\includegraphics[width=11cm,height=8cm]{Tabajara_08.png}
+	}
+\end{frame}
 
 
 \subsection{Inviável}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.21)  14 FEB 2018 22:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.23)  7 MAR 2018 16:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1855,48 +1855,32 @@ File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.0 (rcs-revision 1.7)
 s/tikzlibrarytrees.code.tex
 File: tikzlibrarytrees.code.tex 2008/02/24 v3.0.0 (rcs-revision 1.2)
 )
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 145.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 145.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\insertbuttontext' on input line 145.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\new@ifnextchar' on input line 145.
-
-Package hyperref Info: Option `colorlinks' set `true' on input line 161.
-(./Otimiz_AULA1.aux)
+Package hyperref Info: Option `colorlinks' set `true' on input line 155.
+ (./Otimiz_AULA1.aux)
 \openout1 = `Otimiz_AULA1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 163.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 163.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 157.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 157.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    ... okay on input line 157.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1949,7 +1933,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box110
-Package hyperref Info: Link coloring ON on input line 163.
+Package hyperref Info: Link coloring ON on input line 157.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1959,72 +1943,72 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count328
 )
-LaTeX Info: Redefining \ref on input line 163.
-LaTeX Info: Redefining \pageref on input line 163.
-LaTeX Info: Redefining \nameref on input line 163.
+LaTeX Info: Redefining \ref on input line 157.
+LaTeX Info: Redefining \pageref on input line 157.
+LaTeX Info: Redefining \nameref on input line 157.
 
 (./Otimiz_AULA1.out) (./Otimiz_AULA1.out)
 \@outlinefile=\write6
 \openout6 = `Otimiz_AULA1.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 163.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 157.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 163.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 157.
 \symnumbers=\mathgroup7
 \sympureletters=\mathgroup8
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 163.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 163.
+(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 157.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 157.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/bx/n on input line 163.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/bx/n on input line 157.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/bx/n on input line 163.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 163.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/bx/n on input line 157.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 157.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 163.
+(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 157.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 163.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 163.
+(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 157.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 157.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 163.
+(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 157.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 163.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 163.
+(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 157.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 157.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 163.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 157.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 163.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 157.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 163.
+(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 157.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 163.
+(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 157.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmr/bx/n on input line 163.
+(Font)                  OT1/cmss/bx/n --> T1/cmr/bx/n on input line 157.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/cmss/bx/n --> T1/cmss/bx/n on input line 163.
+(Font)                  T1/cmss/bx/n --> T1/cmss/bx/n on input line 157.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 163.
+(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 157.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 163.
+(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 157.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/cmtt/m/n --> T1/cmtt/bx/n on input line 163.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 163.
+(Font)                  T1/cmtt/m/n --> T1/cmtt/bx/n on input line 157.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 157.
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `normal' on input line 16
-3.
+(Font)              `pureletters' in the math version `normal' on input line 15
+7.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 16
-3.
+(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 15
+7.
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `bold' on input line 163.
+(Font)              `pureletters' in the math version `bold' on input line 157.
 
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  T1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 1
-63.
+57.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 163.
+ut line 157.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/beamer/translator/dicts/translato
 r-basic-dictionary/translator-basic-dictionary-English.dict
@@ -2050,170 +2034,165 @@ Dictionary: translator-numbers-dictionary, Language: English
 r-theorem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 163.
+LaTeX Info: Redefining \includegraphics on input line 157.
 \c@lstlisting=\count329
 
-(./Otimiz_AULA1.nav) <Engenharia.jpg, id=119, 541.02126pt x 649.42625pt>
-File: Engenharia.jpg Graphic file (type jpg)
-
-<use Engenharia.jpg>
-Package pdftex.def Info: Engenharia.jpg used on input line 173.
-(pdftex.def)             Requested size: 28.45274pt x 34.1479pt.
- <cover.jpg, id=120, 1204.5pt x 903.375pt>
+(./Otimiz_AULA1.nav) <cover.jpg, id=121, 1204.5pt x 903.375pt>
 File: cover.jpg Graphic file (type jpg)
  <use cover.jpg>
-Package pdftex.def Info: cover.jpg used on input line 173.
-(pdftex.def)             Requested size: 73.97614pt x 48.36937pt.
+Package pdftex.def Info: cover.jpg used on input line 167.
+(pdftex.def)             Requested size: 113.80379pt x 76.82031pt.
 
 
 LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 173.
+(Font)              size <5> substituted on input line 167.
 
-<UFJF.jpg, id=121, 1027.84pt x 742.775pt>
+<UFJF.jpg, id=122, 1027.84pt x 742.775pt>
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 173.
+Package pdftex.def Info: UFJF.jpg used on input line 167.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
- <./UFJF.jpg> <./Engenharia.jpg> <./cover.jpg>] (./Otimiz_AULA1.toc)
+ <./UFJF.jpg> <./cover.jpg>]
+(./Otimiz_AULA1.toc)
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 178.
+Package pdftex.def Info: UFJF.jpg used on input line 172.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [2
 
 ]
-<portugal.png, id=313, 276.03125pt x 183.68625pt>
+<portugal.png, id=315, 276.03125pt x 183.68625pt>
 File: portugal.png Graphic file (type png)
  <use portugal.png>
-Package pdftex.def Info: portugal.png used on input line 201.
+Package pdftex.def Info: portugal.png used on input line 195.
 (pdftex.def)             Requested size: 19.91382pt x 11.37946pt.
 
-<inglaterra.jpg, id=314, 250.9375pt x 167.62625pt>
+<inglaterra.jpg, id=316, 250.9375pt x 167.62625pt>
 File: inglaterra.jpg Graphic file (type jpg)
  <use inglaterra.jpg>
-Package pdftex.def Info: inglaterra.jpg used on input line 201.
+Package pdftex.def Info: inglaterra.jpg used on input line 195.
 (pdftex.def)             Requested size: 19.91458pt x 11.3795pt.
 
-<usa.jpg, id=315, 277.035pt x 183.68625pt>
+<usa.jpg, id=317, 277.035pt x 183.68625pt>
 File: usa.jpg Graphic file (type jpg)
  <use usa.jpg>
-Package pdftex.def Info: usa.jpg used on input line 201.
+Package pdftex.def Info: usa.jpg used on input line 195.
 (pdftex.def)             Requested size: 19.91437pt x 11.37946pt.
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 201.
+Package pdftex.def Info: UFJF.jpg used on input line 195.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
 
 [3
 
  <./portugal.png> <./inglaterra.jpg> <./usa.jpg>]
-<brasil.jpg, id=385, 1927.2pt x 1204.5pt>
+<brasil.jpg, id=387, 1927.2pt x 1204.5pt>
 File: brasil.jpg Graphic file (type jpg)
  <use brasil.jpg>
-Package pdftex.def Info: brasil.jpg used on input line 219.
+Package pdftex.def Info: brasil.jpg used on input line 213.
 (pdftex.def)             Requested size: 19.90831pt x 11.3767pt.
 
-<world.png, id=387, 803.0pt x 792.9625pt>
+<world.png, id=389, 803.0pt x 792.9625pt>
 File: world.png Graphic file (type png)
  <use world.png>
-Package pdftex.def Info: world.png used on input line 219.
+Package pdftex.def Info: world.png used on input line 213.
 (pdftex.def)             Requested size: 19.91075pt x 19.91597pt.
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 219.
+Package pdftex.def Info: UFJF.jpg used on input line 213.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
 
 [4
 
  <./brasil.jpg> <./world.png>]
-<Pensando.jpg, id=462, 436.63126pt x 353.32pt>
+<Pensando.jpg, id=464, 436.63126pt x 353.32pt>
 File: Pensando.jpg Graphic file (type jpg)
  <use Pensando.jpg>
-Package pdftex.def Info: Pensando.jpg used on input line 232.
+Package pdftex.def Info: Pensando.jpg used on input line 226.
 (pdftex.def)             Requested size: 85.35262pt x 85.3592pt.
 File: UFJF.jpg Graphic file (type jpg)
 
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 232.
+Package pdftex.def Info: UFJF.jpg used on input line 226.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [5
 
  <./Pensando.jpg>]
-<alvo.png, id=532, 2624.80624pt x 2765.33125pt>
+<alvo.png, id=534, 2624.80624pt x 2765.33125pt>
 File: alvo.png Graphic file (type png)
  <use alvo.png>
-Package pdftex.def Info: alvo.png used on input line 244.
+Package pdftex.def Info: alvo.png used on input line 238.
 (pdftex.def)             Requested size: 85.34924pt x 85.3193pt.
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 244.
+Package pdftex.def Info: UFJF.jpg used on input line 238.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
 
 [6
 
- <./alvo.png>] <seg_guerra.png, id=601, 1040.88875pt x 359.3425pt>
+ <./alvo.png>] <seg_guerra.png, id=603, 1040.88875pt x 359.3425pt>
 File: seg_guerra.png Graphic file (type png)
 
 <use seg_guerra.png>
-Package pdftex.def Info: seg_guerra.png used on input line 262.
+Package pdftex.def Info: seg_guerra.png used on input line 256.
 (pdftex.def)             Requested size: 284.52202pt x 85.35568pt.
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 262.
+Package pdftex.def Info: UFJF.jpg used on input line 256.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [7
 
  <./seg_guerra.png>]
-<ciencia.png, id=672, 1034.86626pt x 341.275pt>
+<ciencia.png, id=674, 1034.86626pt x 341.275pt>
 File: ciencia.png Graphic file (type png)
  <use ciencia.png>
-Package pdftex.def Info: ciencia.png used on input line 262.
+Package pdftex.def Info: ciencia.png used on input line 256.
 (pdftex.def)             Requested size: 284.51804pt x 85.35498pt.
 File: UFJF.jpg Graphic file (type jpg)
 
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 262.
+Package pdftex.def Info: UFJF.jpg used on input line 256.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [8
 
  <./ciencia.png>]
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 290.
+Package pdftex.def Info: UFJF.jpg used on input line 284.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [9
 
 ]
-<lista.jpg, id=807, 244.66406pt x 209.28188pt>
+<lista.jpg, id=809, 244.66406pt x 209.28188pt>
 File: lista.jpg Graphic file (type jpg)
  <use lista.jpg>
-Package pdftex.def Info: lista.jpg used on input line 290.
+Package pdftex.def Info: lista.jpg used on input line 284.
 (pdftex.def)             Requested size: 142.26736pt x 199.1679pt.
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 290.
+Package pdftex.def Info: UFJF.jpg used on input line 284.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
 
 [10
 
- <./lista.jpg>] <Figura_1_3.png, id=875, 344.28625pt x 139.52126pt>
+ <./lista.jpg>] <Figura_1_3.png, id=877, 344.28625pt x 139.52126pt>
 File: Figura_1_3.png Graphic file (type png)
 
 <use Figura_1_3.png>
-Package pdftex.def Info: Figura_1_3.png used on input line 301.
+Package pdftex.def Info: Figura_1_3.png used on input line 295.
 (pdftex.def)             Requested size: 227.62363pt x 113.8142pt.
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 301.
+Package pdftex.def Info: UFJF.jpg used on input line 295.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [11
 
  <./Figura_1_3.png>]
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 322.
+Package pdftex.def Info: UFJF.jpg used on input line 316.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
 
 [12
@@ -2221,19 +2200,19 @@ Package pdftex.def Info: UFJF.jpg used on input line 322.
 ]
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 342.
+Package pdftex.def Info: UFJF.jpg used on input line 336.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [13
 
 ]
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 357.
+Package pdftex.def Info: UFJF.jpg used on input line 351.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [14
 
 ]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 488.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 482.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1cmtt.fd
@@ -2250,26 +2229,26 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
 
-Overfull \hbox (4.38458pt too wide) in paragraph at lines 488--488
+Overfull \hbox (4.38458pt too wide) in paragraph at lines 482--482
 [][]  
  []
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 488.
+LaTeX Font Info:    Try loading font information for U+msa on input line 482.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 488.
+LaTeX Font Info:    Try loading font information for U+msb on input line 482.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 488.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 482.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 488.
+line 482.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
@@ -2277,179 +2256,179 @@ thkerncmss.
 )
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 488.
+Package pdftex.def Info: UFJF.jpg used on input line 482.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [15
 
 ]
-Overfull \hbox (4.38458pt too wide) in paragraph at lines 488--488
+Overfull \hbox (4.38458pt too wide) in paragraph at lines 482--482
 [][]  
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 488.
+(mdframed)              on input line 482.
 
-Underfull \hbox (badness 5077) in paragraph at lines 488--488
+Underfull \hbox (badness 5077) in paragraph at lines 482--482
 \T1/cmss/m/n/8 pos-sí-veis ca-mi-nhos
  []
 
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 488.
+ mdframed uses option nobreak mdframed on input line 482.
 File: UFJF.jpg Graphic file (type jpg)
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 488.
+Package pdftex.def Info: UFJF.jpg used on input line 482.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [16
 
 ]
-Overfull \hbox (4.38458pt too wide) in paragraph at lines 488--488
+Overfull \hbox (4.38458pt too wide) in paragraph at lines 482--482
 [][]  
  []
 
-<importante.png, id=1286, 296.01pt x 210.87pt>
+<importante.png, id=1288, 296.01pt x 210.87pt>
 File: importante.png Graphic file (type png)
  <use importante.png>
-Package pdftex.def Info: importante.png used on input line 488.
+Package pdftex.def Info: importante.png used on input line 482.
 (pdftex.def)             Requested size: 71.12965pt x 42.6784pt.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 488.
+(mdframed)              on input line 482.
 
-Underfull \hbox (badness 10000) in paragraph at lines 488--488
+Underfull \hbox (badness 10000) in paragraph at lines 482--482
 []\T1/cmss/m/n/10.95 Representação
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 488--488
+Underfull \hbox (badness 10000) in paragraph at lines 482--482
 \T1/cmss/m/n/10.95 do sis-tema
  []
 
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 488.
+ mdframed uses option nobreak mdframed on input line 482.
 File: UFJF.jpg Graphic file (type jpg)
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 488.
+Package pdftex.def Info: UFJF.jpg used on input line 482.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [17
 
  <./importante.png>]
-Overfull \hbox (4.38458pt too wide) in paragraph at lines 488--488
+Overfull \hbox (4.38458pt too wide) in paragraph at lines 482--482
 [][]  
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 488.
+(mdframed)              on input line 482.
 
-Underfull \hbox (badness 3219) in paragraph at lines 488--488
+Underfull \hbox (badness 3219) in paragraph at lines 482--482
 \T1/cmss/m/n/8 ma-te-má-tico de-sen-
  []
 
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 488.
+ mdframed uses option nobreak mdframed on input line 482.
 File: UFJF.jpg Graphic file (type jpg)
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 488.
+Package pdftex.def Info: UFJF.jpg used on input line 482.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [18
 
 ]
-Overfull \hbox (4.38458pt too wide) in paragraph at lines 488--488
+Overfull \hbox (4.38458pt too wide) in paragraph at lines 482--482
 [][]  
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 488.
+(mdframed)              on input line 482.
 
-Underfull \hbox (badness 4647) in paragraph at lines 488--488
+Underfull \hbox (badness 4647) in paragraph at lines 482--482
 []\T1/cmss/m/n/8 Um mo-delo pode
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 488--488
+Underfull \hbox (badness 10000) in paragraph at lines 482--482
 \T1/cmss/m/n/8 ser con-si-de-rado
  []
 
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 488.
+ mdframed uses option nobreak mdframed on input line 482.
 File: UFJF.jpg Graphic file (type jpg)
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 488.
+Package pdftex.def Info: UFJF.jpg used on input line 482.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [19
 
 ]
-Overfull \hbox (4.38458pt too wide) in paragraph at lines 488--488
+Overfull \hbox (4.38458pt too wide) in paragraph at lines 482--482
 [][]  
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 488.
+(mdframed)              on input line 482.
 
-Underfull \hbox (badness 1377) in paragraph at lines 488--488
+Underfull \hbox (badness 1377) in paragraph at lines 482--482
 []\T1/cmss/m/n/8 Detectar e cor-ri-gir
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 488--488
+Underfull \hbox (badness 10000) in paragraph at lines 482--482
 \T1/cmss/m/n/8 so-lu-ção, po-dendo
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 488--488
+Underfull \hbox (badness 10000) in paragraph at lines 482--482
 \T1/cmss/m/n/8 o mo-delo ter
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 488--488
+Underfull \hbox (badness 10000) in paragraph at lines 482--482
 \T1/cmss/m/n/8 que ser va-li-dado
  []
 
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 488.
+ mdframed uses option nobreak mdframed on input line 482.
 File: UFJF.jpg Graphic file (type jpg)
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 488.
+Package pdftex.def Info: UFJF.jpg used on input line 482.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [20
 
 ]
-Overfull \hbox (4.38458pt too wide) in paragraph at lines 488--488
+Overfull \hbox (4.38458pt too wide) in paragraph at lines 482--482
 [][]  
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 488.
+(mdframed)              on input line 482.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 488.
+ mdframed uses option nobreak mdframed on input line 482.
 File: UFJF.jpg Graphic file (type jpg)
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 488.
+Package pdftex.def Info: UFJF.jpg used on input line 482.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [21
 
 ]
-Overfull \hbox (4.38458pt too wide) in paragraph at lines 488--488
+Overfull \hbox (4.38458pt too wide) in paragraph at lines 482--482
 [][]  
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 488.
+(mdframed)              on input line 482.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 488.
-<vasco.jpg, id=1626, 1284.8pt x 722.7pt>
+ mdframed uses option nobreak mdframed on input line 482.
+<vasco.jpg, id=1628, 1284.8pt x 722.7pt>
 File: vasco.jpg Graphic file (type jpg)
  <use vasco.jpg>
-Package pdftex.def Info: vasco.jpg used on input line 488.
+Package pdftex.def Info: vasco.jpg used on input line 482.
 (pdftex.def)             Requested size: 85.35774pt x 56.90189pt.
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 488.
+Package pdftex.def Info: UFJF.jpg used on input line 482.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
 
 [22
@@ -2457,111 +2436,111 @@ Package pdftex.def Info: UFJF.jpg used on input line 488.
  <./vasco.jpg>]
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 525.
+Package pdftex.def Info: UFJF.jpg used on input line 519.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [23
 
 ]
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 562.
+Package pdftex.def Info: UFJF.jpg used on input line 556.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [24
 
 ]
-Overfull \hbox (26.86487pt too wide) in paragraph at lines 662--662
+Overfull \hbox (26.86487pt too wide) in paragraph at lines 656--656
  [][] 
  []
 
 
-Overfull \vbox (21.45476pt too high) detected at line 662
+Overfull \vbox (21.45476pt too high) detected at line 656
  []
 
 File: UFJF.jpg Graphic file (type jpg)
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 662.
+Package pdftex.def Info: UFJF.jpg used on input line 656.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [25
 
 ]
-Overfull \hbox (26.86487pt too wide) in paragraph at lines 662--662
+Overfull \hbox (26.86487pt too wide) in paragraph at lines 656--656
  [][] 
  []
 
 
-Overfull \vbox (21.45476pt too high) detected at line 662
+Overfull \vbox (21.45476pt too high) detected at line 656
  []
 
 File: UFJF.jpg Graphic file (type jpg)
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 662.
+Package pdftex.def Info: UFJF.jpg used on input line 656.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [26
 
 ]
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 675.
+Package pdftex.def Info: UFJF.jpg used on input line 669.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [27
 
 ]
-<seta.jpg, id=2028, 256.96pt x 197.73875pt>
+<seta.jpg, id=2030, 256.96pt x 197.73875pt>
 File: seta.jpg Graphic file (type jpg)
  <use seta.jpg>
-Package pdftex.def Info: seta.jpg used on input line 695.
+Package pdftex.def Info: seta.jpg used on input line 689.
 (pdftex.def)             Requested size: 22.76076pt x 11.37804pt.
 
-<dinheiro2.jpg, id=2029, 198.7425pt x 254.9525pt>
+<dinheiro2.jpg, id=2031, 198.7425pt x 254.9525pt>
 File: dinheiro2.jpg Graphic file (type jpg)
  <use dinheiro2.jpg>
-Package pdftex.def Info: dinheiro2.jpg used on input line 695.
+Package pdftex.def Info: dinheiro2.jpg used on input line 689.
 (pdftex.def)             Requested size: 42.67725pt x 56.90277pt.
 File: seta.jpg Graphic file (type jpg)
 
 <use seta.jpg>
-Package pdftex.def Info: seta.jpg used on input line 695.
+Package pdftex.def Info: seta.jpg used on input line 689.
 (pdftex.def)             Requested size: 22.76076pt x 11.37804pt.
- <dinheiro.jpg, id=2030, 212.795pt x 237.88875pt>
+ <dinheiro.jpg, id=2032, 212.795pt x 237.88875pt>
 File: dinheiro.jpg Graphic file (type jpg)
 
 <use dinheiro.jpg>
-Package pdftex.def Info: dinheiro.jpg used on input line 695.
+Package pdftex.def Info: dinheiro.jpg used on input line 689.
 (pdftex.def)             Requested size: 42.67838pt x 56.9057pt.
- <profit.png, id=2031, 1002.5896pt x 1002.5896pt>
+ <profit.png, id=2033, 1002.5896pt x 1002.5896pt>
 File: profit.png Graphic file (type png)
 
 <use profit.png>
-Package pdftex.def Info: profit.png used on input line 695.
+Package pdftex.def Info: profit.png used on input line 689.
 (pdftex.def)             Requested size: 85.34901pt x 85.34901pt.
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 695.
+Package pdftex.def Info: UFJF.jpg used on input line 689.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [28
 
  <./seta.jpg> <./dinheiro2.jpg> <./dinheiro.jpg> <./profit.png>] <multiobjetivo
-.png, id=2099, 752.8125pt x 423.5825pt>
+.png, id=2101, 752.8125pt x 423.5825pt>
 File: multiobjetivo.png Graphic file (type png)
 
 <use multiobjetivo.png>
-Package pdftex.def Info: multiobjetivo.png used on input line 703.
+Package pdftex.def Info: multiobjetivo.png used on input line 697.
 (pdftex.def)             Requested size: 227.62596pt x 85.35486pt.
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 703.
+Package pdftex.def Info: UFJF.jpg used on input line 697.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [29
 
  <./multiobjetivo.png>]
-<CO2.png, id=2169, 982.67125pt x 402.50375pt>
+<CO2.png, id=2171, 982.67125pt x 402.50375pt>
 File: CO2.png Graphic file (type png)
  <use CO2.png>
-Package pdftex.def Info: CO2.png used on input line 712.
+Package pdftex.def Info: CO2.png used on input line 706.
 (pdftex.def)             Requested size: 199.16977pt x 85.3574pt.
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 712.
+Package pdftex.def Info: UFJF.jpg used on input line 706.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
 
 [30
@@ -2569,310 +2548,310 @@ Package pdftex.def Info: UFJF.jpg used on input line 712.
  <./CO2.png>]
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 736.
+Package pdftex.def Info: UFJF.jpg used on input line 730.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [31
 
 ]
-<continua1.png, id=2306, 346.29375pt x 205.76875pt>
+<continua1.png, id=2308, 346.29375pt x 205.76875pt>
 File: continua1.png Graphic file (type png)
  <use continua1.png>
-Package pdftex.def Info: continua1.png used on input line 775.
+Package pdftex.def Info: continua1.png used on input line 769.
 (pdftex.def)             Requested size: 227.62459pt x 142.26315pt.
 File: UFJF.jpg Graphic file (type jpg)
 
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 775.
+Package pdftex.def Info: UFJF.jpg used on input line 769.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [32
 
  <./continua1.png (PNG copy)>]
-<continua2.jpg, id=2375, 342.27875pt x 239.89626pt>
+<continua2.jpg, id=2377, 342.27875pt x 239.89626pt>
 File: continua2.jpg Graphic file (type jpg)
  <use continua2.jpg>
-Package pdftex.def Info: continua2.jpg used on input line 775.
+Package pdftex.def Info: continua2.jpg used on input line 769.
 (pdftex.def)             Requested size: 227.62816pt x 142.26599pt.
 File: UFJF.jpg Graphic file (type jpg)
 
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 775.
+Package pdftex.def Info: UFJF.jpg used on input line 769.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [33
 
  <./continua2.jpg>]
-<naodiferenciavel.png, id=2444, 1027.84pt x 1027.84pt>
+<naodiferenciavel.png, id=2446, 1027.84pt x 1027.84pt>
 File: naodiferenciavel.png Graphic file (type png)
 
 <use naodiferenciavel.png>
-Package pdftex.def Info: naodiferenciavel.png used on input line 775.
+Package pdftex.def Info: naodiferenciavel.png used on input line 769.
 (pdftex.def)             Requested size: 227.61543pt x 142.24985pt.
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 775.
+Package pdftex.def Info: UFJF.jpg used on input line 769.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [34
 
  <./naodiferenciavel.png>]
-<descontinua1.png, id=2513, 15.64902pt x 14.58203pt>
+<descontinua1.png, id=2516, 15.64902pt x 14.58203pt>
 File: descontinua1.png Graphic file (type png)
  <use descontinua1.png>
-Package pdftex.def Info: descontinua1.png used on input line 775.
+Package pdftex.def Info: descontinua1.png used on input line 769.
 (pdftex.def)             Requested size: 227.74321pt x 142.3014pt.
 File: UFJF.jpg Graphic file (type jpg)
 
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 775.
+Package pdftex.def Info: UFJF.jpg used on input line 769.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [35
 
  <./descontinua1.png>]
-<descontinua2.png, id=2583, 280.04625pt x 181.67876pt>
+<descontinua2.png, id=2585, 280.04625pt x 181.67876pt>
 File: descontinua2.png Graphic file (type png)
  <use descontinua2.png>
-Package pdftex.def Info: descontinua2.png used on input line 775.
+Package pdftex.def Info: descontinua2.png used on input line 769.
 (pdftex.def)             Requested size: 227.63101pt x 142.26605pt.
 File: UFJF.jpg Graphic file (type jpg)
 
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 775.
+Package pdftex.def Info: UFJF.jpg used on input line 769.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [36
 
  <./descontinua2.png>]
-<discreta1.png, id=2653, 274.02374pt x 185.69376pt>
+<discreta1.png, id=2655, 274.02374pt x 185.69376pt>
 File: discreta1.png Graphic file (type png)
  <use discreta1.png>
-Package pdftex.def Info: discreta1.png used on input line 775.
+Package pdftex.def Info: discreta1.png used on input line 769.
 (pdftex.def)             Requested size: 227.6278pt x 142.26776pt.
 File: UFJF.jpg Graphic file (type jpg)
 
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 775.
+Package pdftex.def Info: UFJF.jpg used on input line 769.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [37
 
  <./discreta1.png>]
-<discreta2.png, id=2722, 148.3944pt x 145.7445pt>
+<discreta2.png, id=2724, 148.3944pt x 145.7445pt>
 File: discreta2.png Graphic file (type png)
  <use discreta2.png>
-Package pdftex.def Info: discreta2.png used on input line 775.
+Package pdftex.def Info: discreta2.png used on input line 769.
 (pdftex.def)             Requested size: 227.62686pt x 142.27266pt.
 File: UFJF.jpg Graphic file (type jpg)
 
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 775.
+Package pdftex.def Info: UFJF.jpg used on input line 769.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [38
 
  <./discreta2.png>]
-<unimodal1.png, id=2791, 498.86375pt x 347.2975pt>
+<unimodal1.png, id=2793, 498.86375pt x 347.2975pt>
 File: unimodal1.png Graphic file (type png)
  <use unimodal1.png>
-Package pdftex.def Info: unimodal1.png used on input line 799.
+Package pdftex.def Info: unimodal1.png used on input line 793.
 (pdftex.def)             Requested size: 227.62277pt x 142.2657pt.
 File: UFJF.jpg Graphic file (type jpg)
 
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 799.
+Package pdftex.def Info: UFJF.jpg used on input line 793.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [39
 
  <./unimodal1.png>]
-<unimodal2.png, id=2862, 476.78125pt x 384.43625pt>
+<unimodal2.png, id=2864, 476.78125pt x 384.43625pt>
 File: unimodal2.png Graphic file (type png)
  <use unimodal2.png>
-Package pdftex.def Info: unimodal2.png used on input line 799.
+Package pdftex.def Info: unimodal2.png used on input line 793.
 (pdftex.def)             Requested size: 227.6229pt x 142.26851pt.
 File: UFJF.jpg Graphic file (type jpg)
 
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 799.
+Package pdftex.def Info: UFJF.jpg used on input line 793.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [40
 
  <./unimodal2.png>]
-<multimodal1.png, id=2931, 451.6875pt x 349.305pt>
+<multimodal1.png, id=2933, 451.6875pt x 349.305pt>
 File: multimodal1.png Graphic file (type png)
  <use multimodal1.png>
-Package pdftex.def Info: multimodal1.png used on input line 799.
+Package pdftex.def Info: multimodal1.png used on input line 793.
 (pdftex.def)             Requested size: 227.62827pt x 142.2619pt.
 File: UFJF.jpg Graphic file (type jpg)
 
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 799.
+Package pdftex.def Info: UFJF.jpg used on input line 793.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [41
 
  <./multimodal1.png>]
-<multimodal2.png, id=3000, 426.59375pt x 448.67625pt>
+<multimodal2.png, id=3002, 426.59375pt x 448.67625pt>
 File: multimodal2.png Graphic file (type png)
  <use multimodal2.png>
-Package pdftex.def Info: multimodal2.png used on input line 799.
+Package pdftex.def Info: multimodal2.png used on input line 793.
 (pdftex.def)             Requested size: 227.62979pt x 142.25801pt.
 File: UFJF.jpg Graphic file (type jpg)
 
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 799.
+Package pdftex.def Info: UFJF.jpg used on input line 793.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [42
 
  <./multimodal2.png>]
-<duvida.jpg, id=3069, 225.84375pt x 225.84375pt>
+<duvida.jpg, id=3071, 225.84375pt x 225.84375pt>
 File: duvida.jpg Graphic file (type jpg)
  <use duvida.jpg>
-Package pdftex.def Info: duvida.jpg used on input line 826.
+Package pdftex.def Info: duvida.jpg used on input line 820.
 (pdftex.def)             Requested size: 56.90533pt x 85.35973pt.
 
-Overfull \hbox (10.81374pt too wide) in paragraph at lines 826--826
+Overfull \hbox (10.81374pt too wide) in paragraph at lines 820--820
 [][]  
  []
 
 File: multimodal2.png Graphic file (type png)
 <use multimodal2.png>
-Package pdftex.def Info: multimodal2.png used on input line 826.
+Package pdftex.def Info: multimodal2.png used on input line 820.
 (pdftex.def)             Requested size: 227.62979pt x 142.25801pt.
 
-Overfull \vbox (2.53764pt too high) detected at line 826
+Overfull \vbox (2.53764pt too high) detected at line 820
  []
 
 File: UFJF.jpg Graphic file (type jpg)
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 826.
+Package pdftex.def Info: UFJF.jpg used on input line 820.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [43
 
  <./duvida.jpg>]
 File: duvida.jpg Graphic file (type jpg)
  <use duvida.jpg>
-Package pdftex.def Info: duvida.jpg used on input line 826.
+Package pdftex.def Info: duvida.jpg used on input line 820.
 (pdftex.def)             Requested size: 56.90533pt x 85.35973pt.
 
-Overfull \hbox (10.81374pt too wide) in paragraph at lines 826--826
+Overfull \hbox (10.81374pt too wide) in paragraph at lines 820--820
 [][]  
  []
 
-<multimodal3.png, id=3142, 621.32124pt x 616.3025pt>
+<multimodal3.png, id=3144, 621.32124pt x 616.3025pt>
 File: multimodal3.png Graphic file (type png)
  <use multimodal3.png>
-Package pdftex.def Info: multimodal3.png used on input line 826.
+Package pdftex.def Info: multimodal3.png used on input line 820.
 (pdftex.def)             Requested size: 227.6194pt x 142.26381pt.
 
-Overfull \vbox (2.54344pt too high) detected at line 826
+Overfull \vbox (2.54344pt too high) detected at line 820
  []
 
 File: UFJF.jpg Graphic file (type jpg)
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 826.
+Package pdftex.def Info: UFJF.jpg used on input line 820.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [44
 
  <./multimodal3.png>]
 File: duvida.jpg Graphic file (type jpg)
  <use duvida.jpg>
-Package pdftex.def Info: duvida.jpg used on input line 826.
+Package pdftex.def Info: duvida.jpg used on input line 820.
 (pdftex.def)             Requested size: 56.90533pt x 85.35973pt.
 
-Overfull \hbox (10.81374pt too wide) in paragraph at lines 826--826
+Overfull \hbox (10.81374pt too wide) in paragraph at lines 820--820
 [][]  
  []
 
-<multimodal4.png, id=3211, 278.03876pt x 148.555pt>
+<multimodal4.png, id=3213, 278.03876pt x 148.555pt>
 File: multimodal4.png Graphic file (type png)
  <use multimodal4.png>
-Package pdftex.def Info: multimodal4.png used on input line 826.
+Package pdftex.def Info: multimodal4.png used on input line 820.
 (pdftex.def)             Requested size: 71.13016pt x 28.45241pt.
 File: multimodal3.png Graphic file (type png)
 
 <use multimodal3.png>
-Package pdftex.def Info: multimodal3.png used on input line 826.
+Package pdftex.def Info: multimodal3.png used on input line 820.
 (pdftex.def)             Requested size: 227.6194pt x 142.26381pt.
 
-Overfull \vbox (2.54344pt too high) detected at line 826
+Overfull \vbox (2.54344pt too high) detected at line 820
  []
 
 File: UFJF.jpg Graphic file (type jpg)
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 826.
+Package pdftex.def Info: UFJF.jpg used on input line 820.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [45
 
  <./multimodal4.png>]
-<concava.png, id=3280, 323.2075pt x 326.21875pt>
+<concava.png, id=3282, 323.2075pt x 326.21875pt>
 File: concava.png Graphic file (type png)
  <use concava.png>
-Package pdftex.def Info: concava.png used on input line 850.
+Package pdftex.def Info: concava.png used on input line 844.
 (pdftex.def)             Requested size: 227.61966pt x 142.26736pt.
 File: UFJF.jpg Graphic file (type jpg)
 
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 850.
+Package pdftex.def Info: UFJF.jpg used on input line 844.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [46
 
  <./concava.png>]
-<convexa.png, id=3350, 320.19624pt x 331.2375pt>
+<convexa.png, id=3352, 320.19624pt x 331.2375pt>
 File: convexa.png Graphic file (type png)
  <use convexa.png>
-Package pdftex.def Info: convexa.png used on input line 850.
+Package pdftex.def Info: convexa.png used on input line 844.
 (pdftex.def)             Requested size: 227.62428pt x 142.26254pt.
 File: UFJF.jpg Graphic file (type jpg)
 
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 850.
+Package pdftex.def Info: UFJF.jpg used on input line 844.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [47
 
  <./convexa.png>]
-<concaveandconvexgoogle.jpg, id=3420, 702.625pt x 301.125pt>
+<concaveandconvexgoogle.jpg, id=3422, 702.625pt x 301.125pt>
 File: concaveandconvexgoogle.jpg Graphic file (type jpg)
 
 <use concaveandconvexgoogle.jpg>
-Package pdftex.def Info: concaveandconvexgoogle.jpg used on input line 850.
+Package pdftex.def Info: concaveandconvexgoogle.jpg used on input line 844.
 (pdftex.def)             Requested size: 284.5294pt x 142.26852pt.
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 850.
+Package pdftex.def Info: UFJF.jpg used on input line 844.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [48
 
- <./concaveandconvexgoogle.jpg>] <nemconcavonemconvexo.jpg, id=3488, 1059.96pt 
+ <./concaveandconvexgoogle.jpg>] <nemconcavonemconvexo.jpg, id=3490, 1059.96pt 
 x 819.06pt>
 File: nemconcavonemconvexo.jpg Graphic file (type jpg)
 
 <use nemconcavonemconvexo.jpg>
-Package pdftex.def Info: nemconcavonemconvexo.jpg used on input line 850.
+Package pdftex.def Info: nemconcavonemconvexo.jpg used on input line 844.
 (pdftex.def)             Requested size: 227.612pt x 142.26283pt.
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 850.
+Package pdftex.def Info: UFJF.jpg used on input line 844.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [49
 
  <./nemconcavonemconvexo.jpg>]
 File: concava.png Graphic file (type png)
 <use concava.png>
-Package pdftex.def Info: concava.png used on input line 887.
+Package pdftex.def Info: concava.png used on input line 881.
 (pdftex.def)             Requested size: 227.61966pt x 142.26736pt.
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 887.
+Package pdftex.def Info: UFJF.jpg used on input line 881.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [50
 
 ]
 File: concava.png Graphic file (type png)
  <use concava.png>
-Package pdftex.def Info: concava.png used on input line 887.
+Package pdftex.def Info: concava.png used on input line 881.
 (pdftex.def)             Requested size: 227.61966pt x 142.26736pt.
 
-<sim.png, id=3625, 174.6525pt x 157.58875pt>
+<sim.png, id=3627, 174.6525pt x 157.58875pt>
 File: sim.png Graphic file (type png)
  <use sim.png>
-Package pdftex.def Info: sim.png used on input line 887.
+Package pdftex.def Info: sim.png used on input line 881.
 (pdftex.def)             Requested size: 28.45131pt x 28.45131pt.
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 887.
+Package pdftex.def Info: UFJF.jpg used on input line 881.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
 
 [51
@@ -2880,56 +2859,56 @@ Package pdftex.def Info: UFJF.jpg used on input line 887.
  <./sim.png>]
 File: convexa.png Graphic file (type png)
  <use convexa.png>
-Package pdftex.def Info: convexa.png used on input line 887.
+Package pdftex.def Info: convexa.png used on input line 881.
 (pdftex.def)             Requested size: 227.62428pt x 142.26254pt.
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 887.
+Package pdftex.def Info: UFJF.jpg used on input line 881.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [52
 
 ]
 File: convexa.png Graphic file (type png)
  <use convexa.png>
-Package pdftex.def Info: convexa.png used on input line 887.
+Package pdftex.def Info: convexa.png used on input line 881.
 (pdftex.def)             Requested size: 227.62428pt x 142.26254pt.
 File: sim.png Graphic file (type png)
 
 <use sim.png>
-Package pdftex.def Info: sim.png used on input line 887.
+Package pdftex.def Info: sim.png used on input line 881.
 (pdftex.def)             Requested size: 28.45131pt x 28.45131pt.
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 887.
+Package pdftex.def Info: UFJF.jpg used on input line 881.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [53
 
 ]
 File: nemconcavonemconvexo.jpg Graphic file (type jpg)
  <use nemconcavonemconvexo.jpg>
-Package pdftex.def Info: nemconcavonemconvexo.jpg used on input line 887.
+Package pdftex.def Info: nemconcavonemconvexo.jpg used on input line 881.
 (pdftex.def)             Requested size: 227.612pt x 142.26283pt.
 File: UFJF.jpg Graphic file (type jpg)
 
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 887.
+Package pdftex.def Info: UFJF.jpg used on input line 881.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [54
 
 ]
 File: nemconcavonemconvexo.jpg Graphic file (type jpg)
  <use nemconcavonemconvexo.jpg>
-Package pdftex.def Info: nemconcavonemconvexo.jpg used on input line 887.
+Package pdftex.def Info: nemconcavonemconvexo.jpg used on input line 881.
 (pdftex.def)             Requested size: 227.612pt x 142.26283pt.
 
-<nao.png, id=3897, 169.63374pt x 163.61125pt>
+<nao.png, id=3899, 169.63374pt x 163.61125pt>
 File: nao.png Graphic file (type png)
  <use nao.png>
-Package pdftex.def Info: nao.png used on input line 887.
+Package pdftex.def Info: nao.png used on input line 881.
 (pdftex.def)             Requested size: 28.45168pt x 28.45264pt.
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 887.
+Package pdftex.def Info: UFJF.jpg used on input line 881.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
 
 [55
@@ -2937,21 +2916,21 @@ Package pdftex.def Info: UFJF.jpg used on input line 887.
  <./nao.png>]
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 906.
+Package pdftex.def Info: UFJF.jpg used on input line 900.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [56
 
 ]
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 961.
+Package pdftex.def Info: UFJF.jpg used on input line 955.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [57
 
 ]
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 961.
+Package pdftex.def Info: UFJF.jpg used on input line 955.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
 
 [58
@@ -2959,21 +2938,21 @@ Package pdftex.def Info: UFJF.jpg used on input line 961.
 ]
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 961.
+Package pdftex.def Info: UFJF.jpg used on input line 955.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [59
 
 ]
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 961.
+Package pdftex.def Info: UFJF.jpg used on input line 955.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [60
 
 ]
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 1018.
+Package pdftex.def Info: UFJF.jpg used on input line 1012.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [61
 
@@ -2981,65 +2960,65 @@ Package pdftex.def Info: UFJF.jpg used on input line 1018.
 File: UFJF.jpg Graphic file (type jpg)
 
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 1018.
+Package pdftex.def Info: UFJF.jpg used on input line 1012.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [62
 
 ]
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 1018.
+Package pdftex.def Info: UFJF.jpg used on input line 1012.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [63
 
 ]
-<seta_baixo.png, id=4512, 256.96pt x 256.96pt>
+<seta_baixo.png, id=4514, 256.96pt x 256.96pt>
 File: seta_baixo.png Graphic file (type png)
  <use seta_baixo.png>
-Package pdftex.def Info: seta_baixo.png used on input line 1050.
+Package pdftex.def Info: seta_baixo.png used on input line 1044.
 (pdftex.def)             Requested size: 56.90385pt x 56.90385pt.
 
-<agulha_palheiro.jpg, id=4513, 278.03876pt x 146.5475pt>
+<agulha_palheiro.jpg, id=4515, 278.03876pt x 146.5475pt>
 File: agulha_palheiro.jpg Graphic file (type jpg)
 
 <use agulha_palheiro.jpg>
-Package pdftex.def Info: agulha_palheiro.jpg used on input line 1050.
+Package pdftex.def Info: agulha_palheiro.jpg used on input line 1044.
 (pdftex.def)             Requested size: 71.13016pt x 71.13133pt.
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 1050.
+Package pdftex.def Info: UFJF.jpg used on input line 1044.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [64
 
- <./seta_baixo.png> <./agulha_palheiro.jpg>] <easyhard.jpg, id=4584, 640.3925pt
+ <./seta_baixo.png> <./agulha_palheiro.jpg>] <easyhard.jpg, id=4586, 640.3925pt
  x 480.79625pt>
 File: easyhard.jpg Graphic file (type jpg)
  <use easyhard.jpg>
-Package pdftex.def Info: easyhard.jpg used on input line 1050.
+Package pdftex.def Info: easyhard.jpg used on input line 1044.
 (pdftex.def)             Requested size: 128.03714pt x 99.58362pt.
 
-<interrogacao.jpg, id=4585, 1026.83624pt x 673.51625pt>
+<interrogacao.jpg, id=4587, 1026.83624pt x 673.51625pt>
 File: interrogacao.jpg Graphic file (type jpg)
  <use interrogacao.jpg>
-Package pdftex.def Info: interrogacao.jpg used on input line 1050.
+Package pdftex.def Info: interrogacao.jpg used on input line 1044.
 (pdftex.def)             Requested size: 99.57166pt x 56.90384pt.
 File: UFJF.jpg Graphic file (type jpg)
 
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 1050.
+Package pdftex.def Info: UFJF.jpg used on input line 1044.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [65
 
  <./easyhard.jpg> <./interrogacao.jpg>]
-<eggcrate.png, id=4653, 2198.2125pt x 1228.59pt>
+<eggcrate.png, id=4655, 2198.2125pt x 1228.59pt>
 File: eggcrate.png Graphic file (type png)
  <use eggcrate.png>
-Package pdftex.def Info: eggcrate.png used on input line 1057.
+Package pdftex.def Info: eggcrate.png used on input line 1051.
 (pdftex.def)             Requested size: 284.50307pt x 199.16547pt.
 File: UFJF.jpg Graphic file (type jpg)
 
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 1057.
+Package pdftex.def Info: UFJF.jpg used on input line 1051.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [66
 
@@ -3052,37 +3031,37 @@ LaTeX Font Info:    Try loading font information for TS1+pcr on input line 10.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ts1pcr.fd
 File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
 ))
-Overfull \vbox (7.66982pt too high) detected at line 1081
+Overfull \vbox (7.66982pt too high) detected at line 1075
  []
 
 File: UFJF.jpg Graphic file (type jpg)
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 1081.
+Package pdftex.def Info: UFJF.jpg used on input line 1075.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [67
 
-] <eggcrate_max.png, id=4790, 2209.25375pt x 1228.59pt>
+] <eggcrate_max.png, id=4792, 2209.25375pt x 1228.59pt>
 File: eggcrate_max.png Graphic file (type png)
 
 <use eggcrate_max.png>
-Package pdftex.def Info: eggcrate_max.png used on input line 1096.
+Package pdftex.def Info: eggcrate_max.png used on input line 1090.
 (pdftex.def)             Requested size: 284.51624pt x 199.16547pt.
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 1096.
+Package pdftex.def Info: UFJF.jpg used on input line 1090.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [68
 
  <./eggcrate_max.png>]
-<egg_crate_2d.png, id=4860, 740.7675pt x 594.22pt>
+<egg_crate_2d.png, id=4862, 740.7675pt x 594.22pt>
 File: egg_crate_2d.png Graphic file (type png)
  <use egg_crate_2d.png>
-Package pdftex.def Info: egg_crate_2d.png used on input line 1096.
+Package pdftex.def Info: egg_crate_2d.png used on input line 1090.
 (pdftex.def)             Requested size: 284.52382pt x 199.16693pt.
 File: UFJF.jpg Graphic file (type jpg)
 
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 1096.
+Package pdftex.def Info: UFJF.jpg used on input line 1090.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [69
 
@@ -3090,256 +3069,256 @@ Package pdftex.def Info: UFJF.jpg used on input line 1096.
 \openout4 = `Otimiz_AULA1.vrb'.
 
  (./Otimiz_AULA1.vrb)
-Overfull \vbox (7.66982pt too high) detected at line 1120
+Overfull \vbox (7.66982pt too high) detected at line 1114
  []
 
 File: UFJF.jpg Graphic file (type jpg)
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 1120.
+Package pdftex.def Info: UFJF.jpg used on input line 1114.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [70
 
 ]
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 1134.
+Package pdftex.def Info: UFJF.jpg used on input line 1128.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [71
 
 ]
-<ackley1.png, id=5062, 906.38625pt x 704.6325pt>
+<ackley1.png, id=5064, 906.38625pt x 704.6325pt>
 File: ackley1.png Graphic file (type png)
  <use ackley1.png>
-Package pdftex.def Info: ackley1.png used on input line 1158.
+Package pdftex.def Info: ackley1.png used on input line 1152.
 (pdftex.def)             Requested size: 284.5174pt x 199.16656pt.
 File: UFJF.jpg Graphic file (type jpg)
 
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 1158.
+Package pdftex.def Info: UFJF.jpg used on input line 1152.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [72
 
  <./ackley1.png>]
-<ackley2.png, id=5133, 662.475pt x 674.52pt>
+<ackley2.png, id=5135, 662.475pt x 674.52pt>
 File: ackley2.png Graphic file (type png)
  <use ackley2.png>
-Package pdftex.def Info: ackley2.png used on input line 1158.
+Package pdftex.def Info: ackley2.png used on input line 1152.
 (pdftex.def)             Requested size: 284.52512pt x 199.16693pt.
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 1158.
+Package pdftex.def Info: UFJF.jpg used on input line 1152.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
 
 [73
 
- <./ackley2.png>] <ackley3.png, id=5203, 692.5875pt x 609.27625pt>
+ <./ackley2.png>] <ackley3.png, id=5205, 692.5875pt x 609.27625pt>
 File: ackley3.png Graphic file (type png)
 
 <use ackley3.png>
-Package pdftex.def Info: ackley3.png used on input line 1158.
+Package pdftex.def Info: ackley3.png used on input line 1152.
 (pdftex.def)             Requested size: 284.53339pt x 199.16522pt.
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 1158.
+Package pdftex.def Info: UFJF.jpg used on input line 1152.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [74
 
  <./ackley3.png>]
-<ackley4.png, id=5272, 613.29124pt x 543.02875pt>
+<ackley4.png, id=5274, 613.29124pt x 543.02875pt>
 File: ackley4.png Graphic file (type png)
  <use ackley4.png>
-Package pdftex.def Info: ackley4.png used on input line 1158.
+Package pdftex.def Info: ackley4.png used on input line 1152.
 (pdftex.def)             Requested size: 284.52242pt x 199.16914pt.
 File: UFJF.jpg Graphic file (type jpg)
 
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 1158.
+Package pdftex.def Info: UFJF.jpg used on input line 1152.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [75
 
  <./ackley4.png>]
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 1178.
+Package pdftex.def Info: UFJF.jpg used on input line 1172.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [76
 
 ]
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 1227.
+Package pdftex.def Info: UFJF.jpg used on input line 1221.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [77
 
 ]
-<restricoes1.png, id=5478, 982.67125pt x 781.92125pt>
+<restricoes1.png, id=5480, 982.67125pt x 781.92125pt>
 File: restricoes1.png Graphic file (type png)
  <use restricoes1.png>
-Package pdftex.def Info: restricoes1.png used on input line 1227.
+Package pdftex.def Info: restricoes1.png used on input line 1221.
 (pdftex.def)             Requested size: 284.51753pt x 199.16655pt.
 File: UFJF.jpg Graphic file (type jpg)
 
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 1227.
+Package pdftex.def Info: UFJF.jpg used on input line 1221.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [78
 
  <./restricoes1.png>]
-<restricoes2.png, id=5548, 755.82375pt x 674.52pt>
+<restricoes2.png, id=5550, 755.82375pt x 674.52pt>
 File: restricoes2.png Graphic file (type png)
  <use restricoes2.png>
-Package pdftex.def Info: restricoes2.png used on input line 1227.
+Package pdftex.def Info: restricoes2.png used on input line 1221.
 (pdftex.def)             Requested size: 284.52884pt x 199.16693pt.
 File: UFJF.jpg Graphic file (type jpg)
 
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 1227.
+Package pdftex.def Info: UFJF.jpg used on input line 1221.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [79
 
  <./restricoes2.png>]
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 1227.
+Package pdftex.def Info: UFJF.jpg used on input line 1221.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [80
 
 ]
-<restricoes3.png, id=5686, 720.6925pt x 676.5275pt>
+<restricoes3.png, id=5688, 720.6925pt x 676.5275pt>
 File: restricoes3.png Graphic file (type png)
  <use restricoes3.png>
-Package pdftex.def Info: restricoes3.png used on input line 1227.
+Package pdftex.def Info: restricoes3.png used on input line 1221.
 (pdftex.def)             Requested size: 284.52196pt x 199.17128pt.
 File: UFJF.jpg Graphic file (type jpg)
 
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 1227.
+Package pdftex.def Info: UFJF.jpg used on input line 1221.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [81
 
  <./restricoes3.png>]
-<restricoes4.png, id=5755, 793.96625pt x 624.3325pt>
+<restricoes4.png, id=5757, 793.96625pt x 624.3325pt>
 File: restricoes4.png Graphic file (type png)
  <use restricoes4.png>
-Package pdftex.def Info: restricoes4.png used on input line 1227.
+Package pdftex.def Info: restricoes4.png used on input line 1221.
 (pdftex.def)             Requested size: 284.53133pt x 199.16173pt.
 File: UFJF.jpg Graphic file (type jpg)
 
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 1227.
+Package pdftex.def Info: UFJF.jpg used on input line 1221.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [82
 
  <./restricoes4.png>]
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 1287.
+Package pdftex.def Info: UFJF.jpg used on input line 1281.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [83
 
 ]
-<redstar.png, id=5892, 260.34615pt x 255.99252pt>
+<redstar.png, id=5894, 260.34615pt x 255.99252pt>
 File: redstar.png Graphic file (type png)
  <use redstar.png>
-Package pdftex.def Info: redstar.png used on input line 1287.
+Package pdftex.def Info: redstar.png used on input line 1281.
 (pdftex.def)             Requested size: 11.3774pt x 11.37854pt.
 File: redstar.png Graphic file (type png)
 
 <use redstar.png>
-Package pdftex.def Info: redstar.png used on input line 1287.
+Package pdftex.def Info: redstar.png used on input line 1281.
 (pdftex.def)             Requested size: 11.3774pt x 11.37854pt.
- <bluestar.png, id=5893, 442.56062pt x 443.30566pt>
+ <bluestar.png, id=5895, 442.56062pt x 443.30566pt>
 File: bluestar.png Graphic file (type png)
 
 <use bluestar.png>
-Package pdftex.def Info: bluestar.png used on input line 1287.
+Package pdftex.def Info: bluestar.png used on input line 1281.
 (pdftex.def)             Requested size: 11.37866pt x 11.37753pt.
 File: redstar.png Graphic file (type png)
  <use redstar.png>
-Package pdftex.def Info: redstar.png used on input line 1287.
+Package pdftex.def Info: redstar.png used on input line 1281.
 (pdftex.def)             Requested size: 11.3774pt x 11.37854pt.
 File: bluestar.png Graphic file (type png)
  <use bluestar.png>
-Package pdftex.def Info: bluestar.png used on input line 1287.
+Package pdftex.def Info: bluestar.png used on input line 1281.
 (pdftex.def)             Requested size: 11.37866pt x 11.37753pt.
 File: redstar.png Graphic file (type png)
  <use redstar.png>
-Package pdftex.def Info: redstar.png used on input line 1287.
+Package pdftex.def Info: redstar.png used on input line 1281.
 (pdftex.def)             Requested size: 11.3774pt x 11.37854pt.
 File: bluestar.png Graphic file (type png)
 
 <use bluestar.png>
-Package pdftex.def Info: bluestar.png used on input line 1287.
+Package pdftex.def Info: bluestar.png used on input line 1281.
 (pdftex.def)             Requested size: 11.37866pt x 11.37753pt.
 File: redstar.png Graphic file (type png)
  <use redstar.png>
-Package pdftex.def Info: redstar.png used on input line 1287.
+Package pdftex.def Info: redstar.png used on input line 1281.
 (pdftex.def)             Requested size: 11.3774pt x 11.37854pt.
 File: bluestar.png Graphic file (type png)
  <use bluestar.png>
-Package pdftex.def Info: bluestar.png used on input line 1287.
+Package pdftex.def Info: bluestar.png used on input line 1281.
 (pdftex.def)             Requested size: 11.37866pt x 11.37753pt.
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 1287.
+Package pdftex.def Info: UFJF.jpg used on input line 1281.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [84
 
  <./redstar.png> <./bluestar.png>]
-<exemplo.png, id=5963, 1640.1275pt x 633.36626pt>
+<exemplo.png, id=5965, 1640.1275pt x 633.36626pt>
 File: exemplo.png Graphic file (type png)
  <use exemplo.png>
-Package pdftex.def Info: exemplo.png used on input line 1309.
+Package pdftex.def Info: exemplo.png used on input line 1303.
 (pdftex.def)             Requested size: 312.97888pt x 156.48561pt.
 
-Overfull \hbox (5.68901pt too wide) in paragraph at lines 1309--1309
+Overfull \hbox (5.68901pt too wide) in paragraph at lines 1303--1303
 [][]  
  []
 
 File: UFJF.jpg Graphic file (type jpg)
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 1309.
+Package pdftex.def Info: UFJF.jpg used on input line 1303.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [85
 
  <./exemplo.png>]
 File: exemplo.png Graphic file (type png)
  <use exemplo.png>
-Package pdftex.def Info: exemplo.png used on input line 1309.
+Package pdftex.def Info: exemplo.png used on input line 1303.
 (pdftex.def)             Requested size: 312.97888pt x 156.48561pt.
 
-Overfull \hbox (5.68901pt too wide) in paragraph at lines 1309--1309
+Overfull \hbox (5.68901pt too wide) in paragraph at lines 1303--1303
 [][]  
  []
 
-<horror.jpg, id=6033, 243.91125pt x 207.77625pt>
+<horror.jpg, id=6035, 243.91125pt x 207.77625pt>
 File: horror.jpg Graphic file (type jpg)
  <use horror.jpg>
-Package pdftex.def Info: horror.jpg used on input line 1309.
+Package pdftex.def Info: horror.jpg used on input line 1303.
 (pdftex.def)             Requested size: 42.67766pt x 42.67683pt.
 
-Overfull \vbox (5.9569pt too high) detected at line 1309
+Overfull \vbox (5.9569pt too high) detected at line 1303
  []
 
 
-Overfull \hbox (6.15837pt too wide) in paragraph at lines 1309--1309
+Overfull \hbox (6.15837pt too wide) in paragraph at lines 1303--1303
  [] 
  []
 
 
-Overfull \vbox (2.04314pt too high) detected at line 1309
+Overfull \vbox (2.04314pt too high) detected at line 1303
  []
 
 File: UFJF.jpg Graphic file (type jpg)
 <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 1309.
+Package pdftex.def Info: UFJF.jpg used on input line 1303.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
  [86
 
  <./horror.jpg>]
 File: UFJF.jpg Graphic file (type jpg)
  <use UFJF.jpg>
-Package pdftex.def Info: UFJF.jpg used on input line 1313.
+Package pdftex.def Info: UFJF.jpg used on input line 1307.
 (pdftex.def)             Requested size: 17.0637pt x 12.33119pt.
 Package atenddvi Info: Last page = 87.
  [87
@@ -3354,11 +3333,11 @@ Package atenddvi Info: Last page = 87.
 \tf@snm=\write9
 \openout9 = `Otimiz_AULA1.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1317.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 1317.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1311.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 1311.
  (./Otimiz_AULA1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1317.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1317.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1311.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1311.
 
 Package rerunfilecheck Info: File `Otimiz_AULA1.out' has not changed.
 (rerunfilecheck)             Checksum: 30D71EA8F13321DCCCA1ACD7BD03F6ED;467.
@@ -3367,14 +3346,14 @@ Package rerunfilecheck Info: File `Otimiz_AULA1.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1317.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1311.
  ) 
 Here is how much of TeX's memory you used:
- 36612 strings out of 493089
- 746879 string characters out of 6134841
- 958034 words of memory out of 5000000
- 39115 multiletter control sequences out of 15000+600000
- 21805 words of font info for 61 fonts, out of 8000000 for 9000
+ 36594 strings out of 493089
+ 746481 string characters out of 6134841
+ 958065 words of memory out of 5000000
+ 39097 multiletter control sequences out of 15000+600000
+ 22619 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,20n,79p,10409b,1666s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
@@ -3388,21 +3367,22 @@ ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive
 15/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/201
 5/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/t
-exmf-dist/fonts/type1/public/cm-super/sfss0600.pfb></usr/local/texlive/2015/tex
-mf-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/local/texlive/2015/texmf
--dist/fonts/type1/public/cm-super/sfss0900.pfb></usr/local/texlive/2015/texmf-d
-ist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2015/texmf-dis
-t/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2015/texmf-dist/
-fonts/type1/public/cm-super/sfss1440.pfb></usr/local/texlive/2015/texmf-dist/fo
-nts/type1/public/cm-super/sfss2488.pfb></usr/local/texlive/2015/texmf-dist/font
-s/type1/public/cm-super/sfsx0800.pfb></usr/local/texlive/2015/texmf-dist/fonts/
-type1/public/cm-super/sfsx1095.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
-pe1/public/cm-super/sftt1095.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
-1/urw/courier/ucrr8a.pfb>
-Output written on Otimiz_AULA1.pdf (87 pages, 7858956 bytes).
+exmf-dist/fonts/type1/public/cm-super/sfsi0800.pfb></usr/local/texlive/2015/tex
+mf-dist/fonts/type1/public/cm-super/sfss0600.pfb></usr/local/texlive/2015/texmf
+-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/local/texlive/2015/texmf-d
+ist/fonts/type1/public/cm-super/sfss0900.pfb></usr/local/texlive/2015/texmf-dis
+t/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2015/texmf-dist/
+fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2015/texmf-dist/fo
+nts/type1/public/cm-super/sfss1440.pfb></usr/local/texlive/2015/texmf-dist/font
+s/type1/public/cm-super/sfss2488.pfb></usr/local/texlive/2015/texmf-dist/fonts/
+type1/public/cm-super/sfsx0800.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
+pe1/public/cm-super/sfsx1095.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
+1/public/cm-super/sftt1095.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
+urw/courier/ucrr8a.pfb>
+Output written on Otimiz_AULA1.pdf (87 pages, 7828897 bytes).
 PDF statistics:
- 6278 PDF objects out of 7423 (max. 8388607)
- 5930 compressed objects within 60 object streams
+ 6283 PDF objects out of 7423 (max. 8388607)
+ 5935 compressed objects within 60 object streams
  182 named destinations out of 1000 (max. 500000)
- 582 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 577 words of extra memory for PDF output out of 10000 (max. 10000000)
 
