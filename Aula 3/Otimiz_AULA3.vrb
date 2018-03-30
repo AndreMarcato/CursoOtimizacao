@@ -1,0 +1,37 @@
+\frametitle{Exemplo Minimização - Matlab}
+	\centering
+	\begin{columns}
+		\begin{column}{0.3\textwidth}
+			\begin{block}{Problema de PL:}
+				\begin{equation*}
+					\begin{matrix}
+						\scriptstyle \min Z = x_1 + x_2 - 4x_3 \\
+						\scriptstyle \text{Sujeito à:} \\
+						\scriptstyle x_1 + x_2 + 2x_3 \le 9 \\
+						\scriptstyle x_2 + x_2 - x_3 \le 2 \\
+						\scriptstyle -x_1 + x_2 + x_3 \le 4 \\
+						\scriptstyle x_1, x_2, x_3 \ge 0 \\
+					\end{matrix}
+				\end{equation*}
+			\end{block}
+			\includegraphics[width=2cm,height=2cm]{solver_matlab.png}
+		\end{column}
+		\begin{column}{0.7\textwidth}
+			\begin{exampleblock}{Programa em Matlab}
+				\begin{lstlisting}[basicstyle=\tiny]
+clear all; close all; clc;
+F = [ 1 1 -4];
+A = [1 1 2; 1 1 -1; -1 1 1];
+B = [9 ; 2 ; 4];
+Aeq = [];
+Beq = [];
+LB = [0     0   0];
+UB = [inf inf inf];
+[x, fval, exitflag] = linprog(F,A,B,Aeq,Beq,LB,UB);
+				\end{lstlisting}
+			\end{exampleblock}
+			\includegraphics[width=3cm,height=2cm]{resp_minimizacao.png}
+		\end{column}
+
+
+	\end{columns}
