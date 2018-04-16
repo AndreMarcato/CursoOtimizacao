@@ -1,0 +1,1727 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+% Interessante: 
+%https://www.codecogs.com/latex/eqneditor.php?lang=pt-br
+
+\documentclass{beamer}
+
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{colortbl}
+\usepackage{mathrsfs}
+\usepackage{smartdiagram}
+\usepackage{listings}
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{mdframed}
+\usepackage{listings}
+\usepackage{amsmath}
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+\usepackage{cancel}
+
+\mode<presentation> {
+
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+%\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+
+\usepackage{animate}
+\usepackage{hyperref}
+\usepackage{media9}
+\usepackage{listings}
+\usepackage{amsmath}
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+\usepackage{chronology}
+\usepackage{xpatch}
+\xpretocmd{\chronology}{\tikzset{>=|}}{}{\failure}
+\usepackage{mdframed}
+\usepackage{tikz}
+\usepackage{makecell}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{shapes,arrows}
+\usepackage{array}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\logo
+{
+    \includegraphics[width=0.6cm,height=0.6cm,keepaspectratio]{UFJF.jpg}~%
+}
+
+\title[Aula 4]{Os Métodos Big M e Duas Fases} 
+
+\author{\scriptsize Professores André L.M. Marcato, Ivo C.da Silva Jr, João A.Passos Filho } % Your name
+\institute[UFJF/PPEE]{Universidade Federal de Juiz de Fora \\
+	Programa de Pós-Graduação em Engenharia Elétrica \\
+	\medskip
+	\textit{\href{mailto:andre.marcato@ufjf.edu.br}{andre.marcato@ufjf.edu.br}, \href{mailto:ivo.chaves@ufjf.edu.br}{ivo.junior@ufjf.edu.br}, \href{mailto:joao.passos@ufjf.edu.br}{joao.passos@ufjf.edu.br}}
+}
+
+%\date{\small \today} % Date, can be changed to a custom date
+\date{\small Primeiro Semestre de 2018} % Date, can be changed to a custom date
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=gray,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+\begin{document}
+
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=2.6cm, height=1.7cm]{cover.jpg}
+%\caption{Ogata - 5a Edicao - Fig. 1.1}
+\label{Ogata_1_1}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Agenda da Apresentação} % Table of contents slide, comment this block out to remove it
+\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+\include{Otimiz_AULA4_A}
+
+\section{Matlab}
+\subsection{Resolução do Exemplo}
+\begin{frame}
+	\frametitle{Matlab - Problema Original}
+	\begin{columns}
+		\begin{column}{5cm}
+			\begin{block}{Resolver o seguinte PPL}
+				\centering
+				$
+					\begin{matrix}
+						\max 2x_1+3x_2 \\
+						\text{Sujeito a} \\
+						-2x_1+3x_2 \le 6 \\
+						x_1 + 2x_2 \ge 8 \\
+						x_1 + x_2 = 6 \\
+						x_1, x_2 \ge 0 \\
+					\end{matrix}
+				$
+			\end{block}
+		\end{column}
+		\only<1>
+		{
+		\begin{column}{5cm}
+			\centering
+			\includegraphics[width=4cm,height=4cm]{solver_matlab.png}
+		\end{column}
+		}
+	\end{columns}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Matlab - Problema Original}
+	\begin{columns}
+		\begin{column}{5cm}
+			\begin{block}{Resolver o seguinte PPL}
+				\centering
+				$
+					\begin{matrix}
+						\max 2x_1+3x_2 \\
+						\text{Sujeito a} \\
+						-2x_1+3x_2 \le 6 \\
+						x_1 + 2x_2 \ge 8 \\
+						x_1 + x_2 = 6 \\
+						x_1, x_2 \ge 0 \\
+					\end{matrix}
+				$
+			\end{block}
+		\end{column}
+		\begin{column}{5cm}
+			\begin{block}{Programa em Matlab}
+				\begin{lstlisting}[basicstyle=\tiny]  
+clear all; close all; clc;
+c = -[2 3];
+A = [ -2 3 ; -1 -2 ];
+B = [ 6 ; -8 ];
+Aeq = [ 1 1 ];
+Beq = [ 6 ];
+[x, fval, exitflag] = linprog(c,A,B,Aeq,Beq);
+				\end{lstlisting}			
+			\end{block}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Matlab - Problema Original}
+	\begin{columns}
+		\begin{column}{5cm}
+			\begin{block}{Resolver o seguinte PPL}
+				\centering
+				$
+					\begin{matrix}
+						\max 2x_1+3x_2 \\
+						\text{Sujeito a} \\
+						-2x_1+3x_2 \le 6 \\
+						x_1 + 2x_2 \ge 8 \\
+						x_1 + x_2 = 6 \\
+						x_1, x_2 \ge 0 \\
+					\end{matrix}
+				$
+			\end{block}
+		\end{column}
+		\begin{column}{5cm}
+			\begin{block}{Programa em Matlab}
+				\only<1>
+				{
+					\includegraphics[width=4cm,height=6cm]{BigM_Matlab_1.png}
+				}
+				\only<2>
+				{
+					\includegraphics[width=4cm,height=6cm]{BigM_Matlab_2.png}
+				}
+			\end{block}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Problema Modificado para BigM}
+		\begin{alertblock}{\centering Inserção das Variáveis Artificiais e das Penalidades}
+			\centering
+			$
+				\begin{matrix}
+					\max Z = 2x_1+3x_2  &                                       &                   & \cellcolor{green!70}{\color{red}-Mx_5} & \cellcolor{green!70}{\color{red}- Mx_6}  & =0 \\
+					\text{Sujeito a} \\
+					-2x_1+3x_2          & \cellcolor{green!70}{\color{red}+x_3} &                   &                                        &                                          & =6 \\
+					x_1 + 2x_2          &                                       & {\color{red}-x_4} & \cellcolor{green!70}{\color{red}+x_5}  &                                          & =8 \\
+					x_1 + x_2           &                                       &                   &                                        & \cellcolor{green!70}{\color{red}+x_6}    & =6 \\
+					x_1, x_2{\color{red},x_3,x_4,x_5,x_6} \ge 0 \\
+				\end{matrix}
+			$
+		\end{alertblock}
+		\centering
+		\includegraphics[width=3cm,height=3cm]{solver_matlab.png}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Problema Modificado para BigM}
+		\begin{alertblock}{\centering Inserção das Variáveis Artificiais e das Penalidades}
+			\centering
+			$
+				\begin{matrix}
+					\max Z = 2x_1+3x_2  &                                       &                   & \cellcolor{green!70}{\color{red}-Mx_5} & \cellcolor{green!70}{\color{red}- Mx_6}  & =0 \\
+					\text{Sujeito a} \\
+					-2x_1+3x_2          & \cellcolor{green!70}{\color{red}+x_3} &                   &                                        &                                          & =6 \\
+					x_1 + 2x_2          &                                       & {\color{red}-x_4} & \cellcolor{green!70}{\color{red}+x_5}  &                                          & =8 \\
+					x_1 + x_2           &                                       &                   &                                        & \cellcolor{green!70}{\color{red}+x_6}    & =6 \\
+					x_1, x_2{\color{red},x_3,x_4,x_5,x_6} \ge 0 \\
+				\end{matrix}
+			$
+		\end{alertblock}
+			\begin{block}{Programa em Matlab}
+				\begin{lstlisting}[basicstyle=\tiny]  
+clear all; close all; clc;
+M = 60;
+c = -[2 3 0 0 -M -M];
+A = []; B=[];
+Aeq = [ -2 3  1 0 0 0; 1 2 0 -1 1 0; 1 1 0 0 0 1];
+Beq = [ 6;8;6 ];
+lb = [  0   0   0   0   0   0];
+ub = [inf inf inf inf inf inf];
+[x, fval, exitflag] = linprog(c,A,B,Aeq,Beq, lb, ub);
+				\end{lstlisting}			
+			\end{block}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Problema Modificado para BigM}
+
+		\centering
+		\only<1>
+		{
+			\includegraphics[width=5cm,height=7cm]{BigM_Matlab_3.png}
+		}
+		\only<2>
+		{
+			\includegraphics[width=5cm,height=7cm]{BigM_Matlab_4.png}
+		}
+\end{frame}
+
+
+\section{Métodos das Duas Fases}
+\subsection{Resolução do Exemplo}
+
+\begin{frame}
+	\centering
+	\includegraphics[width=10cm,height=3cm]{Pergunta_Final.png}
+	\begin{columns}
+		\begin{column}{0.33\textwidth}
+			\begin{mdframed}[backgroundcolor=green!80]
+				\centering
+				Método das Penalidades (BIG-M)
+			\end{mdframed}	
+		\end{column}
+		\begin{column}{0.33\textwidth}
+			\centering
+			\includegraphics[width=4cm,height=4cm]{twoways.jpg}
+		\end{column}
+		\hspace{0.2cm}
+		\begin{column}{0.33\textwidth}
+			\only<1>
+			{
+				\begin{mdframed}[backgroundcolor=green!80]
+					\centering
+					Método das Duas Fases
+				\end{mdframed}		
+			}
+			\only<2>
+			{
+				\begin{mdframed}[backgroundcolor=red!80]
+					\centering
+					Método das Duas Fases
+				\end{mdframed}		
+			}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Exemplo - Método de Duas Fases}
+	\only<1>
+	{
+		\begin{alertblock}{\centering Inserção das Variáveis Artificiais em uma Nova FOB de Minimização}
+			$ \min W = x_5 + x_6 $ \\
+			$ \max Z = 2 x_1 + 3 x_2  $ \\
+			{\textbf{Sujeito à}}: \\
+			$
+				\begin{matrix}
+					-2x_1+3x_2+   & {\color{red}x_3} &                  &  					& = 6 \\
+					x_1+2x_2-x_4  &				     & \color{red}+x_5  &  					& = 8 \\
+					x_1+x_2		  &			         &				   & \color{red}+x_6 	& = 6 \\
+					x_1, x_2, x_3,x_4,x_5,x_6 \ge 0  \\
+				\end{matrix}
+			$
+		\end{alertblock}	
+	}
+	\only<2>
+	{
+		\begin{alertblock}{\centering Inserção das Variáveis Artificiais em uma Nova FOB de Minimização}
+			$ \color{cyan} \min W -x_5 - x_6 = 0 $\\
+			$ \color{cyan} \max Z -2x_1 -3x_2 = 0 $ \\
+			{\textbf{Sujeito à}}: \\
+			$
+				\begin{matrix}
+					-2x_1+3x_2+   & {\color{red}x_3} &                  &  					& = 6 \\
+					x_1+2x_2-x_4  &				     & \color{red}+x_5  &  					& = 8 \\
+					x_1+x_2		  &			         &				   & \color{red}+x_6 	& = 6 \\
+					x_1, x_2, x_3,x_4,x_5,x_6 \ge 0  \\
+				\end{matrix}
+			$
+		\end{alertblock}	
+	}
+	\only<3>
+	{
+		\begin{alertblock}{\centering Inserção das Variáveis Artificiais em uma Nova FOB de Minimização}
+			$ \color{cyan} \min W +2x_1 +3x_2-x_4-14=0 $ {\color{olive} \textbf{(Fase 1)}} \\
+			$ \color{cyan} \max Z -2x_1 -3x_2 = 0 $ {\color{olive} \textbf{(Fase 2)}} \\
+			{\textbf{Sujeito à}}: \\
+			$
+				\begin{matrix}
+					-2x_1+3x_2+   & {\color{red}x_3} &                  &  					& = 6 \\
+					x_1+2x_2-x_4  &				     & \color{red}+x_5  &  					& = 8 \\
+					x_1+x_2		  &			         &				   & \color{red}+x_6 	& = 6 \\
+					x_1, x_2, x_3,x_4,x_5,x_6 \ge 0  \\
+				\end{matrix}
+			$
+		\end{alertblock}	
+	}
+\end{frame}
+
+\begin{frame}
+
+	\only<1-4>
+	{
+		\frametitle{Método das Duas Fases - Tableau - \color{pink}Fase 1 - \color{green}Iter. 1}
+	}
+	\only<5-8>
+	{
+		\frametitle{Método das Duas Fases - Tableau - \color{pink}Fase 1 - \color{green}Iter. 2}
+	}
+	\only<9-12>
+	{
+		\frametitle{Método das Duas Fases - Tableau - \color{pink}Fase 1 - \color{green}Iter. 3}
+	}
+	\only<13-14>
+	{
+		\frametitle{Método das Duas Fases - Tableau - \color{pink}Fase 1 - \color{green}Iter. 4}
+	}
+	\only<15->
+	{
+		\frametitle{Método das Duas Fases - Tableau - \color{pink}Fase 2 - \color{green}Iter. 1}
+	}
+	
+	
+	\only<1>
+	{
+		\begin{table}		
+			\begin{tabular}{c c c c c c c c c c c c}
+				\cline{1-8} 
+				\cellcolor{blue!100} \color{white} \scriptsize Base 
+				&\cellcolor{blue!100} \color{white} \scriptsize Z/W
+				&\cellcolor{blue!100} \color{white} $\scriptstyle X_1$ 
+				&\cellcolor{blue!100} \color{white} $\scriptstyle X_2$ 
+				&\cellcolor{blue!100} \color{red}   $\scriptstyle X_3$ 
+				&\cellcolor{blue!100} \color{white} $\scriptstyle X_4$ 
+				&\cellcolor{blue!100} \color{red}   $\scriptstyle X_5$ 
+				&\cellcolor{blue!100} \color{red}   $\scriptstyle X_6$ 
+				&\cellcolor{blue!100} \color{white} \scriptsize b
+				&
+				&
+				& \\
+				\cellcolor{blue!100} \color{red} $\scriptstyle X_3$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle -2$
+				& \cellcolor{yellow!50} $\scriptstyle +3$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +6$ \\
+			    \cellcolor{blue!100} \color{red} $\scriptstyle X_5$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle +2$
+				& \cellcolor{yellow!50} $\scriptstyle 0$			
+				& \cellcolor{yellow!50} $\scriptstyle -1$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle 0$ 
+				& \cellcolor{yellow!50} $\scriptstyle +8$ \\
+				\cellcolor{blue!100} \color{red} $\scriptstyle X_6$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle +6$ \\
+				\cellcolor{blue!100} \color{white} $\scriptstyle Z$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle -2$
+				& \cellcolor{yellow!50} $\scriptstyle -3$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$ 
+				& \cellcolor{yellow!50} $\scriptstyle 0$  \\
+				\cellcolor{blue!100} \color{white} $\scriptstyle W$
+				& \cellcolor{yellow!90} $\scriptstyle +1$
+				& \cellcolor{yellow!90} $\scriptstyle +2$
+				& \cellcolor{yellow!90} $\scriptstyle +3$
+				& \cellcolor{yellow!90} $\scriptstyle 0$
+				& \cellcolor{yellow!90} $\scriptstyle -1$
+				& \cellcolor{yellow!90} $\scriptstyle 0$
+				& \cellcolor{yellow!90} $\scriptstyle 0$ 
+				& \cellcolor{yellow!90} $\scriptstyle +14$  \\
+			\end{tabular}
+		\end{table}			
+	}
+	\only<2>
+	{
+		\begin{table}		
+			\begin{tabular}{c c c c c c c c c c c c}
+				\cline{1-8} 
+				\cellcolor{blue!100} \color{white} \scriptsize Base 
+				&\cellcolor{blue!100} \color{white} \scriptsize Z/W
+				&\cellcolor{blue!100} \color{white} $\scriptstyle X_1$ 
+				&\cellcolor{blue!100} \color{white} $\scriptstyle X_2$ 
+				&\cellcolor{blue!100} \color{red}   $\scriptstyle X_3$ 
+				&\cellcolor{blue!100} \color{white} $\scriptstyle X_4$ 
+				&\cellcolor{blue!100} \color{red}   $\scriptstyle X_5$ 
+				&\cellcolor{blue!100} \color{red}   $\scriptstyle X_6$ 
+				&\cellcolor{blue!100} \color{white} \scriptsize b
+				&
+				&
+				& \\
+				\cellcolor{blue!100} \color{red} $\scriptstyle X_3$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle -2$
+				& \cellcolor{gray!50} $\scriptstyle +3$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +6$ \\
+			    \cellcolor{blue!100} \color{red} $\scriptstyle X_5$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{gray!50} $\scriptstyle +2$
+				& \cellcolor{yellow!50} $\scriptstyle 0$			
+				& \cellcolor{yellow!50} $\scriptstyle -1$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle 0$ 
+				& \cellcolor{yellow!50} $\scriptstyle +8$ \\
+				\cellcolor{blue!100} \color{red} $\scriptstyle X_6$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{gray!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle +6$ \\
+				\cellcolor{blue!100} \color{white} $\scriptstyle Z$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle -2$
+				& \cellcolor{gray!50} $\scriptstyle -3$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$ 
+				& \cellcolor{yellow!50} $\scriptstyle 0$  \\
+				\cellcolor{blue!100} \color{white} $\scriptstyle W$
+				& \cellcolor{yellow!90} $\scriptstyle +1$
+				& \cellcolor{yellow!90} $\scriptstyle +2$
+				& \cellcolor{gray!50} $\scriptstyle +3$
+				& \cellcolor{yellow!90} $\scriptstyle 0$
+				& \cellcolor{yellow!90} $\scriptstyle -1$
+				& \cellcolor{yellow!90} $\scriptstyle 0$
+				& \cellcolor{yellow!90} $\scriptstyle 0$ 
+				& \cellcolor{yellow!90} $\scriptstyle +14$  \\
+				& & &  \includegraphics[width=0.3cm,height=0.3cm]{setacima.jpg} \\
+				& & &  \scriptsize Entra \\
+			\end{tabular}
+		\end{table}			
+	}
+	\only<3>
+	{
+		\begin{table}		
+			\begin{tabular}{c c c c c c c c c c c c}
+				\cline{1-8} 
+				\cellcolor{blue!100} \color{white} \scriptsize Base 
+				&\cellcolor{blue!100} \color{white} \scriptsize Z/W
+				&\cellcolor{blue!100} \color{white} $\scriptstyle X_1$ 
+				&\cellcolor{blue!100} \color{white} $\scriptstyle X_2$ 
+				&\cellcolor{blue!100} \color{red}   $\scriptstyle X_3$ 
+				&\cellcolor{blue!100} \color{white} $\scriptstyle X_4$ 
+				&\cellcolor{blue!100} \color{red}   $\scriptstyle X_5$ 
+				&\cellcolor{blue!100} \color{red}   $\scriptstyle X_6$ 
+				&\cellcolor{blue!100} \color{white} \scriptsize b \\
+				\cellcolor{blue!100} \color{red} $\scriptstyle X_3$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle -2$
+				& \cellcolor{gray!50} $\scriptstyle +3$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{gray!50} $\scriptstyle +6$ 
+				& $ \scriptstyle \frac{6}{3} = 2$
+				& \includegraphics[width=0.3cm,height=0.3cm]{setaesquerda.jpg} \\
+			    \cellcolor{blue!100} \color{red} $\scriptstyle X_5$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{gray!50} $\scriptstyle +2$
+				& \cellcolor{yellow!50} $\scriptstyle 0$			
+				& \cellcolor{yellow!50} $\scriptstyle -1$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle 0$ 
+				& \cellcolor{gray!50} $\scriptstyle +8$ 
+				& $ \scriptstyle \frac{8}{2} = 4$ 
+				& \includegraphics[width=0.3cm,height=0.3cm]{setaesquerda.jpg}\\
+				\cellcolor{blue!100} \color{red} $\scriptstyle X_6$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{gray!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{gray!50} $\scriptstyle +6$
+				& $ \scriptstyle \frac{6}{1} = 6$ 
+				& \includegraphics[width=0.3cm,height=0.3cm]{setaesquerda.jpg}\\
+				\cellcolor{blue!100} \color{white} $\scriptstyle Z$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle -2$
+				& \cellcolor{gray!50} $\scriptstyle -3$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$ 
+				& \cellcolor{gray!50} $\scriptstyle 0$  \\
+				\cellcolor{blue!100} \color{white} $\scriptstyle W$
+				& \cellcolor{yellow!90} $\scriptstyle +1$
+				& \cellcolor{yellow!90} $\scriptstyle +2$
+				& \cellcolor{gray!50} $\scriptstyle +3$
+				& \cellcolor{yellow!90} $\scriptstyle 0$
+				& \cellcolor{yellow!90} $\scriptstyle -1$
+				& \cellcolor{yellow!90} $\scriptstyle 0$
+				& \cellcolor{yellow!90} $\scriptstyle 0$ 
+				& \cellcolor{gray!50} $\scriptstyle +14$  \\
+				& & &  \includegraphics[width=0.3cm,height=0.3cm]{setacima.jpg} \\
+				& & &  \scriptsize Entra \\
+			\end{tabular}
+		\end{table}			
+	}
+	\only<4>
+	{
+		\begin{table}		
+			\begin{tabular}{c c c c c c c c c c c c}
+				\cline{1-8} 
+				\cellcolor{blue!100} \color{white} \scriptsize Base 
+				&\cellcolor{blue!100} \color{white} \scriptsize Z/W
+				&\cellcolor{blue!100} \color{white} $\scriptstyle X_1$ 
+				&\cellcolor{blue!100} \color{white} $\scriptstyle X_2$ 
+				&\cellcolor{blue!100} \color{red}   $\scriptstyle X_3$ 
+				&\cellcolor{blue!100} \color{white} $\scriptstyle X_4$ 
+				&\cellcolor{blue!100} \color{red}   $\scriptstyle X_5$ 
+				&\cellcolor{blue!100} \color{red}   $\scriptstyle X_6$ 
+				&\cellcolor{blue!100} \color{white} \scriptsize b \\
+				\cellcolor{blue!100} \color{red} $\scriptstyle X_3$
+				& \cellcolor{gray!50} $\scriptstyle 0$
+				& \cellcolor{gray!50} $\scriptstyle -2$
+				& \cellcolor{red!50} $\scriptstyle +3$
+				& \cellcolor{gray!50} $\scriptstyle +1$
+				& \cellcolor{gray!50} $\scriptstyle 0$
+				& \cellcolor{gray!50} $\scriptstyle 0$
+				& \cellcolor{gray!50} $\scriptstyle 0$
+				& \cellcolor{gray!50} $\scriptstyle +6$ 
+				& $ \scriptstyle \frac{6}{3} = 2$
+				& \includegraphics[width=0.3cm,height=0.3cm]{setaesquerda.jpg} \scriptsize Sai \\
+			    \cellcolor{blue!100} \color{red} $\scriptstyle X_5$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{gray!50} $\scriptstyle +2$
+				& \cellcolor{yellow!50} $\scriptstyle 0$			
+				& \cellcolor{yellow!50} $\scriptstyle -1$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle 0$ 
+				& \cellcolor{gray!50} $\scriptstyle +8$ 
+				& $ \scriptstyle \frac{8}{2} = 4$ \\
+				\cellcolor{blue!100} \color{red} $\scriptstyle X_6$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{gray!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{gray!50} $\scriptstyle +6$
+				& $ \scriptstyle \frac{6}{1} = 6$ \\
+				\cellcolor{blue!100} \color{white} $\scriptstyle Z$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle -2$
+				& \cellcolor{gray!50} $\scriptstyle -3$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$ 
+				& \cellcolor{gray!50} $\scriptstyle 0$  \\
+				\cellcolor{blue!100} \color{white} $\scriptstyle W$
+				& \cellcolor{yellow!90} $\scriptstyle +1$
+				& \cellcolor{yellow!90} $\scriptstyle +2$
+				& \cellcolor{gray!50} $\scriptstyle +3$
+				& \cellcolor{yellow!90} $\scriptstyle 0$
+				& \cellcolor{yellow!90} $\scriptstyle -1$
+				& \cellcolor{yellow!90} $\scriptstyle 0$
+				& \cellcolor{yellow!90} $\scriptstyle 0$ 
+				& \cellcolor{gray!50} $\scriptstyle +14$  \\
+				& & &  \includegraphics[width=0.3cm,height=0.3cm]{setacima.jpg} \\
+				& & &  \scriptsize Entra \\
+			\end{tabular}
+		\end{table}			
+	}
+	\only<5>
+	{
+		\begin{table}		
+			\begin{tabular}{c c c c c c c c c c c c}
+				\cline{1-8} 
+				\cellcolor{blue!100} \color{white} \scriptsize Base 
+				&\cellcolor{blue!100} \color{white} \scriptsize Z/W
+				&\cellcolor{blue!100} \color{white} $\scriptstyle X_1$ 
+				&\cellcolor{blue!100} \color{red} $\scriptstyle X_2$ 
+				&\cellcolor{blue!100} \color{white}   $\scriptstyle X_3$ 
+				&\cellcolor{blue!100} \color{white} $\scriptstyle X_4$ 
+				&\cellcolor{blue!100} \color{red}   $\scriptstyle X_5$ 
+				&\cellcolor{blue!100} \color{red}   $\scriptstyle X_6$ 
+				&\cellcolor{blue!100} \color{white} \scriptsize b
+				&
+				&
+				& \\
+				\cellcolor{blue!100} \color{red} $\scriptstyle X_2$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle -\frac{2}{3}$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{1}{3}$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +2$ \\
+			    \cellcolor{blue!100} \color{red} $\scriptstyle X_5$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{7}{3}$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle -\frac{2}{3}$			
+				& \cellcolor{yellow!50} $\scriptstyle -1$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle 0$ 
+				& \cellcolor{yellow!50} $\scriptstyle +4$ \\
+				\cellcolor{blue!100} \color{red} $\scriptstyle X_6$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{5}{3}$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle -\frac{1}{3}$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle +4$ \\
+				\cellcolor{blue!100} \color{white} $\scriptstyle Z$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle -4$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$ 
+				& \cellcolor{yellow!50} $\scriptstyle 6$  \\
+				\cellcolor{blue!100} \color{white} $\scriptstyle W$
+				& \cellcolor{yellow!90} $\scriptstyle +1$
+				& \cellcolor{yellow!90} $\scriptstyle +4$
+				& \cellcolor{yellow!90} $\scriptstyle 0$
+				& \cellcolor{yellow!90} $\scriptstyle -1$
+				& \cellcolor{yellow!90} $\scriptstyle -1$
+				& \cellcolor{yellow!90} $\scriptstyle 0$
+				& \cellcolor{yellow!90} $\scriptstyle 0$ 
+				& \cellcolor{yellow!90} $\scriptstyle +8$  \\
+			\end{tabular}
+		\end{table}			
+	}
+	\only<6>
+	{
+		\begin{table}		
+			\begin{tabular}{c c c c c c c c c c c c}
+				\cline{1-8} 
+				\cellcolor{blue!100} \color{white} \scriptsize Base 
+				&\cellcolor{blue!100} \color{white} \scriptsize Z/W
+				&\cellcolor{blue!100} \color{white} $\scriptstyle X_1$ 
+				&\cellcolor{blue!100} \color{red} $\scriptstyle X_2$ 
+				&\cellcolor{blue!100} \color{white}   $\scriptstyle X_3$ 
+				&\cellcolor{blue!100} \color{white} $\scriptstyle X_4$ 
+				&\cellcolor{blue!100} \color{red}   $\scriptstyle X_5$ 
+				&\cellcolor{blue!100} \color{red}   $\scriptstyle X_6$ 
+				&\cellcolor{blue!100} \color{white} \scriptsize b
+				&
+				&
+				& \\
+				\cellcolor{blue!100} \color{red} $\scriptstyle X_2$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{gray!50} $\scriptstyle -\frac{2}{3}$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{1}{3}$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +2$ \\
+			    \cellcolor{blue!100} \color{red} $\scriptstyle X_5$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{gray!50} $\scriptstyle +\frac{7}{3}$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle -\frac{2}{3}$			
+				& \cellcolor{yellow!50} $\scriptstyle -1$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle 0$ 
+				& \cellcolor{yellow!50} $\scriptstyle +4$ \\
+				\cellcolor{blue!100} \color{red} $\scriptstyle X_6$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{gray!50} $\scriptstyle +\frac{5}{3}$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle -\frac{1}{3}$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle +4$ \\
+				\cellcolor{blue!100} \color{white} $\scriptstyle Z$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{gray!50} $\scriptstyle -4$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$ 
+				& \cellcolor{yellow!50} $\scriptstyle 6$  \\
+				\cellcolor{blue!100} \color{white} $\scriptstyle W$
+				& \cellcolor{yellow!90} $\scriptstyle +1$
+				& \cellcolor{gray!50} $\scriptstyle +4$
+				& \cellcolor{yellow!90} $\scriptstyle 0$
+				& \cellcolor{yellow!90} $\scriptstyle -1$
+				& \cellcolor{yellow!90} $\scriptstyle -1$
+				& \cellcolor{yellow!90} $\scriptstyle 0$
+				& \cellcolor{yellow!90} $\scriptstyle 0$ 
+				& \cellcolor{yellow!90} $\scriptstyle +8$  \\
+				& & \includegraphics[width=0.3cm,height=0.3cm]{setacima.jpg} \\
+				& & \scriptsize Entra \\
+			\end{tabular}
+		\end{table}			
+	}
+	\only<7>
+	{
+		\begin{table}		
+			\begin{tabular}{c c c c c c c c c c c c}
+				\cline{1-8} 
+				\cellcolor{blue!100} \color{white} \scriptsize Base 
+				&\cellcolor{blue!100} \color{white} \scriptsize Z/W
+				&\cellcolor{blue!100} \color{white} $\scriptstyle X_1$ 
+				&\cellcolor{blue!100} \color{red} $\scriptstyle X_2$ 
+				&\cellcolor{blue!100} \color{white}   $\scriptstyle X_3$ 
+				&\cellcolor{blue!100} \color{white} $\scriptstyle X_4$ 
+				&\cellcolor{blue!100} \color{red}   $\scriptstyle X_5$ 
+				&\cellcolor{blue!100} \color{red}   $\scriptstyle X_6$ 
+				&\cellcolor{blue!100} \color{white} \scriptsize b
+				&
+				&
+				& \\
+				\cellcolor{blue!100} \color{red} $\scriptstyle X_2$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{gray!50} $\scriptstyle -\frac{2}{3}$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{1}{3}$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{gray!50} $\scriptstyle +2$ 
+				& $ \scriptstyle -3 $ \\
+			    \cellcolor{blue!100} \color{red} $\scriptstyle X_5$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{gray!50} $\scriptstyle +\frac{7}{3}$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle -\frac{2}{3}$			
+				& \cellcolor{yellow!50} $\scriptstyle -1$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle 0$ 
+				& \cellcolor{gray!50} $\scriptstyle +4$ 
+				& $ \scriptstyle +\frac{12}{7} $ & \includegraphics[width=0.3cm,height=0.3cm]{setaesquerda.jpg}\\
+				\cellcolor{blue!100} \color{red} $\scriptstyle X_6$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{gray!50} $\scriptstyle +\frac{5}{3}$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle -\frac{1}{3}$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{gray!50} $\scriptstyle +4$ 
+				& $ \scriptstyle +\frac{12}{5} $ & \includegraphics[width=0.3cm,height=0.3cm]{setaesquerda.jpg}\\
+				\cellcolor{blue!100} \color{white} $\scriptstyle Z$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{gray!50} $\scriptstyle -4$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$ 
+				& \cellcolor{gray!50} $\scriptstyle 6$  \\
+				\cellcolor{blue!100} \color{white} $\scriptstyle W$
+				& \cellcolor{yellow!90} $\scriptstyle +1$
+				& \cellcolor{gray!50} $\scriptstyle +4$
+				& \cellcolor{yellow!90} $\scriptstyle 0$
+				& \cellcolor{yellow!90} $\scriptstyle -1$
+				& \cellcolor{yellow!90} $\scriptstyle -1$
+				& \cellcolor{yellow!90} $\scriptstyle 0$
+				& \cellcolor{yellow!90} $\scriptstyle 0$ 
+				& \cellcolor{gray!50} $\scriptstyle +8$  \\
+				& & \includegraphics[width=0.3cm,height=0.3cm]{setacima.jpg} \\
+				& & \scriptsize Entra \\
+			\end{tabular}
+		\end{table}			
+	}
+	\only<8>
+	{
+		\begin{table}		
+			\begin{tabular}{c c c c c c c c c c c c}
+				\cline{1-8} 
+				\cellcolor{blue!100} \color{white} \scriptsize Base 
+				&\cellcolor{blue!100} \color{white} \scriptsize Z/W
+				&\cellcolor{blue!100} \color{white} $\scriptstyle X_1$ 
+				&\cellcolor{blue!100} \color{red} $\scriptstyle X_2$ 
+				&\cellcolor{blue!100} \color{white}   $\scriptstyle X_3$ 
+				&\cellcolor{blue!100} \color{white} $\scriptstyle X_4$ 
+				&\cellcolor{blue!100} \color{red}   $\scriptstyle X_5$ 
+				&\cellcolor{blue!100} \color{red}   $\scriptstyle X_6$ 
+				&\cellcolor{blue!100} \color{white} \scriptsize b
+				&
+				&
+				& \\
+				\cellcolor{blue!100} \color{red} $\scriptstyle X_2$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{gray!50} $\scriptstyle -\frac{2}{3}$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{1}{3}$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{gray!50} $\scriptstyle +2$ \\
+			    \cellcolor{blue!100} \color{red} $\scriptstyle X_5$
+				& \cellcolor{gray!50} $\scriptstyle 0$
+				& \cellcolor{red!50} $\scriptstyle +\frac{7}{3}$
+				& \cellcolor{gray!50} $\scriptstyle 0$
+				& \cellcolor{gray!50} $\scriptstyle -\frac{2}{3}$			
+				& \cellcolor{gray!50} $\scriptstyle -1$
+				& \cellcolor{gray!50} $\scriptstyle +1$
+				& \cellcolor{gray!50} $\scriptstyle 0$ 
+				& \cellcolor{gray!50} $\scriptstyle +4$ 
+				& $ \scriptstyle +\frac{12}{7} $ 
+				& \includegraphics[width=0.3cm,height=0.3cm]{setaesquerda.jpg}  \scriptsize Sai \\
+				\cellcolor{blue!100} \color{red} $\scriptstyle X_6$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{gray!50} $\scriptstyle +\frac{5}{3}$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle -\frac{1}{3}$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{gray!50} $\scriptstyle +4$ \\
+				\cellcolor{blue!100} \color{white} $\scriptstyle Z$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{gray!50} $\scriptstyle -4$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$ 
+				& \cellcolor{gray!50} $\scriptstyle 6$  \\
+				\cellcolor{blue!100} \color{white} $\scriptstyle W$
+				& \cellcolor{yellow!90} $\scriptstyle +1$
+				& \cellcolor{gray!50} $\scriptstyle +4$
+				& \cellcolor{yellow!90} $\scriptstyle 0$
+				& \cellcolor{yellow!90} $\scriptstyle -1$
+				& \cellcolor{yellow!90} $\scriptstyle -1$
+				& \cellcolor{yellow!90} $\scriptstyle 0$
+				& \cellcolor{yellow!90} $\scriptstyle 0$ 
+				& \cellcolor{gray!50} $\scriptstyle +8$  \\
+				& & \includegraphics[width=0.3cm,height=0.3cm]{setacima.jpg} \\
+				& & \scriptsize Entra \\
+			\end{tabular}
+		\end{table}			
+	}
+	\only<9>
+	{
+		\begin{table}		
+			\begin{tabular}{c c c c c c c c c c c c}
+				\cline{1-8} 
+				\cellcolor{blue!100} \color{white} \scriptsize Base 
+				&\cellcolor{blue!100} \color{white} \scriptsize Z/W
+				&\cellcolor{blue!100} \color{red} $\scriptstyle X_1$ 
+				&\cellcolor{blue!100} \color{red} $\scriptstyle X_2$ 
+				&\cellcolor{blue!100} \color{white}   $\scriptstyle X_3$ 
+				&\cellcolor{blue!100} \color{white} $\scriptstyle X_4$ 
+				&\cellcolor{blue!100} \color{white}   $\scriptstyle X_5$ 
+				&\cellcolor{blue!100} \color{red}   $\scriptstyle X_6$ 
+				&\cellcolor{blue!100} \color{white} \scriptsize b
+				&
+				&
+				& \\
+				\cellcolor{blue!100} \color{red} $\scriptstyle X_2$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{1}{7}$
+				& \cellcolor{yellow!50} $\scriptstyle -\frac{2}{7}$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{2}{7}$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{22}{7}$ \\
+			    \cellcolor{blue!100} \color{red} $\scriptstyle X_1$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle -\frac{2}{7}$			
+				& \cellcolor{yellow!50} $\scriptstyle -\frac{3}{7}$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{3}{7}$
+				& \cellcolor{yellow!50} $\scriptstyle 0$ 
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{12}{7}$ \\
+				\cellcolor{blue!100} \color{red} $\scriptstyle X_6$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{1}{7}$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{5}{7}$
+				& \cellcolor{yellow!50} $\scriptstyle -\frac{5}{7}$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{8}{7}$ \\
+				\cellcolor{blue!100} \color{white} $\scriptstyle Z$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle -\frac{1}{7}$
+				& \cellcolor{yellow!50} $\scriptstyle -\frac{12}{7}$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{12}{7}$
+				& \cellcolor{yellow!50} $\scriptstyle 0$ 
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{90}{7}$  \\
+				\cellcolor{blue!100} \color{white} $\scriptstyle W$
+				& \cellcolor{yellow!90} $\scriptstyle +1$
+				& \cellcolor{yellow!90} $\scriptstyle 0$
+				& \cellcolor{yellow!90} $\scriptstyle 0$
+				& \cellcolor{yellow!90} $\scriptstyle +\frac{1}{7}$
+				& \cellcolor{yellow!90} $\scriptstyle +\frac{5}{7}$
+				& \cellcolor{yellow!90} $\scriptstyle -\frac{12}{7}$
+				& \cellcolor{yellow!90} $\scriptstyle 0$ 
+				& \cellcolor{yellow!90} $\scriptstyle +\frac{8}{7}$  \\
+			\end{tabular}
+		\end{table}			
+	}	
+	\only<10>
+	{
+		\begin{table}		
+			\begin{tabular}{c c c c c c c c c c c c}
+				\cline{1-8} 
+				\cellcolor{blue!100} \color{white} \scriptsize Base 
+				&\cellcolor{blue!100} \color{white} \scriptsize Z/W
+				&\cellcolor{blue!100} \color{red} $\scriptstyle X_1$ 
+				&\cellcolor{blue!100} \color{red} $\scriptstyle X_2$ 
+				&\cellcolor{blue!100} \color{white}   $\scriptstyle X_3$ 
+				&\cellcolor{blue!100} \color{white} $\scriptstyle X_4$ 
+				&\cellcolor{blue!100} \color{white}   $\scriptstyle X_5$ 
+				&\cellcolor{blue!100} \color{red}   $\scriptstyle X_6$ 
+				&\cellcolor{blue!100} \color{white} \scriptsize b
+				&
+				&
+				& \\
+				\cellcolor{blue!100} \color{red} $\scriptstyle X_2$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{1}{7}$
+				& \cellcolor{gray!50} $\scriptstyle -\frac{2}{7}$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{2}{7}$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{22}{7}$ \\
+			    \cellcolor{blue!100} \color{red} $\scriptstyle X_1$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle -\frac{2}{7}$			
+				& \cellcolor{gray!50} $\scriptstyle -\frac{3}{7}$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{3}{7}$
+				& \cellcolor{yellow!50} $\scriptstyle 0$ 
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{12}{7}$ \\
+				\cellcolor{blue!100} \color{red} $\scriptstyle X_6$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{1}{7}$
+				& \cellcolor{gray!50} $\scriptstyle +\frac{5}{7}$
+				& \cellcolor{yellow!50} $\scriptstyle -\frac{5}{7}$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{8}{7}$ \\
+				\cellcolor{blue!100} \color{white} $\scriptstyle Z$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle -\frac{1}{7}$
+				& \cellcolor{gray!50} $\scriptstyle -\frac{12}{7}$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{12}{7}$
+				& \cellcolor{yellow!50} $\scriptstyle 0$ 
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{90}{7}$  \\
+				\cellcolor{blue!100} \color{white} $\scriptstyle W$
+				& \cellcolor{yellow!90} $\scriptstyle +1$
+				& \cellcolor{yellow!90} $\scriptstyle 0$
+				& \cellcolor{yellow!90} $\scriptstyle 0$
+				& \cellcolor{yellow!90} $\scriptstyle +\frac{1}{7}$
+				& \cellcolor{gray!50} $\scriptstyle +\frac{5}{7}$
+				& \cellcolor{yellow!90} $\scriptstyle -\frac{12}{7}$
+				& \cellcolor{yellow!90} $\scriptstyle 0$ 
+				& \cellcolor{yellow!90} $\scriptstyle +\frac{8}{7}$  \\
+				& & & & & \includegraphics[width=0.3cm,height=0.3cm]{setacima.jpg} \\
+				& & & & & \scriptsize Entra \\
+			\end{tabular}
+		\end{table}			
+	}	
+	\only<11>
+	{
+		\begin{table}		
+			\begin{tabular}{c c c c c c c c c c c c}
+				\cline{1-8} 
+				\cellcolor{blue!100} \color{white} \scriptsize Base 
+				&\cellcolor{blue!100} \color{white} \scriptsize Z/W
+				&\cellcolor{blue!100} \color{red} $\scriptstyle X_1$ 
+				&\cellcolor{blue!100} \color{red} $\scriptstyle X_2$ 
+				&\cellcolor{blue!100} \color{white}   $\scriptstyle X_3$ 
+				&\cellcolor{blue!100} \color{white} $\scriptstyle X_4$ 
+				&\cellcolor{blue!100} \color{white}   $\scriptstyle X_5$ 
+				&\cellcolor{blue!100} \color{red}   $\scriptstyle X_6$ 
+				&\cellcolor{blue!100} \color{white} \scriptsize b
+				&
+				&
+				& \\
+				\cellcolor{blue!100} \color{red} $\scriptstyle X_2$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{1}{7}$
+				& \cellcolor{gray!50} $\scriptstyle -\frac{2}{7}$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{2}{7}$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{22}{7}$
+				& $ \scriptstyle -11 $ \\
+			    \cellcolor{blue!100} \color{red} $\scriptstyle X_1$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle -\frac{2}{7}$			
+				& \cellcolor{gray!50} $\scriptstyle -\frac{3}{7}$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{3}{7}$
+				& \cellcolor{yellow!50} $\scriptstyle 0$ 
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{12}{7}$
+				& $ \scriptstyle -4 $  \\
+				\cellcolor{blue!100} \color{red} $\scriptstyle X_6$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{1}{7}$
+				& \cellcolor{gray!50} $\scriptstyle +\frac{5}{7}$
+				& \cellcolor{yellow!50} $\scriptstyle -\frac{5}{7}$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{8}{7}$
+				& $ \scriptstyle +\frac{8}{5} $ & \includegraphics[width=0.3cm,height=0.3cm]{setaesquerda.jpg}  \\
+				\cellcolor{blue!100} \color{white} $\scriptstyle Z$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle -\frac{1}{7}$
+				& \cellcolor{gray!50} $\scriptstyle -\frac{12}{7}$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{12}{7}$
+				& \cellcolor{yellow!50} $\scriptstyle 0$ 
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{90}{7}$  \\
+				\cellcolor{blue!100} \color{white} $\scriptstyle W$
+				& \cellcolor{yellow!90} $\scriptstyle +1$
+				& \cellcolor{yellow!90} $\scriptstyle 0$
+				& \cellcolor{yellow!90} $\scriptstyle 0$
+				& \cellcolor{yellow!90} $\scriptstyle +\frac{1}{7}$
+				& \cellcolor{gray!50} $\scriptstyle +\frac{5}{7}$
+				& \cellcolor{yellow!90} $\scriptstyle -\frac{12}{7}$
+				& \cellcolor{yellow!90} $\scriptstyle 0$ 
+				& \cellcolor{yellow!90} $\scriptstyle +\frac{8}{7}$  \\
+				& & & & & \includegraphics[width=0.3cm,height=0.3cm]{setacima.jpg} \\
+				& & & & & \scriptsize Entra \\
+			\end{tabular}
+		\end{table}			
+	}	
+	\only<12>
+	{
+		\begin{table}		
+			\begin{tabular}{c c c c c c c c c c c c}
+				\cline{1-8} 
+				\cellcolor{blue!100} \color{white} \scriptsize Base 
+				&\cellcolor{blue!100} \color{white} \scriptsize Z/W
+				&\cellcolor{blue!100} \color{red} $\scriptstyle X_1$ 
+				&\cellcolor{blue!100} \color{red} $\scriptstyle X_2$ 
+				&\cellcolor{blue!100} \color{white}   $\scriptstyle X_3$ 
+				&\cellcolor{blue!100} \color{white} $\scriptstyle X_4$ 
+				&\cellcolor{blue!100} \color{white}   $\scriptstyle X_5$ 
+				&\cellcolor{blue!100} \color{red}   $\scriptstyle X_6$ 
+				&\cellcolor{blue!100} \color{white} \scriptsize b
+				&
+				&
+				& \\
+				\cellcolor{blue!100} \color{red} $\scriptstyle X_2$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{1}{7}$
+				& \cellcolor{gray!50} $\scriptstyle -\frac{2}{7}$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{2}{7}$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{22}{7}$
+				& $ \scriptstyle -11 $ \\
+			    \cellcolor{blue!100} \color{red} $\scriptstyle X_1$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle -\frac{2}{7}$			
+				& \cellcolor{gray!50} $\scriptstyle -\frac{3}{7}$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{3}{7}$
+				& \cellcolor{yellow!50} $\scriptstyle 0$ 
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{12}{7}$
+				& $ \scriptstyle -4 $  \\
+				\cellcolor{blue!100} \color{red} $\scriptstyle X_6$
+				& \cellcolor{gray!50} $\scriptstyle 0$
+				& \cellcolor{gray!50} $\scriptstyle 0$
+				& \cellcolor{gray!50} $\scriptstyle 0$
+				& \cellcolor{gray!50} $\scriptstyle +\frac{1}{7}$
+				& \cellcolor{red!50} $\scriptstyle +\frac{5}{7}$
+				& \cellcolor{gray!50} $\scriptstyle -\frac{5}{7}$
+				& \cellcolor{gray!50} $\scriptstyle +1$
+				& \cellcolor{gray!50} $\scriptstyle +\frac{8}{7}$
+				& $ \scriptstyle +\frac{8}{5} $ 
+				& \includegraphics[width=0.3cm,height=0.3cm]{setaesquerda.jpg} \scriptsize Sai \\
+				\cellcolor{blue!100} \color{white} $\scriptstyle Z$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle -\frac{1}{7}$
+				& \cellcolor{gray!50} $\scriptstyle -\frac{12}{7}$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{12}{7}$
+				& \cellcolor{yellow!50} $\scriptstyle 0$ 
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{90}{7}$  \\
+				\cellcolor{blue!100} \color{white} $\scriptstyle W$
+				& \cellcolor{yellow!90} $\scriptstyle +1$
+				& \cellcolor{yellow!90} $\scriptstyle 0$
+				& \cellcolor{yellow!90} $\scriptstyle 0$
+				& \cellcolor{yellow!90} $\scriptstyle +\frac{1}{7}$
+				& \cellcolor{gray!50} $\scriptstyle +\frac{5}{7}$
+				& \cellcolor{yellow!90} $\scriptstyle -\frac{12}{7}$
+				& \cellcolor{yellow!90} $\scriptstyle 0$ 
+				& \cellcolor{yellow!90} $\scriptstyle +\frac{8}{7}$  \\
+				& & & & & \includegraphics[width=0.3cm,height=0.3cm]{setacima.jpg} \\
+				& & & & & \scriptsize Entra \\
+			\end{tabular}
+		\end{table}			
+	}	
+	\only<13>
+	{
+		\begin{table}		
+			\begin{tabular}{c c c c c c c c c c c c}
+				\cline{1-8} 
+				\cellcolor{blue!100} \color{white} \scriptsize Base 
+				&\cellcolor{blue!100} \color{white} \scriptsize Z/W
+				&\cellcolor{blue!100} \color{red} $\scriptstyle X_1$ 
+				&\cellcolor{blue!100} \color{red} $\scriptstyle X_2$ 
+				&\cellcolor{blue!100} \color{white}   $\scriptstyle X_3$ 
+				&\cellcolor{blue!100} \color{red} $\scriptstyle X_4$ 
+				&\cellcolor{blue!100} \color{white}   $\scriptstyle X_5$ 
+				&\cellcolor{blue!100} \color{white}   $\scriptstyle X_6$ 
+				&\cellcolor{blue!100} \color{white} \scriptsize b
+				&
+				&
+				& \\
+				\cellcolor{blue!100} \color{red} $\scriptstyle X_2$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{1}{5}$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{2}{5}$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{18}{5}$ \\
+			    \cellcolor{blue!100} \color{red} $\scriptstyle X_1$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle -\frac{1}{5}$			
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{3}{5}$ 
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{12}{5}$ \\
+				\cellcolor{blue!100} \color{red} $\scriptstyle X_4$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{1}{5}$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle -1$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{7}{5}$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{8}{5}$ \\
+				\cellcolor{blue!100} \color{white} $\scriptstyle Z$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{1}{5}$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{12}{5}$ 
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{78}{5}$  \\
+				\cellcolor{blue!100} \color{white} $\scriptstyle W$
+				& \cellcolor{yellow!90} $\scriptstyle +1$
+				& \cellcolor{yellow!90} $\scriptstyle 0$
+				& \cellcolor{yellow!90} $\scriptstyle 0$
+				& \cellcolor{yellow!90} $\scriptstyle 0$
+				& \cellcolor{yellow!90} $\scriptstyle 0$
+				& \cellcolor{yellow!90} $\scriptstyle -1$
+				& \cellcolor{yellow!90} $\scriptstyle -1$ 
+				& \cellcolor{yellow!90} $\scriptstyle 0$  \\
+			\end{tabular}
+		\end{table}			
+	}		
+	\only<14>
+	{
+		\begin{table}		
+			\begin{tabular}{c c c c c c c c c c c c}
+				\cline{1-8} 
+				\cellcolor{blue!100} \color{white} \scriptsize Base 
+				&\cellcolor{blue!100} \color{white} \scriptsize Z/W
+				&\cellcolor{blue!100} \color{red} $\scriptstyle X_1$ 
+				&\cellcolor{blue!100} \color{red} $\scriptstyle X_2$ 
+				&\cellcolor{blue!100} \color{white}   $\scriptstyle X_3$ 
+				&\cellcolor{blue!100} \color{red} $\scriptstyle X_4$ 
+				&\cellcolor{olive!90} \color{white}   $\scriptstyle X_5$ 
+				&\cellcolor{olive!90} \color{white}   $\scriptstyle X_6$ 
+				&\cellcolor{blue!100} \color{white} \scriptsize b
+				&
+				&
+				& \\
+				\cellcolor{blue!100} \color{red} $\scriptstyle X_2$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{1}{5}$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{olive!90} $\scriptstyle 0$
+				& \cellcolor{olive!90} $\scriptstyle +\frac{2}{5}$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{18}{5}$ \\
+			    \cellcolor{blue!100} \color{red} $\scriptstyle X_1$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle -\frac{1}{5}$			
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{olive!90} $\scriptstyle 0$
+				& \cellcolor{olive!90} $\scriptstyle +\frac{3}{5}$ 
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{12}{5}$ \\
+				\cellcolor{blue!100} \color{red} $\scriptstyle X_4$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{1}{5}$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{olive!90} $\scriptstyle -1$
+				& \cellcolor{olive!90} $\scriptstyle +\frac{7}{5}$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{8}{5}$ \\
+				\cellcolor{blue!100} \color{white} $\scriptstyle Z$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{1}{5}$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{olive!90} $\scriptstyle 0$
+				& \cellcolor{olive!90} $\scriptstyle +\frac{12}{5}$ 
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{78}{5}$  \\
+				\cellcolor{olive!100} \color{white} $\scriptstyle W$
+				& \cellcolor{olive!90} $\scriptstyle +1$
+				& \cellcolor{olive!90} $\scriptstyle 0$
+				& \cellcolor{olive!90} $\scriptstyle 0$
+				& \cellcolor{olive!90} $\scriptstyle 0$
+				& \cellcolor{olive!90} $\scriptstyle 0$
+				& \cellcolor{olive!90} $\scriptstyle -1$
+				& \cellcolor{olive!90} $\scriptstyle -1$ 
+				& \cellcolor{olive!90} $\scriptstyle 0$  \\
+			\end{tabular}
+		\end{table}			
+	}		
+	\only<15-16>
+	{
+		\begin{table}		
+			\begin{tabular}{c c c c c c c c c c c c}
+				\cellcolor{blue!100} \color{white} \scriptsize Base 
+				&\cellcolor{blue!100} \color{white} \scriptsize Z/W
+				&\cellcolor{blue!100} \color{red} $\scriptstyle X_1$ 
+				&\cellcolor{blue!100} \color{red} $\scriptstyle X_2$ 
+				&\cellcolor{blue!100} \color{white}   $\scriptstyle X_3$ 
+				&\cellcolor{blue!100} \color{red} $\scriptstyle X_4$ 
+				&\cellcolor{blue!100} \color{white} \scriptsize b
+				&
+				&
+				& \\
+				\cellcolor{blue!100} \color{red} $\scriptstyle X_2$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{1}{5}$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{18}{5}$ \\
+			    \cellcolor{blue!100} \color{red} $\scriptstyle X_1$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle -\frac{1}{5}$			
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{12}{5}$ \\
+				\cellcolor{blue!100} \color{red} $\scriptstyle X_4$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{1}{5}$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{8}{5}$ \\
+				\cellcolor{blue!100} \color{white} $\scriptstyle Z$
+				& \cellcolor{yellow!50} $\scriptstyle +1$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{1}{5}$
+				& \cellcolor{yellow!50} $\scriptstyle 0$
+				& \cellcolor{yellow!50} $\scriptstyle +\frac{78}{5}$  \\
+			\end{tabular}
+		\end{table}			
+	}		
+
+	% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %	
+	\only<1>
+	{
+		\begin{columns}
+			\begin{column}{5cm}
+				\begin{mdframed}[backgroundcolor=olive!80]
+					Verificar se a solução é ótima! (Linha de Z). \underline{Problema de Minimização}, todos coeficientes devem ser negativos.
+				\end{mdframed}
+			\end{column}
+			\begin{column}{5cm}
+
+			\end{column}
+		\end{columns}
+	}	
+	\only<2>
+	{
+		\begin{columns}
+			\begin{column}{5cm}
+				\begin{mdframed}[backgroundcolor=orange!80]
+					Escolhe variável com coeficiente mais positivo na FOB para entrar na base.
+				\end{mdframed}
+			\end{column}
+			\begin{column}{5cm}
+
+			\end{column}
+		\end{columns}
+	}	
+	\only<3>
+	{
+		\begin{columns}
+			\begin{column}{5cm}
+				\begin{mdframed}[backgroundcolor=olive!80]
+					Para cada linha do Tableau calcular razão $\frac{b_i}{\text{coluna}}$ e verificar se há razão positiva e finita.
+				\end{mdframed}
+			\end{column}
+			\begin{column}{5cm}
+
+			\end{column}
+		\end{columns}
+	}	
+	\only<4>
+	{
+		\begin{columns}
+			\begin{column}{5cm}
+				\begin{mdframed}[backgroundcolor=orange!80]
+					A linha com a menor razão positiva finita sairá da base.
+				\end{mdframed}
+			\end{column}
+			\begin{column}{5cm}
+				$
+					\begin{matrix}
+						\scriptstyle \text{LINHA}'_1 = \frac{1}{3} \times \text{LINHA}_1 \\
+						\scriptstyle \text{LINHA}'_2 = \text{LINHA}_2 - \frac{2}{3} \times \text{LINHA}_1 \\
+						\scriptstyle \text{LINHA}'_3 = \text{LINHA}_3 - \frac{1}{3} \times \text{LINHA}_1 \\
+						\scriptstyle \text{LINHA}'_4 = \text{LINHA}_4 + \text{LINHA}_1 \\
+						\scriptstyle \text{LINHA}'_5 = \text{LINHA}_5 - \text{LINHA}_1 \\
+					\end{matrix}
+				$
+			\end{column}
+		\end{columns}
+	}	
+	\only<5>
+	{
+		\begin{columns}
+			\begin{column}{5cm}
+				\begin{mdframed}[backgroundcolor=olive!80]
+					Verificar se a solução é ótima! (Linha de Z). \underline{Problema de Minimização!}
+				\end{mdframed}
+			\end{column}
+			\begin{column}{5cm}
+
+			\end{column}
+		\end{columns}
+	}	
+	\only<6>
+	{
+		\begin{columns}
+			\begin{column}{5cm}
+				\begin{mdframed}[backgroundcolor=orange!80]
+					Escolhe variável com coeficiente mais positivo na FOB para entrar na base.
+				\end{mdframed}
+			\end{column}
+			\begin{column}{5cm}
+
+			\end{column}
+		\end{columns}
+	}	
+	\only<7>
+	{
+		\begin{columns}
+			\begin{column}{5cm}
+				\begin{mdframed}[backgroundcolor=olive!80]
+					Para cada linha do Tableau calcular razão $\frac{b_i}{\text{coluna}}$ e verificar se há razão positiva e finita.
+				\end{mdframed}
+			\end{column}
+			\begin{column}{5cm}
+
+			\end{column}
+		\end{columns}
+	}	
+	\only<8>
+	{
+		\begin{columns}
+			\begin{column}{5cm}
+				\begin{mdframed}[backgroundcolor=orange!80]
+					A linha com a menor razão positiva finita sairá da base.
+				\end{mdframed}
+			\end{column}
+			\begin{column}{5cm}
+				$
+					\begin{matrix}
+						\scriptstyle \text{LINHA}'_1 = \text{LINHA}_1 + \frac{2}{7} \times \text{LINHA}_2\\
+						\scriptstyle \text{LINHA}'_2 = \frac{3}{7} \times \text{LINHA}_2 \\
+						\scriptstyle \text{LINHA}'_3 = \text{LINHA}_3 - \frac{5}{7} \times \text{LINHA}_2 \\
+						\scriptstyle \text{LINHA}'_4 = \text{LINHA}_4 + \frac{12}{7} \times \text{LINHA}_2 \\
+						\scriptstyle \text{LINHA}'_5 = \text{LINHA}_5 - \frac{12}{7} \times \text{LINHA}_2 \\
+					\end{matrix}
+				$
+			\end{column}
+		\end{columns}
+	}	
+	\only<9>
+	{
+		\begin{columns}
+			\begin{column}{5cm}
+				\begin{mdframed}[backgroundcolor=olive!80]
+					Verificar se a solução é ótima! (Linha de Z). \underline{Problema de Minimização}
+				\end{mdframed}
+			\end{column}
+			\begin{column}{5cm}
+
+			\end{column}
+		\end{columns}
+	}	
+	\only<10>
+	{
+		\begin{columns}
+			\begin{column}{5cm}
+				\begin{mdframed}[backgroundcolor=orange!80]
+					Escolhe variável com coeficiente mais positivo na FOB para entrar na base.
+				\end{mdframed}
+			\end{column}
+			\begin{column}{5cm}
+
+			\end{column}
+		\end{columns}
+	}	
+	\only<11>
+	{
+		\begin{columns}
+			\begin{column}{5cm}
+				\begin{mdframed}[backgroundcolor=olive!80]
+					Para cada linha do Tableau calcular razão $\frac{b_i}{\text{coluna}}$ e verificar se há razão positiva e finita.
+				\end{mdframed}
+			\end{column}
+			\begin{column}{5cm}
+
+			\end{column}
+		\end{columns}
+	}	
+	\only<12>
+	{
+		\begin{columns}
+			\begin{column}{5cm}
+				\begin{mdframed}[backgroundcolor=orange!80]
+					A linha com a menor razão positiva finita sairá da base.
+				\end{mdframed}
+			\end{column}
+			\begin{column}{5cm}
+				$
+					\begin{matrix}
+						\scriptstyle \text{LINHA}'_1 = \text{LINHA}_1 + \frac{2}{5} \times \text{LINHA}_3\\
+						\scriptstyle \text{LINHA}'_2 = \text{LINHA}_2 + \frac{3}{5} \times \text{LINHA}_3\\
+						\scriptstyle \text{LINHA}'_3 = \frac{7}{5} \times \text{LINHA}_3  \\
+						\scriptstyle \text{LINHA}'_4 = \text{LINHA}_4 + \frac{12}{5} \times \text{LINHA}_3 \\
+						\scriptstyle \text{LINHA}'_5 = \text{LINHA}_5 - \text{LINHA}_3 \\
+					\end{matrix}
+				$
+			\end{column}
+		\end{columns}
+	}	
+	\only<13>
+	{
+		\begin{columns}
+			\begin{column}{5cm}
+				\begin{mdframed}[backgroundcolor=red!80]
+					\centering
+					OPTIMAL SOLUTION FOUND DA FASE 1!!!!
+				\end{mdframed}
+			\end{column}
+			\begin{column}{5cm}
+
+			\end{column}
+		\end{columns}
+	}	
+	\only<14>
+	{
+		\begin{columns}
+			\begin{column}{5cm}
+				\begin{mdframed}[backgroundcolor=red!80]
+					\centering
+					Elimanam-se as colunas das variáveis artificiais e a linha da FOB de Minimização!!!! \\
+					Inicia-se a FASE 2.
+				\end{mdframed}
+			\end{column}
+			\begin{column}{5cm}
+
+			\end{column}
+		\end{columns}
+	}	
+	\only<15>
+	{
+		\begin{columns}
+			\begin{column}{5cm}
+				\begin{mdframed}[backgroundcolor=olive!80]
+					Verificar se a solução é ótima! (Linha de Z). \underline{Problema de Maximização}
+				\end{mdframed}
+			\end{column}
+			\begin{column}{5cm}
+
+			\end{column}
+		\end{columns}
+	}	
+	\only<16>
+	{
+		\begin{columns}
+			\begin{column}{5cm}
+				\begin{mdframed}[backgroundcolor=red!80]
+					\centering
+					OPTIMAL SOLUTION FOUND !!!!
+				\end{mdframed}
+			\end{column}
+			\begin{column}{5cm}
+				\begin{table}
+					\begin{tabular}{ c | c | c |}
+						\hline
+						\cellcolor{blue!100} \color{white}\scriptsize Tipo     & 
+						\cellcolor{blue!100} \color{white} \scriptsize Variável &  
+						\cellcolor{blue!100} \color{white} \scriptsize Valor \\
+						\cellcolor{green!80}  & 
+						\cellcolor{green!80} $\scriptstyle X_1$   &  
+						\cellcolor{green!80} $\scriptstyle \frac{12}{5}$   \\
+						\cellcolor{green!80} VB & 
+						\cellcolor{green!80} $\scriptstyle X_2$   &  
+						\cellcolor{green!80} $\scriptstyle \frac{18}{5}$   \\
+						\cellcolor{green!80} & 
+						\cellcolor{green!80} $\scriptstyle X_4$   &  
+						\cellcolor{green!100} $\scriptstyle \frac{8}{5}$   \\
+						\cellcolor{yellow!50} & 
+						\cellcolor{yellow!50} $ \scriptstyle X_3$   &  
+						\cellcolor{yellow!50} $\scriptstyle 0$   \\
+						\cellcolor{yellow!50} VNB & 
+						\cellcolor{yellow!50} $\scriptstyle X_5$   &  
+						\cellcolor{yellow!50} $\scriptstyle 0$   \\
+						\cellcolor{yellow!50} & 
+						\cellcolor{yellow!50} $\scriptstyle X_6$   &  
+						\cellcolor{yellow!50} $\scriptstyle 0$   \\						
+						\cellcolor{green!80} FOB 				 & 
+						\cellcolor{green!80} $\scriptstyle Z$     &  
+						\cellcolor{green!80} $\scriptstyle \frac{78}{5}$  \\
+						\hline		
+					\end{tabular}
+				\end{table}
+			\end{column}
+		\end{columns}
+	}	
+	
+
+\end{frame}
+
+% Método das duas fases
+% https://www.youtube.com/watch?v=PtT2ddGg5SQ
+
+\begin{frame}
+	\frametitle{Método das Duas Fases - Youtube} 
+	\centering
+	\begin{table}
+		\begin{tabular}{c}
+			\includegraphics[width=3.5cm,height=3.5cm]{youtube.png} \\
+			\href{https://www.youtube.com/watch?v=PtT2ddGg5SQ}{Clicar para assistir video no YouTube !!!}
+		\end{tabular}
+	\end{table}
+\end{frame} 
+
+
+
+
+\begin{frame}
+\Huge{\centerline{Fim}}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\end{document} 

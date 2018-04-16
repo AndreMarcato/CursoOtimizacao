@@ -1,0 +1,487 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+% Interessante: 
+%https://www.codecogs.com/latex/eqneditor.php?lang=pt-br
+
+\documentclass{beamer}
+
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{colortbl}
+\usepackage{mathrsfs}
+\usepackage{smartdiagram}
+\usepackage{listings}
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{mdframed}
+\usepackage{listings}
+\usepackage{amsmath}
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+\usepackage{cancel}
+
+\mode<presentation> {
+
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+%\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+
+\usepackage{animate}
+\usepackage{hyperref}
+\usepackage{media9}
+\usepackage{listings}
+\usepackage{amsmath}
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+\usepackage{chronology}
+\usepackage{xpatch}
+\xpretocmd{\chronology}{\tikzset{>=|}}{}{\failure}
+\usepackage{mdframed}
+\usepackage{tikz}
+\usepackage{makecell}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{shapes,arrows}
+\usepackage{array}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\logo
+{
+    \includegraphics[width=0.6cm,height=0.6cm,keepaspectratio]{UFJF.jpg}~%
+}
+
+\title[Aula 5]{Casos Especiais e Dualidade} 
+
+\author{\scriptsize Professores André L.M. Marcato, Ivo C.da Silva Jr, João A.Passos Filho } % Your name
+\institute[UFJF/PPEE]{Universidade Federal de Juiz de Fora \\
+	Programa de Pós-Graduação em Engenharia Elétrica \\
+	\medskip
+	\textit{\href{mailto:andre.marcato@ufjf.edu.br}{andre.marcato@ufjf.edu.br}, \href{mailto:ivo.chaves@ufjf.edu.br}{ivo.junior@ufjf.edu.br}, \href{mailto:joao.passos@ufjf.edu.br}{joao.passos@ufjf.edu.br}}
+}
+
+%\date{\small \today} % Date, can be changed to a custom date
+\date{\small Primeiro Semestre de 2018} % Date, can be changed to a custom date
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=gray,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+\begin{document}
+
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=2.6cm, height=1.7cm]{cover.jpg}
+%\caption{Ogata - 5a Edicao - Fig. 1.1}
+\label{Ogata_1_1}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Agenda da Apresentação} % Table of contents slide, comment this block out to remove it
+\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+%\include{Otimiz_AULA4_A}
+
+\section{Casos Especiais}
+
+\begin{frame}
+	\frametitle{Casos Especiais em PL - Como Identificar no Tableau?}
+	\centering
+	\begin{columns}
+		\begin{column}{5cm}
+			\centering
+			\includegraphics[width=5cm,height=4cm]{prob_semsol.png}
+		\end{column}
+		\begin{column}{5cm}
+			\centering
+			\includegraphics[width=4cm,height=4cm]{prob_multsol.png}
+		\end{column}
+	\end{columns}
+	\includegraphics[width=5cm,height=4cm]{prob_ilimitado.png}
+\end{frame}
+
+\subsection{Problema com Múltiplas Soluções} 
+\begin{frame}
+	\frametitle{Caso Especial: Múltipla Solução}
+	\begin{block}{Como identificar esta situação no Tableau Simplex?}
+			Quando, {\color{red}\underline{na forma tableau ótima}}, o coeficiente de uma das variáveis não-básicas (VNB) for nulo na linha referente a expressão da FOB. 
+	\end{block} \pause
+	\underline{Exemplo}:
+	\begin{columns}
+		\begin{column}{4cm}
+			\begin{mdframed}[backgroundcolor=black!10]
+				$	\begin{matrix}
+						\max z = 8x_1 + 4x_2 \\
+						Sujeito a: \\
+						4x_1 + 2x_2 \le 16 \\
+						x_1 + x_2 \le 16 \\
+						x_1, x_2 \ge 0 \\
+					\end{matrix}
+				$
+			\end{mdframed}
+		\end{column} \pause
+		\begin{column}{6.5cm}
+			\includegraphics[width=7cm,height=5cm]{prob_multsol.png}
+		\end{column}
+	\end{columns}
+	
+\end{frame}
+
+
+
+\begin{frame}
+	\frametitle{Caso Especial: Múltipla Solução}
+
+	\begin{itemize}
+		\item {Tableau ótimo em um problema de Maximização. Convergência $\Leftrightarrow$ Coef. das VNBs $\ge$ 0.}
+			\only<1>
+			{
+			\begin{table}
+				\scriptsize
+				\newcommand{\azbr}{\cellcolor{blue!70} \color{white}}
+				\newcommand{\azvm}{\cellcolor{blue!70} \color{red}}
+				\newcommand{\ampr}{\cellcolor{yellow!70} \color{black}}
+				\newcommand{\amvm}{\cellcolor{yellow!70} \color{red}}
+				\begin{tabular}{ c  c  c  c  c  c  c  c }
+				\azbr Variável & \azbr $N^o$ da & \multicolumn{5}{c}{\azbr Coeficientes} & \multirow{2}{1.5cm}{\azbr  Constantes} \\[3pt]
+				\azbr Básica   & \azbr Equação  & \azbr $z$ &\azvm  $x_1$ & \azbr $x_2$ & \azbr $x_3$ & \azvm $x_4$ &  \azbr                               \\[3pt]
+				\amvm $x_1$ & \ampr 1 & \ampr 0 & \ampr 1 & \ampr $\frac{1}{2}$ & \ampr $\frac{1}{4}$  &  \ampr 0 & \ampr 4  \\ [3pt]
+				\amvm $x_4$ & \ampr 2 & \ampr 0 & \ampr 0 & \ampr $\frac{1}{2}$ & \ampr -$\frac{1}{4}$ &  \ampr 1 & \ampr 2  \\	[3pt]
+				\ampr $z$   & \ampr 3 & \ampr 1 & \ampr 0 & \ampr 0  			& \ampr 2 			   &  \ampr 0 & \ampr 32 \\	[3pt]
+				\end{tabular}
+			\end{table}
+			}
+			\only<2->
+			{
+			\begin{table}
+				\scriptsize
+				\newcommand{\azbr}{\cellcolor{blue!70} \color{white}}
+				\newcommand{\azvm}{\cellcolor{blue!70} \color{red}}
+				\newcommand{\ampr}{\cellcolor{yellow!70} \color{black}}
+				\newcommand{\amvm}{\cellcolor{yellow!70} \color{red}}
+				\newcommand{\vevm}{\cellcolor{green!70} \color{red}}
+				\begin{tabular}{ c  c  c  c  c  c  c  c }
+				\azbr Variável & \azbr $N^o$ da & \multicolumn{5}{c}{\azbr Coeficientes} & \multirow{2}{1.5cm}{\azbr  Constantes} \\[3pt]
+				\azbr Básica   & \azbr Equação  & \azbr $z$ &\azvm  $x_1$ & \azbr $x_2$ & \azbr $x_3$ & \azvm $x_4$ &  \azbr                               \\[3pt]
+				\amvm $x_1$ & \ampr 1 & \ampr 0 & \ampr 1 & \ampr $\frac{1}{2}$ & \ampr $\frac{1}{4}$  &  \ampr 0 & \ampr 4  \\ [3pt]
+				\amvm $x_4$ & \ampr 2 & \ampr 0 & \ampr 0 & \ampr $\frac{1}{2}$ & \ampr -$\frac{1}{4}$ &  \ampr 1 & \ampr 2  \\	[3pt]
+				\ampr $z$   & \ampr 3 & \ampr 1 & \ampr 0 & \vevm 0  			& \vevm 2 			   &  \ampr 0 & \ampr 32 \\	[3pt]
+				\end{tabular}
+			\end{table}
+			}
+			\only<3->
+			{
+			{\color{black} \scriptsize Como $x_2$ (VNB) tem coeficiente igual a zero, sua entrada não altera o valor de Z (FOB). }
+			}
+		\only<4->
+		{
+		\item  {\color{black} Sai $x_4$ e entra $x_2$}
+			\only<5->
+			{
+				\begin{table}
+					\scriptsize
+					\newcommand{\azbr}{\cellcolor{blue!70} \color{white}}
+					\newcommand{\azvm}{\cellcolor{blue!70} \color{red}}
+					\newcommand{\ampr}{\cellcolor{yellow!70} \color{black}}
+					\newcommand{\amvm}{\cellcolor{yellow!70} \color{red}}
+					\newcommand{\vevm}{\cellcolor{green!70} \color{red}}
+					\begin{tabular}{ c  c  c  c  c  c  c  c }
+					\azbr Variável & \azbr $N^o$ da & \multicolumn{5}{c}{\azbr Coeficientes} & \multirow{2}{1.5cm}{\azbr  Constantes} \\[3pt]
+					\azbr Básica   & \azbr Equação  & \azbr $z$ &\azvm  $x_1$ & \azvm $x_2$ & \azbr $x_3$ & \azbr $x_4$ &  \azbr                               \\[3pt]
+					\amvm $x_1$ & \ampr 1 & \ampr 0 & \ampr 1 & \ampr 0 & \ampr $\frac{1}{2}$  & \ampr -1 & \ampr 2  \\ [3pt]
+					\amvm $x_2$ & \ampr 2 & \ampr 0 & \ampr 0 & \ampr 1 & \ampr -$\frac{1}{2}$ & \ampr 2  & \ampr 4  \\ [3pt]
+					\ampr $z$   & \ampr 3 & \ampr 1 & \ampr 0 & \ampr 0 & \vevm 2  			   & \vevm 0  & \ampr 32 \\ [3pt]
+					\end{tabular}
+				\end{table}
+			}
+			\only<6->
+			{
+			{\color{black} \scriptsize Com a entrada $x_2$ na base o valor de Z (FOB) não se altera. }
+			}
+		}
+	\end{itemize}
+
+\end{frame}
+
+\subsection{Problema Ilimitado}
+
+\begin{frame}
+	\frametitle{Caso Especial: Conjunto Ilimitado de Soluções (unbounded)}
+	\begin{block}{Como identificar esta situação no Tableau Simplex?}
+		Quando, {\color{red} \underline{na forma tableau simplex (em qualquer iteração)}}, não há a possibilidade de retirar nenhuma VB devido aos coeficientes negativos ou nulos na coluna referente a VNB que entratá na base.
+	\end{block}
+	\underline{Exemplo}:
+	\begin{columns}
+		\begin{column}{4cm}
+			\begin{mdframed}[backgroundcolor=black!10]
+				$	\begin{matrix}
+						\max z = 4x_1 + 3x_2\\
+						\text{Sujeito a:} \\
+						2x_1 + 5x_2 \ge 20 \\
+						x_1 \le 8 \\
+						x_1, x_2 \ge 0 \\
+					\end{matrix}
+				$
+			\end{mdframed}
+		\end{column} \pause
+		\begin{column}{6.5cm}
+			\includegraphics[width=7cm,height=5cm]{prob_ilimitado.png}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Caso Especial: Conjunto Ilimitado de Soluções (unbounded)}
+
+	\begin{itemize}
+		\item {Tableau $2^a$ Iteração, problema de Maximização. Convergência $\Leftrightarrow$ Coef. das VNBs $\ge$ 0.}
+			\only<1>
+			{
+			\begin{table}
+				\scriptsize
+				\newcommand{\azbr}{\cellcolor{blue!70} \color{white}}
+				\newcommand{\azvm}{\cellcolor{blue!70} \color{red}}
+				\newcommand{\ampr}{\cellcolor{yellow!70} \color{black}}
+				\newcommand{\amvm}{\cellcolor{yellow!70} \color{red}}
+				\begin{tabular}{ c  c  c  c  c  c  c  c }
+				\azbr Variável & \azbr $N^o$ da & \multicolumn{5}{c}{\azbr Coeficientes} & \multirow{2}{1.5cm}{\azbr  Constantes} \\[3pt]
+				\azbr Básica   & \azbr Equação  & \azbr $w$ & \azbr  $x_1$ & \azvm $x_2$ & \azbr $x_3$           & \azvm $x_4$          & \azbr      		  \\[3pt]
+				\amvm $x_2$    & \ampr 1        & \ampr 0   & \ampr 0      & \ampr 1     & \ampr -$\frac{1}{5}$  & \ampr -$\frac{2}{5}$ & \ampr $\frac{4}{5}$ \\[3pt]
+				\amvm $x_4$    & \ampr 2        & \ampr 0   & \ampr 1      & \ampr 0     & \ampr 0               & \ampr 1              & \ampr 8  			  \\[3pt]
+				\ampr $w$      & \ampr 3        & \ampr 1   & \ampr 0      & \ampr 0     & \ampr -$\frac{3}{5}$  & \ampr $\frac{14}{5}$ & \ampr $\frac{172}{5}$\\[3pt]
+				\end{tabular}
+			\end{table}
+			}
+			\only<2->
+			{
+			\begin{table}
+				\scriptsize
+				\newcommand{\azbr}{\cellcolor{blue!70} \color{white}}
+				\newcommand{\azvm}{\cellcolor{blue!70} \color{red}}
+				\newcommand{\ampr}{\cellcolor{yellow!70} \color{black}}
+				\newcommand{\amvm}{\cellcolor{yellow!70} \color{red}}
+				\newcommand{\prpr}{\cellcolor{black!40} \color{black}}
+				\begin{tabular}{ c  c  c  c  c  c  c  c c }
+				\azbr Variável & \azbr $N^o$ da & \multicolumn{5}{c}{\azbr Coeficientes} & \multirow{2}{1.5cm}{\azbr  Constantes} \\[3pt]
+				\azbr Básica   & \azbr Equação  & \azbr $w$ & \azbr  $x_1$ & \azvm $x_2$ & \azbr $x_3$           & \azvm $x_4$          & \azbr      		     \\[3pt]
+				\amvm $x_2$    & \ampr 1        & \ampr 0   & \ampr 0      & \ampr 1     & \prpr -$\frac{1}{5}$  & \ampr -$\frac{2}{5}$ & \prpr $\frac{4}{5}$  & \color{black} $=-4$ \\[3pt]
+				\amvm $x_4$    & \ampr 2        & \ampr 0   & \ampr 1      & \ampr 0     & \prpr 0               & \ampr 1              & \prpr 8  			   & \color{black} $=\infty$\\[3pt]
+				\ampr $w$      & \ampr 3        & \ampr 1   & \ampr 0      & \ampr 0     & \prpr -$\frac{3}{5}$  & \ampr $\frac{14}{5}$ & \prpr $\frac{172}{5}$  \\[3pt]
+				\end{tabular}
+			\end{table}
+			}			
+			\only<3->
+			{
+			{\color{black} \scriptsize $x_3$ deve entrar na base - maior coeficiente negativo em w (FOB). Entretanto, todos os elementos de sua coluna são negativos ou nulos, não há como uma variável básica ($x_2$ ou $x_4$) sair da base. }
+			}
+	\end{itemize}
+	\only<4->
+	{
+		\begin{mdframed}[backgroundcolor=red!40]
+			\centering
+			Valor da Função Objetivo Ilimitado!
+		\end{mdframed}
+	}
+\end{frame}
+
+
+\subsection{Problema Sem Solução}
+\begin{frame}
+	\frametitle{Caso Especial: Problema Sem Solução Ótima}
+	\begin{block}{Como identificar esta situação no Tableau Simplex?}
+		Quando, {\color{red} \underline{na forma tableau ótimo}}, a solução final tiver pelo menos uma variável artificial com valor não nulo na base. 	
+	\end{block}
+	\underline{Exemplo}:
+	\begin{columns}
+		\begin{column}{4cm}
+			\begin{mdframed}[backgroundcolor=black!10]
+				$	\begin{matrix}
+						\max z = x_1 + x_2\\
+						\text{Sujeito a:} \\
+						5x_1 + 4x_2 \ge 40 \\
+						2x_1 + x_2 \le 6 \\
+						x_1, x_2 \ge 0 \\
+					\end{matrix}
+				$
+			\end{mdframed}
+		\end{column} \pause
+		\begin{column}{6.5cm}
+			\includegraphics[width=7cm,height=5cm]{prob_semsol.png}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Caso Especial: Problema Sem Solução Ótima}
+	\begin{columns}
+		\centering
+		\begin{column}{5cm}
+			\begin{mdframed}[backgroundcolor=black!20]
+				\centering
+				\scriptsize
+				$	\begin{matrix}
+						\max z = x_1 + x_2\\
+						\text{Sujeito a:} \\
+						5x_1 + 4x_2 \ge 40 \\
+						2x_1 + x_2 \le 6 \\
+						x_1, x_2 \ge 0 \\
+					\end{matrix}
+				$			
+			\end{mdframed}
+		\end{column}
+		\begin{column}{5cm}
+			\begin{mdframed}[backgroundcolor=yellow!70]
+				\centering
+				\scriptsize
+				$	\begin{matrix}
+						\max z = x_1 + x_2 {\color{red}+Ma_1}\\
+						\text{Sujeito a:} \\
+						5x_1 + 4x_2 {\color{red} - x_3 + a_1 =} 40 \\
+						2x_1 + x_2 {\color{red} + x_4 =} 6 \\
+						x_1, x_2{\color{red} ,x_3,x_4,a_1} \ge 0 \\
+					\end{matrix}
+				$			
+			\end{mdframed}
+		\end{column}
+	\end{columns}
+	\begin{itemize}
+		\item {Tableau ótimo no prob. Maxim. Convergência $\Leftrightarrow$ Coef. das VNBs $\ge$ 0.}
+		\begin{table}
+			\scriptsize
+			\newcommand{\azbr}{\cellcolor{blue!70} \color{white}}
+			\newcommand{\azvm}{\cellcolor{blue!70} \color{red}}
+			\newcommand{\ampr}{\cellcolor{yellow!70} \color{black}}
+			\newcommand{\amvm}{\cellcolor{yellow!70} \color{red}}
+			\begin{tabular}{ c  c  c  c  c  c  c  c c }
+			\azbr Variável & \azbr $N^o$ da & \multicolumn{6}{c}{\azbr Coeficientes} & \multirow{2}{1.5cm}{\azbr  Constantes} \\[3pt]
+			\azbr Básica   & \azbr Equação  & \azbr $w$ & \azbr  $x_1$ & \azvm $x_2$ & \azbr $x_3$ & \azbr $x_4$ & \azvm $a_1$ & \azbr          \\[3pt]
+			\amvm $a_1$    & \ampr 1        & \ampr 0   & \ampr -3     & \ampr 0     & \ampr -1    & \ampr -4    & \ampr1	   & \ampr 16 	    \\[3pt]
+			\amvm $x_2$    & \ampr 2        & \ampr 0   & \ampr 2      & \ampr 1     & \ampr 0     & \ampr 1     & \ampr0	   & \ampr 6  	    \\[3pt]
+			\ampr $w$      & \ampr 3        & \ampr 1   & \ampr $3M+1$ & \ampr 0     & \ampr -$M$  & \ampr $M+1$ & \ampr0	   & \ampr $-16M+6$ \\[3pt]
+			\end{tabular}
+		\end{table}	
+		\item \color{black} Observe que $a_1$ possui valor não nulo ($=16$). Ou seja, a solução final encontrada não é ótima, uma vez que a solução encontrada não corresponde à formulação original (FOB Original. 	
+	\end{itemize}
+\end{frame}
+
+\subsection{Empate na Escolha (entrar ou sair da base)}
+\begin{frame}
+	\frametitle{Empate na Escolha da Variável para \underline{Entrar} ou \underline{Sair} da base}
+	\only<1>
+	{
+		\begin{table}
+			\begin{tabular}{c c c}
+				\includegraphics[width=0.6cm,height=0.3cm]{seta.png} & \text{Empate para entrar na base} & \multirow{2}{1cm}{\includegraphics[width=1.5cm,height=1.5cm]{There-are-no-rules.jpg}} \\ [12pt] 
+				\includegraphics[width=0.6cm,height=0.3cm]{seta.png} & \text{Empate para sair da Base} \\[12pt]				
+			\end{tabular}
+		\end{table}
+	}
+	\only<2->
+	{
+		\begin{table}
+			\begin{tabular}{c c c}
+				\includegraphics[width=0.6cm,height=0.3cm]{seta.png} & \text{Empate para entrar na base} & \multirow{2}{1cm}{\includegraphics[width=3cm,height=1.5cm]{proibido.jpg}}\\[12pt]
+				\includegraphics[width=0.6cm,height=0.3cm]{seta.png} & \text{Empate para sair da Base} \\[12pt]				
+			\end{tabular}
+		\end{table}
+	}
+	\only<3->
+	{
+		\begin{mdframed}[backgroundcolor=red!60]
+			\centering
+			\underline{Conseqüência}: $\pm$ iterações dependendo da escolha.
+		\end{mdframed}
+	}
+\end{frame}
+
+
+\begin{frame}
+\Huge{\centerline{Fim}}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\end{document} 

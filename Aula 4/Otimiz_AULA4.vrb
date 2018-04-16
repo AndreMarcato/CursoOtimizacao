@@ -1,0 +1,27 @@
+\frametitle{Problema Modificado para BigM}
+		\begin{alertblock}{\centering Inserção das Variáveis Artificiais e das Penalidades}
+			\centering
+			$
+				\begin{matrix}
+					\max Z = 2x_1+3x_2  &                                       &                   & \cellcolor{green!70}{\color{red}-Mx_5} & \cellcolor{green!70}{\color{red}- Mx_6}  & =0 \\
+					\text{Sujeito a} \\
+					-2x_1+3x_2          & \cellcolor{green!70}{\color{red}+x_3} &                   &                                        &                                          & =6 \\
+					x_1 + 2x_2          &                                       & {\color{red}-x_4} & \cellcolor{green!70}{\color{red}+x_5}  &                                          & =8 \\
+					x_1 + x_2           &                                       &                   &                                        & \cellcolor{green!70}{\color{red}+x_6}    & =6 \\
+					x_1, x_2{\color{red},x_3,x_4,x_5,x_6} \ge 0 \\
+				\end{matrix}
+			$
+		\end{alertblock}
+			\begin{block}{Programa em Matlab}
+				\begin{lstlisting}[basicstyle=\tiny]
+clear all; close all; clc;
+M = 60;
+c = -[2 3 0 0 -M -M];
+A = []; B=[];
+Aeq = [ -2 3  1 0 0 0; 1 2 0 -1 1 0; 1 1 0 0 0 1];
+Beq = [ 6;8;6 ];
+lb = [  0   0   0   0   0   0];
+ub = [inf inf inf inf inf inf];
+[x, fval, exitflag] = linprog(c,A,B,Aeq,Beq, lb, ub);
+				\end{lstlisting}
+			\end{block}
