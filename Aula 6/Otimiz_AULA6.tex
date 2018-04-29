@@ -1,0 +1,1169 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+% Interessante: 
+%https://www.codecogs.com/latex/eqneditor.php?lang=pt-br
+
+\documentclass{beamer}
+
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{colortbl}
+\usepackage{mathrsfs}
+\usepackage{smartdiagram}
+\usepackage{listings}
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{mdframed}
+\usepackage{listings}
+\usepackage{amsmath}
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+\usepackage{cancel}
+
+\mode<presentation> {
+
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+%\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+
+\usepackage{animate}
+\usepackage{hyperref}
+\usepackage{media9}
+\usepackage{listings}
+\usepackage{amsmath}
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+\usepackage{chronology}
+\usepackage{xpatch}
+\xpretocmd{\chronology}{\tikzset{>=|}}{}{\failure}
+\usepackage{mdframed}
+\usepackage{tikz}
+\usepackage{makecell}
+\usepackage{array}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{shapes,arrows}
+\usepackage{array}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\logo
+{
+    \includegraphics[width=0.6cm,height=0.6cm,keepaspectratio]{UFJF.jpg}~%
+}
+
+\title[Aula 6]{Análise de Sensibilidade} 
+
+\author{\scriptsize Professores André L.M. Marcato, Ivo C.da Silva Jr, João A.Passos Filho } % Your name
+\institute[UFJF/PPEE]{Universidade Federal de Juiz de Fora \\
+	Programa de Pós-Graduação em Engenharia Elétrica \\
+	\medskip
+	\textit{\href{mailto:andre.marcato@ufjf.edu.br}{andre.marcato@ufjf.edu.br}, \href{mailto:ivo.chaves@ufjf.edu.br}{ivo.junior@ufjf.edu.br}, \href{mailto:joao.passos@ufjf.edu.br}{joao.passos@ufjf.edu.br}}
+}
+
+%\date{\small \today} % Date, can be changed to a custom date
+\date{\small Primeiro Semestre de 2018} % Date, can be changed to a custom date
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=gray,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+\begin{document}
+
+\begin{frame}
+	\titlepage 
+	\begin{figure}[!htb]
+		\centering
+		\includegraphics[width=2.6cm, height=1.7cm]{cover.jpg}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Agenda da Apresentação}
+	\tableofcontents 
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+%\include{Otimiz_AULA4_A}
+
+\section{Análise de Sensibilidade ou Análise de Pós-Otimização}
+\subsection{Exemplo Tableau-Simplex}
+
+\begin{frame}
+	\frametitle{O Problema dos Cereais - Matlab}
+	\centering
+	\includegraphics[width=12cm,height=7cm]{Prob_Agricultor.png}
+\end{frame}
+ 
+\begin{frame}
+	\frametitle{O Problema dos Cereais}
+	\begin{columns}
+		\begin{column}{4cm}
+			\scriptsize
+			\begin{table}
+				\begin{tabular}{c}
+					\cellcolor{red!50} $ \max z = 600x_1 + 800x_2 $ \\
+					\cellcolor{red!50} Sujeito a: \\
+					\cellcolor{red!50} $x_1 + x_2 \le 100$ \\
+					\cellcolor{red!50} $3x_1 + 2x_2 \le 240$ \\
+					\cellcolor{red!50} $x_1 \le 60 $ \\
+					\cellcolor{red!50} $x_2 \le 80 $ \\
+				    \cellcolor{red!50} $x_1, x_2 \ge 0 $ \\
+				\end{tabular}
+			\end{table}
+		\end{column} \pause
+		\begin{column}{3cm}
+			\centering
+			\textbf{Forma Padrão} \\
+			\includegraphics[width=3cm,height=0.5cm]{seta.png} \\
+			\textbf{Tableau Simplex} \\
+		\end{column}
+		\begin{column}{4cm}
+			\scriptsize
+			\begin{table}
+				\begin{tabular}{c}
+					\cellcolor{red!50} $ \max z = 600x_1 + 800x_2 $ \\
+					\cellcolor{red!50} Sujeito a: \\
+					\cellcolor{red!50} $x_1 + x_2 {\color{green}+ S_1 =}  100$ \\
+					\cellcolor{red!50} $3x_1 + 2x_2 {\color{green}+ S_2 =}  240$ \\
+					\cellcolor{red!50} $x_1 {\color{green}+ S_3 =}  60 $  \\
+					\cellcolor{red!50} $x_2 {\color{green}+ S_4 =}  80 $ \\
+				    \cellcolor{red!50} $x_1, x_2 \ge 0 $ \\
+				\end{tabular}
+			\end{table}
+		\end{column} \pause
+	\end{columns}
+	
+	\begin{table}
+		\caption{{\textbf{Tableau Simplex Final Processo Iterativo}}}
+		\begin{tabular}{c c c c c c c c c}
+			\cellcolor{blue} {\color{white} Base} &
+			\cellcolor{blue} {\color{white} $Z$} &
+			\cellcolor{blue} {\color{white} $x_1$} &
+			\cellcolor{blue} {\color{white} $x_2$} &
+			\cellcolor{blue} {\color{white} $S_1$} &
+			\cellcolor{blue} {\color{white} $S_2$} &
+			\cellcolor{blue} {\color{white} $S_3$} &
+			\cellcolor{blue} {\color{white} $S_4$} &
+			\cellcolor{blue} {\color{white} $B$} \\
+			\cellcolor{blue} {\color{white} $X_1$} &
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $1$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $1$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $-1$&
+			\cellcolor{yellow} $20$\\
+			\cellcolor{blue} {\color{white} $S_2$} &
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $-3$& 
+			\cellcolor{yellow} $1$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $1$&
+			\cellcolor{yellow} $20$\\
+			\cellcolor{blue} {\color{white} $S_3$} &
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $-2$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $1$& 
+			\cellcolor{yellow} $1$&
+			\cellcolor{yellow} $40$\\
+			\cellcolor{blue} {\color{white} $X_2$} &
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $1$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $1$&
+			\cellcolor{yellow} $80$\\
+			\cellcolor{blue} {\color{white} $Z$} &
+			\cellcolor{yellow} $1$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $600$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $200$&
+			\cellcolor{yellow} $76000$\\
+		\end{tabular}
+	\end{table}
+\end{frame}
+
+\subsection{Variáveis Duais x Tableau Simplex}
+\begin{frame}
+	\frametitle{O Problema dos Cereais - Tableau Final - Linha FOB}
+	\centering
+	\begin{table}
+		\scriptsize
+		\begin{tabular}{c c c c c c c c c}
+			\cellcolor{blue} {\color{white} Base} &
+			\cellcolor{blue} {\color{white} $Z$} &
+			\cellcolor{blue} {\color{white} $x_1$} &
+			\cellcolor{blue} {\color{white} $x_2$} &
+			\cellcolor{blue} {\color{red} $\mathbf{S_1}$} &
+			\cellcolor{blue} {\color{white} $S_2$} &
+			\cellcolor{blue} {\color{white} $S_3$} &
+			\cellcolor{blue} {\color{red} $\mathbf{S_4}$} &
+			\cellcolor{blue} {\color{white} $B$} \\
+			\cellcolor{blue} {\color{white} $Z$} &
+			\cellcolor{yellow} $1$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{red} $600$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{red} $200$&
+			\cellcolor{yellow} $76000$\\
+		\end{tabular}
+	\end{table} 
+	\includegraphics[width=7.5cm,height=5.5cm]{Prob_Agricultor.png}\\
+	\scriptsize
+	\underline{\textbf{Conclusão}:} Os coeficientes da VNB da FOB (Tableau Ótimo) são referentes aos valores das variáveis duais e suas respectivas restrições.
+\end{frame}
+
+\begin{frame}
+	\frametitle{O Problema dos Cereais}
+	\centering
+	\includegraphics[width=8.5cm,height=7cm]{anima_22.jpg}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Programação Linear - Análise de Sensibilidade}
+	\begin{block}{Justificativas para a Análise Pós-Otimização}
+		\begin{itemize}
+			\item O problema em estudo exige grande tempo de processamento e já foi resolvido anteriormente.
+			\item Modificação ou ajuste de algum parâmetro do modelo.
+			\item Estudo do impacto da variação de alguns parâmetros do modelo na função objetivo do problema.
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Programação Linear - Análise de Sensibilidade}
+	\begin{exampleblock}{Análise Pós-Otimização pode ser feita em relação:}
+		\begin{itemize}
+			\item Variação dos recursos das restrições
+			\item Eliminação das variáveis
+			\item Eliminação das restrições
+			\item Variação dos coeficientes da FOB
+		\end{itemize}
+	\end{exampleblock}
+\end{frame}
+
+
+\subsection{Eliminação de Variáveis}
+\begin{frame}
+	\frametitle{Eliminação de Variáveis}
+	\begin{block}{Quais variáveis podem ser eliminadas?}
+		\begin{itemize}
+			\item Variáveis nulas podem ser eliminadas (VNB e/ou VB nulas) sem afetar a solução ótima do problema.
+			\item Variáveis básicas (VB) \underline{não nulas} {\color{red}não podem} ser eliminadas. Caso sejam, deve-se resolver o problema novamente.
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Eliminação de Variáveis}
+	\begin{columns}
+		\begin{column}{4cm}
+			\only<1->
+			{
+				\centering
+				\scriptsize
+				\begin{table}
+					\begin{tabular}{c}
+						\cellcolor{red!50} $ \max z = 600x_1 + 800x_2  + x_3 $\\
+						\cellcolor{red!50} Sujeito a: \\
+						\cellcolor{red!50} $x_1 + x_2 + x_3 \le 100$ \\
+						\cellcolor{red!50} $3x_1 + 2x_2 \le 240$ \\
+						\cellcolor{red!50} $x_1 \le 60 $ \\
+						\cellcolor{red!50} $x_2 \le 80 $ \\
+					    \cellcolor{red!50} $x_1, x_2, x_3 \ge 0 $ \\
+					\end{tabular}
+				\end{table}
+			}
+		\end{column}
+		\begin{column}{3cm}
+			\only<2->
+			{		
+				\centering
+				\includegraphics[width=2cm,height=2cm]{solver_matlab.png} \\
+				\includegraphics[width=1.5cm,height=1cm]{seta_azul_direita.jpg} \\
+			}
+		\end{column}
+		\begin{column}{4cm}
+			\only<2->
+			{		
+				\centering
+				\includegraphics[width=3cm,height=3cm]{Elimina_Matlab_1.png}
+			}
+		\end{column}
+	\end{columns}
+	\begin{columns}
+		\begin{column}{4cm}
+			\only<4->
+			{		
+				\centering
+				\includegraphics[width=1cm,height=1.5cm]{seta_azul_cima.jpg}		
+			}
+		\end{column}
+		\begin{column}{3cm}
+		\end{column}
+		\begin{column}{4cm}
+			\only<3->
+			{		
+				\centering
+				%\includegraphics[width=1cm,height=1.5cm]{seta_azul_baixo.jpg}
+				\includegraphics[width=2cm,height=1cm]{tesoura.png} {\color{red}$X_3$}
+			}
+		\end{column}
+	\end{columns}
+	\begin{columns}
+		\begin{column}{4cm}
+			\only<4->
+			{		
+				\centering
+				\includegraphics[width=2.5cm,height=2.5cm]{Elimina_Matlab_2.png}
+			}
+		\end{column} 
+		\begin{column}{3cm}
+			\only<4->
+			{		
+				\centering
+				\includegraphics[width=1.5cm,height=1cm]{seta_azul_esquerda.jpg} \\		
+			}
+		\end{column}
+		\begin{column}{4cm}
+			\only<3->
+			{		
+				\centering
+				\scriptsize
+				\begin{table}
+					\begin{tabular}{c}
+						\cellcolor{olive!50} $ \max z = 600x_1 + 800x_2 $\\
+						\cellcolor{olive!50} Sujeito a: \\
+						\cellcolor{olive!50} $x_1 + x_2 \le 100$ \\
+						\cellcolor{olive!50} $3x_1 + 2x_2 \le 240$ \\
+						\cellcolor{olive!50} $x_1 \le 60 $ \\
+						\cellcolor{olive!50} $x_2 \le 80 $ \\
+					    \cellcolor{olive!50} $x_1, x_2 \ge 0 $ \\
+					\end{tabular}
+				\end{table}
+			}
+		\end{column} 
+	\end{columns}	
+\end{frame}
+
+\subsection{Eliminação de Restrições}
+\begin{frame}
+	\frametitle{Eliminação de Restrições}
+	\begin{itemize}
+		\item {A restrição a ser eliminada é uma igualdade:}
+			\begin{itemize}
+			\item[$\diamond$] \textbf{Neste caso, deve-se resolver o problema novamente.}
+			\end{itemize} 
+		\item {A restrição a ser eliminada é uma desigualdade. Neste caso, deve-se verificar se a restrição é ativa ou não}
+			\begin{itemize}
+			\item[$\diamond$] \textbf{\underline{Ativa}}: Deve-se resolver o problema novamente.
+			\item[$\diamond$] \textbf{\underline{Não está ativa}}: A desigualdade pode ser eliminada, pois esta não afetará em nada a solução do problema.
+			\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Eliminação de Restrições}
+	\begin{columns}
+		\begin{column}{5cm}
+			\scriptsize
+			\begin{table}
+				\only<1>
+				{
+					\begin{tabular}{c}
+						\cellcolor{red!50} $ \max z = 600x_1 + 800x_2 $ \\
+						\cellcolor{red!50} Sujeito a: \\
+						\cellcolor{red!50} $x_1 + x_2 \le 100$ \\
+						\cellcolor{red!50} $3x_1 + 2x_2 \le 240$ \\
+						\cellcolor{red!50} $x_1 \le 60 $ \\
+						\cellcolor{red!50} $x_2 \le 80 $ \\
+					    \cellcolor{red!50} $x_1, x_2 \ge 0 $ \\
+					\end{tabular}
+				}
+				\only<2>
+				{
+					\begin{tabular}{c}
+						\cellcolor{red!50} $ \max z = 600x_1 + 800x_2 $ \\
+						\cellcolor{red!50} Sujeito a: \\
+						\cellcolor{red!50} $x_1 + x_2 \le 100$ {\color{green} $\Leftrightarrow$ Ativa}\\
+						\cellcolor{red!50} $3x_1 + 2x_2 \le 240$ {\color{green} $\Leftrightarrow$ \textbf{Não Ativa}}\\
+						\cellcolor{red!50} $x_1 \le 60 $ {\color{green} $\Leftrightarrow$ \textbf{Não Ativa}}\\
+						\cellcolor{red!50} $x_2 \le 80 $ {\color{green} $\Leftrightarrow$ Ativa}\\
+					    \cellcolor{red!50} $x_1, x_2 \ge 0 $ \\
+					\end{tabular}
+				}
+			\end{table}
+		\end{column}
+		\begin{column}{3cm}
+			\centering
+			\textbf{Forma Padrão} \\
+			\includegraphics[width=3cm,height=0.5cm]{seta.png} \\
+			\textbf{Tableau Simplex} \\
+		\end{column}
+		\begin{column}{4cm}
+			\scriptsize
+			\begin{table}
+				\begin{tabular}{c}
+					\cellcolor{red!50} $ \max z = 600x_1 + 800x_2 $ \\
+					\cellcolor{red!50} Sujeito a: \\
+					\cellcolor{red!50} $x_1 + x_2 {\color{green}+ S_1 =}  100$ \\
+					\cellcolor{red!50} $3x_1 + 2x_2 {\color{green}+ S_2 =}  240$ \\
+					\cellcolor{red!50} $x_1 {\color{green}+ S_3 =}  60 $  \\
+					\cellcolor{red!50} $x_2 {\color{green}+ S_4 =}  80 $ \\
+				    \cellcolor{red!50} $x_1, x_2 \ge 0 $ \\
+				\end{tabular}
+			\end{table}
+		\end{column}
+	\end{columns}
+	
+	\begin{table}
+		\caption{{\textbf{Tableau Simplex Final Processo Iterativo}}}
+		\begin{tabular}{c c c c c c c c c}
+			\cellcolor{blue} {\color{white} Base} &
+			\cellcolor{blue} {\color{white} $Z$} &
+			\cellcolor{blue} {\color{white} $x_1$} &
+			\cellcolor{blue} {\color{white} $x_2$} &
+			\cellcolor{blue} {\color{white} $S_1$} &
+			\cellcolor{blue} {\color{white} $S_2$} &
+			\cellcolor{blue} {\color{white} $S_3$} &
+			\cellcolor{blue} {\color{white} $S_4$} &
+			\cellcolor{blue} {\color{white} $B$} \\
+			\cellcolor{blue} {\color{white} $X_1$} &
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $1$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $1$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $-1$&
+			\cellcolor{yellow} $20$\\
+			\cellcolor{blue} {\color{white} $S_2$} &
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $-3$& 
+			\cellcolor{yellow} $1$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $1$&
+			\cellcolor{yellow} $20$\\
+			\cellcolor{blue} {\color{white} $S_3$} &
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $-2$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $1$& 
+			\cellcolor{yellow} $1$&
+			\cellcolor{yellow} $40$\\
+			\cellcolor{blue} {\color{white} $X_2$} &
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $1$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $1$&
+			\cellcolor{yellow} $80$\\
+			\only<1>
+			{
+			\cellcolor{blue} {\color{white} $Z$} &
+			\cellcolor{yellow} $1$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $600$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $200$&
+			\cellcolor{yellow} $76000$\\
+			}
+			\only<2>
+			{
+			\cellcolor{blue} {\color{white} $Z$} &
+			\cellcolor{yellow} $1$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{green} $600$& 
+			\cellcolor{green} $0$& 
+			\cellcolor{green} $0$& 
+			\cellcolor{green} $200$&
+			\cellcolor{yellow} $76000$\\
+			}
+		\end{tabular}
+	\end{table}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Eliminação de Restrições}
+	\begin{columns}
+		\begin{column}{5cm}
+			\scriptsize
+			\begin{table}
+				\begin{tabular}{c}
+					\cellcolor{red!50} $ \max z = 600x_1 + 800x_2 $ \\
+					\cellcolor{red!50} Sujeito a: \\
+					\cellcolor{red!50} $x_1 + x_2 \le 100$ {\color{green} $\Leftrightarrow$ Ativa}\\
+					\cellcolor{red!50} $3x_1 + 2x_2 \le 240$ {\color{green} $\Leftrightarrow$ \textbf{Não Ativa}}\\
+					\cellcolor{red!50} $x_1 \le 60 $ {\color{green} $\Leftrightarrow$ \textbf{Não Ativa}}\\
+					\cellcolor{red!50} $x_2 \le 80 $ {\color{green} $\Leftrightarrow$ Ativa}\\
+				    \cellcolor{red!50} $x_1, x_2 \ge 0 $ \\
+				\end{tabular}
+			\end{table}
+		\end{column} \pause
+		\begin{column}{3cm}
+			\centering
+			\includegraphics[width=3cm,height=2cm]{tesoura.jpg} \\
+		\end{column}
+		\begin{column}{4cm}
+			\scriptsize
+			\begin{table}
+				\begin{tabular}{c}
+					\cellcolor{red!50} $ \max z = 600x_1 + 800x_2 $ \\
+					\cellcolor{red!50} Sujeito a: \\
+					\cellcolor{red!50} $x_1 + x_2 {\color{green}+ S_1 =}  100$ \\
+					\cellcolor{red!50} $x_2 {\color{green}+ S_4 =}  80 $ \\
+				    \cellcolor{red!50} $x_1, x_2 \ge 0 $ \\
+				\end{tabular}
+			\end{table}
+		\end{column} \pause
+	\end{columns}
+	\begin{columns}
+		\begin{column}{6cm}		
+			\centering
+			\begin{block}{Programa em Matlab}
+				\begin{lstlisting}[basicstyle=\tiny]  
+clear all; close all; clc;
+
+c = -[ 600 800];
+
+A = [ 1 1; 0 1]; B = [ 100; 80];
+lb = [0 0]; ub = [inf inf];
+
+[x, fval, exitflag] = linprog(c,A,B,[],[],lb,ub)
+				\end{lstlisting}			
+			\end{block}
+		\end{column} \pause
+		\begin{column}{6cm}
+			\centering
+			\includegraphics[width=3cm,height=4cm]{Elimina_Matlab_3.png}
+		\end{column}
+	\end{columns}	
+\end{frame}
+
+\subsection{Variação dos Coeficientes da FOB}
+\begin{frame}
+	\frametitle{Variação dos Coeficientes da FOB}
+	\begin{block}{Exemplo da Fábrica de Sucos}
+		\begin{table}
+			\begin{tabular}{l l l}
+				$ \max z = 5x_1 + 7x_2 + 3x_3 $	& \color{red} $\Rightarrow$ Lucro  \\
+				\underline{Sujeito a}: \\
+				$2x_1 + 3x_2 + 4x_3 \le 240$ 	& \color{red} $\Rightarrow$ Horas \\
+				$2x_1 + 1x_2 + 1x_3 \le 150$ 	& \color{red} $\Rightarrow$ Matéria Prima \\
+				$x_1 \le 80$ 					& \color{red} $\Rightarrow$ Produção \\
+				$x_1, x_2, x_3 \ge 0$ \\ 
+				& & \scriptsize $x_1$ litros de suco maçã\\
+				& & \scriptsize $x_2$ litros de suco uva\\
+				& & \scriptsize $x_3$ litros de suco limão\\
+			\end{tabular}
+		\end{table}
+	\end{block}
+	\begin{columns}
+		\only<2->
+		{
+			\begin{column}{1cm}
+				\centering
+				\includegraphics[width=1.5cm,height=2cm]{doubt.jpg}
+			\end{column}
+		}
+		\only<2>
+		{
+			\begin{column}{10cm}
+				\Large
+				Uma redução do preço original de $x_3$ tem impacto no lucro (Z)?
+			\end{column}
+		}
+		\only<3>
+		{
+			\begin{column}{10cm}
+				\Large
+				A partir de que valor de preço, o produto $x_3$ passa a ser mais vantajoso?
+			\end{column}
+		}
+		\only<4>
+		{
+			\begin{column}{10cm}
+				\Large
+				Como ficaria minha estratégia de venda com esse novo valor de produto $x_3$?
+			\end{column}
+		}
+
+
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Exemplo da Fábrica de Sucos}
+	\begin{table}
+		\scriptsize
+		\caption{{\textbf{Tableau Simplex Final Processo Iterativo}}}
+		\begin{tabular}{c c c c c c c c c}
+			\cellcolor{blue} {\color{white} Base} &
+			\cellcolor{blue} {\color{white} $Z$} &
+			\cellcolor{blue} {\color{white} $X_1$} &
+			\cellcolor{blue} {\color{red} $X_2$} &
+			\cellcolor{blue} {\color{red} $X_3$} &
+			\cellcolor{blue} {\color{white} $SLK_2$} &
+			\cellcolor{blue} {\color{white} $SLK_3$} &
+			\cellcolor{blue} {\color{red} $SLK_4$} &
+			\cellcolor{blue} {\color{white} $B$} \\
+			\cellcolor{blue} {\color{red} $X_2$} &
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $1$& 
+			\cellcolor{yellow} $1.5$& 
+			\cellcolor{yellow} $0.5$& 
+			\cellcolor{yellow} $-0.5$& 
+			\cellcolor{yellow} $0$&
+			\cellcolor{yellow} $45$\\
+			\cellcolor{blue} {\color{red} $X_1$} &
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $1$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $-0.25$& 
+			\cellcolor{yellow} $-0.25$& 
+			\cellcolor{yellow} $0.75$& 
+			\cellcolor{yellow} $0$&
+			\cellcolor{yellow} $52.5$\\
+			\cellcolor{blue} {\color{red} $SLK_4$} &
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $0.25$& 
+			\cellcolor{yellow} $0.25$& 
+			\cellcolor{yellow} $-0.75$& 
+			\cellcolor{yellow} $1$&
+			\cellcolor{yellow} $27.5$\\
+			\only<1>
+			{
+				\cellcolor{blue} {\color{white} $Z$} &
+				\cellcolor{yellow} $1$& 
+				\cellcolor{yellow} $0$& 
+				\cellcolor{yellow} $0$& 
+				\cellcolor{yellow} $6.25$& 
+				\cellcolor{yellow} $2.25$& 
+				\cellcolor{yellow} $0.25$& 
+				\cellcolor{yellow} $0$&
+				\cellcolor{yellow} $577.5$\\
+			}
+			\only<4>
+			{
+				\cellcolor{blue} {\color{white} $Z$} &
+				\cellcolor{yellow} $1$& 
+				\cellcolor{yellow} $0$& 
+				\cellcolor{yellow} $0$& 
+				\cellcolor{green} $6.25$& 
+				\cellcolor{yellow} $2.25$& 
+				\cellcolor{yellow} $0.25$& 
+				\cellcolor{yellow} $0$&
+				\cellcolor{yellow} $577.5$\\
+			}
+		\end{tabular}
+	\end{table}
+	\begin{columns}
+		\begin{column}{5cm}
+			\begin{table}
+				\scriptsize`
+				\begin{tabular}{| l | }
+					\hline
+					\cellcolor{yellow} $ \max Z = 5X_1 + 7X_2 + 3X_3 $ \\
+					\cellcolor{yellow} \underline{Sujeito a}: \\
+					\cellcolor{yellow} $2X_1 + 3X_2 + 4X_3 + SLK_2 = 240$ \\
+					\cellcolor{yellow} $2X_1 + 1X_2 + 1X_3 + SLK_3 150$ \\
+					\cellcolor{yellow} $X_1 + SLK_4 = 80$ \\
+					\cellcolor{yellow} $X_1, X_2, X_3, SLK_2, SLK_3, SLK_4 \ge 0$ \\ 
+					\hline
+				\end{tabular}
+			\end{table}			
+		\end{column}
+		\begin{column}{6cm}
+			\begin{block}{CASO 1 - Variável Não Básica}
+				Quanto se pode variar o coeficiente da variável $X_3$ (VNB) na FOB \textbf{sem alterar o valor da FOB}?
+				\only<2->
+				{
+					\begin{table}
+						\scriptsize
+						\begin{tabular}{| c |}
+							\hline
+							\cellcolor{gray} $\max Z = 5X_1 + 7X_2 + (3 + \Delta C_3)X_3 = 577,5$ \\
+							\hline
+						\end{tabular}
+					\end{table}
+				}
+				\only<3->
+				{
+					\begin{table}
+						\scriptsize
+						\begin{tabular}{| c |}
+							\hline
+							\cellcolor{gray} $ \Delta C_3 = ????$ \\
+							\hline
+						\end{tabular}
+					\end{table}				
+				}
+			\end{block}
+		\end{column}
+	\end{columns}	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Exemplo da Fábrica de Sucos}
+	\begin{table}
+		\scriptsize
+		\caption{{\textbf{Tableau Simplex Final Processo Iterativo}}}
+		\begin{tabular}{c c c c c c c c c}
+			\cellcolor{blue} {\color{white} Base} &
+			\cellcolor{blue} {\color{white} $Z$} &
+			\cellcolor{blue} {\color{white} $X_1$} &
+			\cellcolor{blue} {\color{red} $X_2$} &
+			\cellcolor{blue} {\color{red} $X_3$} &
+			\cellcolor{blue} {\color{white} $SLK_2$} &
+			\cellcolor{blue} {\color{white} $SLK_3$} &
+			\cellcolor{blue} {\color{red} $SLK_4$} &
+			\cellcolor{blue} {\color{white} $B$} \\
+			\cellcolor{blue} {\color{red} $X_2$} &
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $1$& 
+			\cellcolor{yellow} $1.5$& 
+			\cellcolor{yellow} $0.5$& 
+			\cellcolor{yellow} $-0.5$& 
+			\cellcolor{yellow} $0$&
+			\cellcolor{yellow} $45$\\
+			\cellcolor{blue} {\color{red} $X_1$} &
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $1$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $-0.25$& 
+			\cellcolor{yellow} $-0.25$& 
+			\cellcolor{yellow} $0.75$& 
+			\cellcolor{yellow} $0$&
+			\cellcolor{yellow} $52.5$\\
+			\cellcolor{blue} {\color{red} $SLK_4$} &
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $0.25$& 
+			\cellcolor{yellow} $0.25$& 
+			\cellcolor{yellow} $-0.75$& 
+			\cellcolor{yellow} $1$&
+			\cellcolor{yellow} $27.5$\\
+			\cellcolor{blue} {\color{white} $Z$} &
+			\cellcolor{yellow} $1$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{green} $6.25$& 
+			\cellcolor{yellow} $2.25$& 
+			\cellcolor{yellow} $0.25$& 
+			\cellcolor{yellow} $0$&
+			\cellcolor{yellow} $577.5$\\
+		\end{tabular}
+	\end{table} 
+	
+	\begin{table}
+		\scriptsize
+		\caption{\textbf{Expressão da FOB Tableau Ótimo}}
+		\begin{tabular}{| c |}
+			\hline
+			\cellcolor{gray!50} $ Z + 6,25X_3 + 2,25SLK_2 + 0,25SLK_3 = 577,50$ \\
+			\hline
+		\end{tabular}
+	\end{table} \pause
+
+	\begin{table}
+		\scriptsize
+		\caption{\textbf{Alteração na FOB devido a variação em $X_3$}}
+		\begin{tabular}{| c |}
+			\hline
+			\cellcolor{gray!50} $ \max Z = 5X_1 + 7X_2 + (3+\Delta C_3)X_3$ \\
+			\hline
+		\end{tabular}
+	\end{table} \pause
+	
+	\begin{table}
+		\scriptsize
+		\caption{\textbf{Expressão da FOB para entrada no tableau}}
+		\begin{tabular}{| c |}
+			\hline
+			\cellcolor{gray!50} $ \max Z - 5X_1 - 7X_2 - (3+\Delta C_3)X_3$ = 0 \\
+			\hline
+		\end{tabular}
+	\end{table}		
+\end{frame}
+
+\begin{frame}
+	\frametitle{Exemplo da Fábrica de Sucos}
+	\begin{table}
+		\scriptsize
+		\caption{\textbf{Alteração na Expressão da FOB no tableau ótimo}}
+		\begin{tabular}{| c |}
+			\hline
+			\cellcolor{yellow!50} $ \max Z - 5X_1 - 7X_2 - (3+\Delta C_3)X_3$ = 0 \\
+			\hline
+		\end{tabular}		
+	\end{table}		
+	\vspace{2cm}
+	O Tableau ótimo (Maximização) permanecerá o mesmo enquanto o coeficiente de $X_3$ for positivo. \pause
+
+	\begin{table}
+		\begin{tabular}{| c | c | c |}
+			\cline{1-1}
+			\cline{3-3}
+			\cellcolor{gray!60} $6,25 - \Delta C_3 \ge 0$ & \pause
+			\includegraphics[width=1cm,height=0.3cm]{seta_azul_direita.jpg} & 
+			\cellcolor{gray!60} $\Delta C_3 \le 6,25$ \\
+			\cline{1-1}
+			\cline{3-3}
+		\end{tabular}
+	\end{table}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Exemplo da Fábrica de Sucos}
+	\includegraphics[width=11cm,height=4cm]{Sensib_1.png}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Exemplo da Fábrica de Sucos}
+	\includegraphics[width=11cm,height=8cm]{Sensib_2.png}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Exemplo da Fábrica de Sucos}
+	\includegraphics[width=11cm,height=8cm]{Sensib_3.png}
+\end{frame}
+	
+\begin{frame}
+	\frametitle{Exemplo da Fábrica de Sucos}
+	\includegraphics[width=11cm,height=8cm]{Sensib_4.png}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Exemplo da Fábrica de Sucos}
+	\begin{table}
+		\scriptsize
+		\caption{{\textbf{Tableau Simplex Final Processo Iterativo}}}
+		\begin{tabular}{c c c c c c c c c}
+			\cellcolor{blue} {\color{white} Base} &
+			\cellcolor{blue} {\color{white} $Z$} &
+			\cellcolor{blue} {\color{white} $X_1$} &
+			\cellcolor{blue} {\color{red} $X_2$} &
+			\cellcolor{blue} {\color{red} $X_3$} &
+			\cellcolor{blue} {\color{white} $SLK_2$} &
+			\cellcolor{blue} {\color{white} $SLK_3$} &
+			\cellcolor{blue} {\color{red} $SLK_4$} &
+			\cellcolor{blue} {\color{white} $B$} \\
+			\cellcolor{blue} {\color{red} $X_2$} &
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $1$& 
+			\cellcolor{yellow} $1.5$& 
+			\cellcolor{yellow} $0.5$& 
+			\cellcolor{yellow} $-0.5$& 
+			\cellcolor{yellow} $0$&
+			\cellcolor{yellow} $45$\\
+			\cellcolor{blue} {\color{red} $X_1$} &
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $1$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $-0.25$& 
+			\cellcolor{yellow} $-0.25$& 
+			\cellcolor{yellow} $0.75$& 
+			\cellcolor{yellow} $0$&
+			\cellcolor{yellow} $52.5$\\
+			\cellcolor{blue} {\color{red} $SLK_4$} &
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $0.25$& 
+			\cellcolor{yellow} $0.25$& 
+			\cellcolor{yellow} $-0.75$& 
+			\cellcolor{yellow} $1$&
+			\cellcolor{yellow} $27.5$\\
+			\only<1>
+			{
+				\cellcolor{blue} {\color{white} $Z$} &
+				\cellcolor{yellow} $1$& 
+				\cellcolor{yellow} $0$& 
+				\cellcolor{yellow} $0$& 
+				\cellcolor{yellow} $6.25$& 
+				\cellcolor{yellow} $2.25$& 
+				\cellcolor{yellow} $0.25$& 
+				\cellcolor{yellow} $0$&
+				\cellcolor{yellow} $577.5$\\
+			}
+			\only<4>
+			{
+				\cellcolor{blue} {\color{white} $Z$} &
+				\cellcolor{yellow} $1$& 
+				\cellcolor{green} $-\Delta C_1$& 
+				\cellcolor{yellow} $0$& 
+				\cellcolor{yellow} $6.25$& 
+				\cellcolor{yellow} $2.25$& 
+				\cellcolor{yellow} $0.25$& 
+				\cellcolor{yellow} $0$&
+				\cellcolor{yellow} $577.5$\\
+			}
+		\end{tabular}
+	\end{table}
+	\begin{columns}
+		\begin{column}{5cm}
+			\begin{table}
+				\scriptsize`
+				\begin{tabular}{| l | }
+					\hline
+					\cellcolor{yellow} $ \max Z = 5X_1 + 7X_2 + 3X_3 $ \\
+					\cellcolor{yellow} \underline{Sujeito a}: \\
+					\cellcolor{yellow} $2X_1 + 3X_2 + 4X_3 + SLK_2 = 240$ \\
+					\cellcolor{yellow} $2X_1 + 1X_2 + 1X_3 + SLK_3 150$ \\
+					\cellcolor{yellow} $X_1 + SLK_4 = 80$ \\
+					\cellcolor{yellow} $X_1, X_2, X_3, SLK_2, SLK_3, SLK_4 \ge 0$ \\ 
+					\hline
+				\end{tabular}
+			\end{table}			
+		\end{column}
+		\begin{column}{6cm}
+			\begin{block}{CASO 2 - Variável Básica}
+				Quanto se pode variar o coeficiente da variável $X_1$ (VNB) na FOB \textbf{de modo a manter a otimalidade das variáveis do problema}?
+				\only<2->
+				{
+					\begin{table}
+						\scriptsize
+						\begin{tabular}{| c |}
+							\hline
+							\cellcolor{gray} $\max Z = (5+\Delta C_1) X_1 + 7X_2 + 3X_3 = 577,5$ \\
+							\hline
+						\end{tabular}
+					\end{table}
+				}
+				\only<3->
+				{
+					\begin{table}
+						\scriptsize
+						\begin{tabular}{| c |}
+							\hline
+							\cellcolor{gray} $ \Delta C_1 = ????$ \\
+							\hline
+						\end{tabular}
+					\end{table}				
+				}
+			\end{block}
+		\end{column}
+	\end{columns}	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Exemplo da Fábrica de Sucos}
+	\begin{table}
+		\scriptsize
+		\caption{{\textbf{Método Simplex, quadro final com alteração $\Delta C_1$}}}
+		\begin{tabular}{c c c c c c c c c}
+			\cellcolor{blue} {\color{white} Base} &
+			\cellcolor{blue} {\color{white} $Z$} &
+			\cellcolor{blue} {\color{white} $X_1$} &
+			\cellcolor{blue} {\color{red} $X_2$} &
+			\cellcolor{blue} {\color{red} $X_3$} &
+			\cellcolor{blue} {\color{white} $SLK_2$} &
+			\cellcolor{blue} {\color{white} $SLK_3$} &
+			\cellcolor{blue} {\color{red} $SLK_4$} &
+			\cellcolor{blue} {\color{white} $B$} \\
+			\cellcolor{blue} {\color{red} $X_2$} &
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $1$& 
+			\cellcolor{yellow} $1.5$& 
+			\cellcolor{yellow} $0.5$& 
+			\cellcolor{yellow} $-0.5$& 
+			\cellcolor{yellow} $0$&
+			\cellcolor{yellow} $45$\\
+			\cellcolor{blue} {\color{red} $X_1$} &
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $1$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $-0.25$& 
+			\cellcolor{yellow} $-0.25$& 
+			\cellcolor{yellow} $0.75$& 
+			\cellcolor{yellow} $0$&
+			\cellcolor{yellow} $52.5$\\
+			\cellcolor{blue} {\color{red} $SLK_4$} &
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $0.25$& 
+			\cellcolor{yellow} $0.25$& 
+			\cellcolor{yellow} $-0.75$& 
+			\cellcolor{yellow} $1$&
+			\cellcolor{yellow} $27.5$\\
+			\cellcolor{blue} {\color{white} $Z$} &
+			\cellcolor{yellow} $1$& 
+			\cellcolor{green} $-\Delta C_1$& 
+			\cellcolor{yellow} $0$& 
+			\cellcolor{yellow} $6.25$& 
+			\cellcolor{yellow} $2.25$& 
+			\cellcolor{yellow} $0.25$& 
+			\cellcolor{yellow} $0$&
+			\cellcolor{yellow} $577.5$\\
+		\end{tabular}
+	\end{table}
+	Diante da alteração (VB na FOB) deve-se eliminar o coeficiente de $X_1$, uma vez que na FOB só deve haver VNB.
+	\begin{mdframed}[backgroundcolor=gray!50]
+		\centering
+		$\text{Linha}(Z) = \text{Linha}(Z) + \Delta C_1 \cdot \text{Linha}(X_1) $
+	\end{mdframed}
+	
+	\begin{table}
+		\scriptsize
+		\caption{{\textbf{Linha da FOB com variação $\Delta C_1$}}}
+		\begin{tabular}{c c c c c c c c c}
+			\cellcolor{blue} {\color{white} Base} &
+			\cellcolor{blue} {\color{white} $Z$} &
+			\cellcolor{blue} {\color{white} $X_1$} &
+			\cellcolor{blue} {\color{red} $X_2$} &
+			\cellcolor{blue} {\color{red} $X_3$} &
+			\cellcolor{blue} {\color{white} $SLK_2$} &
+			\cellcolor{blue} {\color{white} $SLK_3$} &
+			\cellcolor{blue} {\color{red} $S_4$} &
+			\cellcolor{blue} {\color{white} $B$} \\
+			\cellcolor{blue} {\color{white} $Z$} &
+			\cellcolor{yellow} $1$ & 
+			\cellcolor{yellow} $0$ & 
+			\cellcolor{yellow} $0$ & 
+			\cellcolor{yellow} $6.25$& 
+			\cellcolor{yellow} $2.25$& 
+			\cellcolor{yellow} $0.25$& 
+			\cellcolor{yellow} $0$&
+			\cellcolor{yellow} $577.5$\\
+			\cellcolor{blue} & \cellcolor{yellow}& \cellcolor{yellow} & \cellcolor{yellow} & 
+			\cellcolor{yellow} $- 0.25 \Delta C_1$& 
+			\cellcolor{yellow} $- 0.25 \Delta C_1$& 
+			\cellcolor{yellow} $+ 0.75 \Delta C_1$& \cellcolor{yellow} &
+			\cellcolor{yellow} $+ 52.5 \Delta C_1$\\
+		\end{tabular}
+	\end{table}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Exemplo da Fábrica de Sucos}
+	\includegraphics[width=11cm,height=6cm]{Sensib_5.png}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Exemplo da Fábrica de Sucos}
+	\includegraphics[width=11cm,height=6cm]{Sensib_6.png}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Exemplo da Fábrica de Sucos}
+	\includegraphics[width=11cm,height=8cm]{Sensib_7.png}
+\end{frame}
+
+\begin{frame}
+\Huge{\centerline{Fim}}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\end{document} 

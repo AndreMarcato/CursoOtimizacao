@@ -1,0 +1,54 @@
+\frametitle{Eliminação de Restrições}
+	\begin{columns}
+		\begin{column}{5cm}
+			\scriptsize
+			\begin{table}
+				\begin{tabular}{c}
+					\cellcolor{red!50} $ \max z = 600x_1 + 800x_2 $ \\
+					\cellcolor{red!50} Sujeito a: \\
+					\cellcolor{red!50} $x_1 + x_2 \le 100$ {\color{green} $\Leftrightarrow$ Ativa}\\
+					\cellcolor{red!50} $3x_1 + 2x_2 \le 240$ {\color{green} $\Leftrightarrow$ \textbf{Não Ativa}}\\
+					\cellcolor{red!50} $x_1 \le 60 $ {\color{green} $\Leftrightarrow$ \textbf{Não Ativa}}\\
+					\cellcolor{red!50} $x_2 \le 80 $ {\color{green} $\Leftrightarrow$ Ativa}\\
+				    \cellcolor{red!50} $x_1, x_2 \ge 0 $ \\
+				\end{tabular}
+			\end{table}
+		\end{column} \pause
+		\begin{column}{3cm}
+			\centering
+			\includegraphics[width=3cm,height=2cm]{tesoura.jpg} \\
+		\end{column}
+		\begin{column}{4cm}
+			\scriptsize
+			\begin{table}
+				\begin{tabular}{c}
+					\cellcolor{red!50} $ \max z = 600x_1 + 800x_2 $ \\
+					\cellcolor{red!50} Sujeito a: \\
+					\cellcolor{red!50} $x_1 + x_2 {\color{green}+ S_1 =}  100$ \\
+					\cellcolor{red!50} $x_2 {\color{green}+ S_4 =}  80 $ \\
+				    \cellcolor{red!50} $x_1, x_2 \ge 0 $ \\
+				\end{tabular}
+			\end{table}
+		\end{column} \pause
+	\end{columns}
+	\begin{columns}
+		\begin{column}{6cm}
+			\centering
+			\begin{block}{Programa em Matlab}
+				\begin{lstlisting}[basicstyle=\tiny]
+clear all; close all; clc;
+
+c = -[ 600 800];
+
+A = [ 1 1; 0 1]; B = [ 100; 80];
+lb = [0 0]; ub = [inf inf];
+
+[x, fval, exitflag] = linprog(c,A,B,[],[],lb,ub)
+				\end{lstlisting}
+			\end{block}
+		\end{column} \pause
+		\begin{column}{6cm}
+			\centering
+			\includegraphics[width=3cm,height=4cm]{Elimina_Matlab_3.png}
+		\end{column}
+	\end{columns}
